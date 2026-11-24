@@ -1,0 +1,734 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1140" viewBox="0 0 2000 1140">
+<defs><pattern id="p8grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfc5a8" stroke-width="0.8"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect x="0" y="0" width="2000" height="38" rx="0" fill="#f0f0f0" stroke="none" stroke-width="1" />
+<line x1="0" y1="38" x2="2000" y2="38" stroke="#bdbdbd" stroke-width="1" stroke-linecap="round" />
+<text x="14" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#222" text-anchor="start" font-weight="bold" >Elevador LCD - Proteus 8 Professional - Esquema electronico  [VERSION DISPLAY LCD 16x2]</text>
+<rect x="0" y="38" width="2000" height="28" rx="0" fill="#e6ecf5" stroke="none" stroke-width="1" />
+<rect x="12" y="42" width="165" height="24" rx="2" fill="#fff" stroke="#bbb" stroke-width="1" />
+<text x="94" y="59" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111" text-anchor="middle" font-weight="bold" >Esquema electronico</text>
+<rect x="0" y="66" width="225" height="1074" rx="0" fill="#f5f5f5" stroke="#c0c0c0" stroke-width="1" />
+<rect x="8" y="74" width="209" height="120" rx="0" fill="#dcd2b4" stroke="#888" stroke-width="1" />
+<text x="112" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle" font-weight="normal" >Vista previa</text>
+<rect x="8" y="204" width="209" height="24" rx="0" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="16" y="221" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#fff" text-anchor="start" font-weight="bold" >DEVICES (Buscar con 'P')</text>
+<rect x="10" y="228" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="239" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >BUTTON</text>
+<text x="18" y="251" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >2 botones pasillo (Subir/Bajar)</text>
+<rect x="10" y="258" width="205" height="28" rx="0" fill="#edf2f7" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="269" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >BUZZER</text>
+<text x="18" y="281" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Buzzer ACTIVE 5V (en RB5)</text>
+<rect x="10" y="288" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="299" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >COMPIM</text>
+<text x="18" y="311" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Serial 9600 (Fisico: USB-TTL)</text>
+<rect x="10" y="318" width="205" height="28" rx="0" fill="#edf2f7" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="329" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >KEYPAD-SMALLCALC</text>
+<text x="18" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Teclado 4x4 (A,B,C,D,#,*)</text>
+<rect x="10" y="348" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="359" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >LED-GREEN</text>
+<text x="18" y="371" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >LED Verde = SUBE (x3)</text>
+<rect x="10" y="378" width="205" height="28" rx="0" fill="#edf2f7" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="389" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >LED-YELLOW</text>
+<text x="18" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >LED Amarillo = PUERTA (x3)</text>
+<rect x="10" y="408" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="419" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >LED-RED</text>
+<text x="18" y="431" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >LED Rojo = BAJA (x3)</text>
+<rect x="10" y="438" width="205" height="28" rx="0" fill="#edf2f7" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="449" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >LM016L</text>
+<text x="18" y="461" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Pantalla LCD 16x2 (x1)</text>
+<rect x="10" y="468" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="479" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >PIC18F4550</text>
+<text x="18" y="491" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Microcontrolador (x1)</text>
+<rect x="10" y="498" width="205" height="28" rx="0" fill="#edf2f7" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="509" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >POT-HG</text>
+<text x="18" y="521" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >Potenciometro 10k lineal</text>
+<rect x="10" y="528" width="205" height="28" rx="0" fill="#fff" stroke="#dcdcdc" stroke-width="1" />
+<text x="18" y="539" font-family="Consolas, monospace" font-size="10" fill="#003380" text-anchor="start" font-weight="bold" >RES</text>
+<text x="18" y="551" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#444" text-anchor="start" font-weight="normal" >10k (x7) y 220 Ohm (x9)</text>
+<rect x="8" y="560" width="209" height="155" rx="3" fill="#fff" stroke="#b0b0b0" stroke-width="1" />
+<rect x="8" y="560" width="209" height="24" rx="0" fill="#406080" stroke="none" stroke-width="1" />
+<text x="16" y="577" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="start" font-weight="bold" >MODO TERMINALES (Terminals)</text>
+<text x="16" y="602" font-family="Consolas" font-size="11" fill="#8b0000" text-anchor="start" font-weight="bold" >POWER</text>
+<text x="80" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >Triangulo arriba (+5V)</text>
+<text x="16" y="626" font-family="Consolas" font-size="11" fill="#8b0000" text-anchor="start" font-weight="bold" >GROUND</text>
+<text x="80" y="626" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >Rayas abajo (0V / GND)</text>
+<text x="16" y="650" font-family="Consolas" font-size="11" fill="#8b0000" text-anchor="start" font-weight="bold" >DEFAULT</text>
+<text x="80" y="650" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >Etiqueta de red (mismo</text>
+<text x="16" y="674" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >nombre = conectados)</text>
+<rect x="8" y="735" width="209" height="190" rx="3" fill="#fff8d6" stroke="#c9a400" stroke-width="1" />
+<text x="16" y="757" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#5a4200" text-anchor="start" font-weight="bold" >VENTAJAS DE ESTA VERSION:</text>
+<text x="16" y="779" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >- Soporta N pisos (1..99)</text>
+<text x="16" y="797" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >- Muestra piso tecleado</text>
+<text x="16" y="815" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >  antes de confirmar (#)</text>
+<text x="16" y="833" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >- Solo 6 cables al PIC</text>
+<text x="16" y="851" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >  (RD0..RD5 en modo 4 bits)</text>
+<text x="16" y="869" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >- Sin chips 74LS47 ni 21</text>
+<text x="16" y="887" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >  resistencias de display</text>
+<text x="16" y="905" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#333" text-anchor="start" font-weight="normal" >- Clock en U1 = 8MHz</text>
+<rect x="225" y="66" width="1775" height="1074" rx="0" fill="#dcd2b4" stroke="none" stroke-width="1" />
+<rect x="225" y="66" width="1775" height="1074" rx="0" fill="url(#p8grid)" stroke="none" stroke-width="1" />
+<text x="724" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#111" text-anchor="start" font-weight="bold" >U1</text>
+<rect x="720" y="215" width="270" height="578" rx="0" fill="#dcb998" stroke="#8b0000" stroke-width="2" />
+<text x="724" y="809" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111" text-anchor="start" font-weight="normal" >PIC18F4550</text>
+<text x="855.0" y="827" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#555" text-anchor="middle" font-weight="normal" >(Oscilador interno 8 MHz - VDD/VSS automaticos en Proteus)</text>
+<rect x="694" y="224" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >2</text>
+<text x="726" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA0/AN0</text>
+<rect x="694" y="250" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="263" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >3</text>
+<text x="726" y="263" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA1/AN1</text>
+<rect x="694" y="276" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >4</text>
+<text x="726" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA2/AN2/VREF-/CVREF</text>
+<rect x="694" y="302" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >5</text>
+<text x="726" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA3/AN3/VREF+</text>
+<rect x="694" y="328" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >6</text>
+<text x="726" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA4/T0CKI/C1OUT/RCV</text>
+<line x1="694" y1="337" x2="610" y2="337" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="612" y="332" font-family="Consolas, monospace" font-size="11.5" fill="#8b008b" text-anchor="start" font-weight="bold" >BTN_SUBIR</text>
+<rect x="694" y="354" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >7</text>
+<text x="726" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA5/AN4/SS/HLVDIN</text>
+<line x1="694" y1="363" x2="610" y2="363" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="612" y="358" font-family="Consolas, monospace" font-size="11.5" fill="#8b008b" text-anchor="start" font-weight="bold" >BTN_BAJAR</text>
+<rect x="694" y="380" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >14</text>
+<text x="726" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RA6/OSC2/CLKO</text>
+<rect x="694" y="406" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >13</text>
+<text x="726" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >OSC1/CLKI</text>
+<rect x="694" y="458" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="471" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >33</text>
+<text x="726" y="471" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB0/AN12/INT0/SDI</text>
+<rect x="694" y="484" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="497" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >34</text>
+<text x="726" y="497" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB1/AN10/INT1/SCK</text>
+<rect x="694" y="510" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="523" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >35</text>
+<text x="726" y="523" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB2/AN8/INT2/VMO</text>
+<rect x="694" y="536" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >36</text>
+<text x="726" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB3/AN9/CCP2/VPO</text>
+<rect x="694" y="562" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >37</text>
+<text x="726" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB4/AN11/KBI0/CSSPP</text>
+<line x1="694" y1="571" x2="625" y2="571" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="627" y="566" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E3_PUERTA</text>
+<rect x="694" y="588" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="601" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >38</text>
+<text x="726" y="601" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB5/KBI1/PGM</text>
+<line x1="694" y1="597" x2="625" y2="597" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="627" y="592" font-family="Consolas, monospace" font-size="11.5" fill="#cc0000" text-anchor="start" font-weight="bold" >BUZZER</text>
+<rect x="694" y="614" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >39</text>
+<text x="726" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB6/KBI2/PGC</text>
+<text x="688" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#666" text-anchor="end" font-weight="italic" >PGC (Libre)</text>
+<rect x="694" y="640" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="653" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >40</text>
+<text x="726" y="653" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >RB7/KBI3/PGD</text>
+<text x="688" y="653" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#666" text-anchor="end" font-weight="italic" >PGD (Libre)</text>
+<rect x="694" y="718" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="707" y="731" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >18</text>
+<text x="726" y="731" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="start" font-weight="normal" >VUSB</text>
+<rect x="990" y="224" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >15</text>
+<text x="984" y="237" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC0/T1OSO/T13CKI</text>
+<rect x="990" y="250" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="263" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >16</text>
+<text x="984" y="263" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC1/T1OSI/CCP2/UOE</text>
+<rect x="990" y="276" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >17</text>
+<text x="984" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC2/CCP1/P1A</text>
+<rect x="990" y="302" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >23</text>
+<text x="984" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC4/D-/VM</text>
+<rect x="990" y="328" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >24</text>
+<text x="984" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC5/D+/VP</text>
+<rect x="990" y="354" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >25</text>
+<text x="984" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC6/TX/CK</text>
+<rect x="990" y="380" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >26</text>
+<text x="984" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RC7/RX/DT/SDO</text>
+<rect x="990" y="458" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="471" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >19</text>
+<text x="984" y="471" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD0/SPP0</text>
+<rect x="990" y="484" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="497" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >20</text>
+<text x="984" y="497" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD1/SPP1</text>
+<rect x="990" y="510" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="523" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >21</text>
+<text x="984" y="523" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD2/SPP2</text>
+<rect x="990" y="536" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >22</text>
+<text x="984" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD3/SPP3</text>
+<rect x="990" y="562" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >27</text>
+<text x="984" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD4/SPP4</text>
+<rect x="990" y="588" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="601" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >28</text>
+<text x="984" y="601" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD5/SPP5/P1B</text>
+<rect x="990" y="614" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >29</text>
+<text x="984" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD6/SPP6/P1C</text>
+<line x1="1016" y1="623" x2="1105" y2="623" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="618" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E1_PUERTA</text>
+<rect x="990" y="640" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="653" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >30</text>
+<text x="984" y="653" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RD7/SPP7/P1D</text>
+<line x1="1016" y1="649" x2="1105" y2="649" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="644" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E2_PUERTA</text>
+<rect x="990" y="692" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="705" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >8</text>
+<text x="984" y="705" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RE0/AN5/CK1SPP</text>
+<line x1="1016" y1="701" x2="1086" y2="701" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="696" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E2_BAJA</text>
+<rect x="990" y="718" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="731" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >9</text>
+<text x="984" y="731" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RE1/AN6/CK2SPP</text>
+<line x1="1016" y1="727" x2="1086" y2="727" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="722" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E3_SUBE</text>
+<rect x="990" y="744" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="757" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >10</text>
+<text x="984" y="757" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RE2/AN7/OESPP</text>
+<line x1="1016" y1="753" x2="1086" y2="753" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="748" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E3_BAJA</text>
+<rect x="990" y="770" width="26" height="18" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1" />
+<text x="1003" y="783" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#111" text-anchor="middle" font-weight="normal" >1</text>
+<text x="984" y="783" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#222" text-anchor="end" font-weight="normal" >RE3/MCLR/VPP</text>
+<rect x="1145" y="355" width="130" height="74" rx="4" fill="#dcb998" stroke="#0055aa" stroke-width="2" />
+<text x="1210" y="443" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#0055aa" text-anchor="middle" font-weight="bold" >P1 (COMPIM - 9600 bps)</text>
+<text x="1210" y="388" font-family="Consolas" font-size="12" fill="#003380" text-anchor="middle" font-weight="bold" >COMPIM</text>
+<text x="1210" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="middle" font-weight="bold" >Fisico: USB-TTL</text>
+<text x="1210" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#0055aa" text-anchor="middle" font-weight="italic" >-> GUI Python</text>
+<line x1="1016" y1="363" x2="1127" y2="363" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="358" font-family="Consolas, monospace" font-size="11.5" fill="#0055aa" text-anchor="start" font-weight="bold" >UART_TX</text>
+<rect x="1127" y="356" width="18" height="14" rx="0" fill="#e6b5b5" stroke="#0055aa" stroke-width="1" />
+<text x="1136" y="366" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#111" text-anchor="middle" font-weight="normal" >3</text>
+<text x="1149" y="366" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#003380" text-anchor="start" font-weight="bold" >TXD</text>
+<line x1="1016" y1="389" x2="1127" y2="389" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1022" y="384" font-family="Consolas, monospace" font-size="11.5" fill="#0055aa" text-anchor="start" font-weight="bold" >UART_RX</text>
+<rect x="1127" y="382" width="18" height="14" rx="0" fill="#e6b5b5" stroke="#0055aa" stroke-width="1" />
+<text x="1136" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#111" text-anchor="middle" font-weight="normal" >2</text>
+<text x="1149" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#003380" text-anchor="start" font-weight="bold" >RXD</text>
+<line x1="1016" y1="779" x2="1125" y2="779" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1125" y1="713" x2="1125" y2="729" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1119" y="729" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1125" y1="763" x2="1125" y2="779" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1135" y="744.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R1</text>
+<text x="1135" y="756.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<line x1="1125" y1="713" x2="1125" y2="697" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1117,697 1133,697 1125,686" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="1125" y="682" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >POWER (+5V)</text>
+<text x="320" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111" text-anchor="start" font-weight="bold" >KEYPAD1</text>
+<rect x="320" y="390" width="190" height="235" rx="4" fill="#d9d9d9" stroke="#8b0000" stroke-width="2" />
+<rect x="332" y="404" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="350" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >1</text>
+<text x="350" y="441" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(7)</text>
+<rect x="375" y="404" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="393" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >2</text>
+<text x="393" y="441" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(8)</text>
+<rect x="418" y="404" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="436" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >3</text>
+<text x="436" y="441" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(9)</text>
+<rect x="461" y="404" width="37" height="44" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.2" />
+<text x="479" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >A</text>
+<text x="479" y="441" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(/)</text>
+<rect x="332" y="458" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="350" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >4</text>
+<text x="350" y="495" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="375" y="458" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="393" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >5</text>
+<text x="393" y="495" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="418" y="458" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="436" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >6</text>
+<text x="436" y="495" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="461" y="458" width="37" height="44" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.2" />
+<text x="479" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >B</text>
+<text x="479" y="495" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(*)</text>
+<rect x="332" y="512" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="350" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >7</text>
+<text x="350" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(1)</text>
+<rect x="375" y="512" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="393" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >8</text>
+<text x="393" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(2)</text>
+<rect x="418" y="512" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="436" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >9</text>
+<text x="436" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(3)</text>
+<rect x="461" y="512" width="37" height="44" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.2" />
+<text x="479" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >C</text>
+<text x="479" y="549" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(-)</text>
+<rect x="332" y="566" width="37" height="44" rx="3" fill="#b85c5c" stroke="#555" stroke-width="1.2" />
+<text x="350" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >*</text>
+<text x="350" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(ON/C)</text>
+<rect x="375" y="566" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="393" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >0</text>
+<text x="393" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="418" y="566" width="37" height="44" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.2" />
+<text x="436" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >#</text>
+<text x="436" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(=)</text>
+<rect x="461" y="566" width="37" height="44" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.2" />
+<text x="479" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >D</text>
+<text x="479" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#eee" text-anchor="middle" font-weight="normal" >(+)</text>
+<text x="415.0" y="657" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#111" text-anchor="middle" font-weight="bold" >KEYPAD-SMALLCALC</text>
+<line x1="300" y1="426" x2="320" y2="426" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="324" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="start" font-weight="bold" >A</text>
+<line x1="300" y1="426" x2="290" y2="426" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="290" y1="426" x2="290" y2="233" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="290" y1="233" x2="694" y2="233" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="628" y="228" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA1</text>
+<line x1="300" y1="480" x2="320" y2="480" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="324" y="484" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="start" font-weight="bold" >B</text>
+<line x1="300" y1="480" x2="276" y2="480" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="276" y1="480" x2="276" y2="259" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="276" y1="259" x2="694" y2="259" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="628" y="254" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA2</text>
+<line x1="300" y1="534" x2="320" y2="534" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="324" y="538" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="start" font-weight="bold" >C</text>
+<line x1="300" y1="534" x2="262" y2="534" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="262" y1="534" x2="262" y2="285" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="262" y1="285" x2="694" y2="285" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="628" y="280" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA3</text>
+<line x1="300" y1="588" x2="320" y2="588" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="324" y="592" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="start" font-weight="bold" >D</text>
+<line x1="300" y1="588" x2="248" y2="588" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="248" y1="588" x2="248" y2="311" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="248" y1="311" x2="694" y2="311" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="628" y="306" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA4</text>
+<line x1="350" y1="625" x2="350" y2="645" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="350" y="621" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="bold" >1</text>
+<line x1="350" y1="645" x2="350" y2="711" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="350" y1="711" x2="550" y2="711" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="350" cy="711" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="350" y1="711" x2="350" y2="755" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="350" y1="755" x2="350" y2="771" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="344" y="771" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="350" y1="805" x2="350" y2="821" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="360" y="786.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R2</text>
+<text x="360" y="798.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<line x1="350" y1="821" x2="527" y2="821" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="550" y1="711" x2="550" y2="467" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="550" y1="467" x2="694" y2="467" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="626" y="462" font-family="Consolas, monospace" font-size="11.5" fill="#006600" text-anchor="start" font-weight="bold" >COL1</text>
+<line x1="393" y1="625" x2="393" y2="645" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="393" y="621" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="bold" >2</text>
+<line x1="393" y1="645" x2="393" y2="696" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="393" y1="696" x2="570" y2="696" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="393" cy="696" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="393" y1="696" x2="393" y2="755" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="393" y1="755" x2="393" y2="771" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="387" y="771" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="393" y1="805" x2="393" y2="821" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="403" y="786.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R3</text>
+<text x="403" y="798.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="393" cy="821" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="570" y1="696" x2="570" y2="493" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="570" y1="493" x2="694" y2="493" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="626" y="488" font-family="Consolas, monospace" font-size="11.5" fill="#006600" text-anchor="start" font-weight="bold" >COL2</text>
+<line x1="436" y1="625" x2="436" y2="645" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="436" y="621" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="bold" >3</text>
+<line x1="436" y1="645" x2="436" y2="681" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="436" y1="681" x2="590" y2="681" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="436" cy="681" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="436" y1="681" x2="436" y2="755" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="436" y1="755" x2="436" y2="771" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="430" y="771" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="436" y1="805" x2="436" y2="821" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="446" y="786.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R4</text>
+<text x="446" y="798.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="436" cy="821" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="590" y1="681" x2="590" y2="519" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="590" y1="519" x2="694" y2="519" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="626" y="514" font-family="Consolas, monospace" font-size="11.5" fill="#006600" text-anchor="start" font-weight="bold" >COL3</text>
+<line x1="479" y1="625" x2="479" y2="645" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="479" y="621" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="bold" >4</text>
+<line x1="479" y1="645" x2="479" y2="666" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="479" y1="666" x2="610" y2="666" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="479" cy="666" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="479" y1="666" x2="479" y2="755" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="479" y1="755" x2="479" y2="771" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="473" y="771" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="479" y1="805" x2="479" y2="821" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="489" y="786.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R5</text>
+<text x="489" y="798.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="479" cy="821" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="610" y1="666" x2="610" y2="545" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="610" y1="545" x2="694" y2="545" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="626" y="540" font-family="Consolas, monospace" font-size="11.5" fill="#006600" text-anchor="start" font-weight="bold" >COL4</text>
+<line x1="527" y1="821" x2="527" y2="805" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="519,805 535,805 527,794" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="527" y="790" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >POWER (+5V)</text>
+<text x="414" y="839" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >Pull-Ups 10k (Columnas a +5V)</text>
+<line x1="1016" y1="233" x2="1028" y2="233" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1028" y1="233" x2="1028" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1028" y1="92" x2="1165" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1159" y="87" font-family="Consolas, monospace" font-size="11.5" fill="#111" text-anchor="end" font-weight="bold" >E1_SUBE</text>
+<line x1="1165" y1="92" x2="1183" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="86" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="92" x2="1237" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="83" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R6</text>
+<text x="1201.0" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="92" x2="1251" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,82 1251,102 1269,92" fill="#1fe01f" stroke="#8b0000" stroke-width="1.8" filter="url(#glow)"/>
+<line x1="1269" y1="82" x2="1269" y2="102" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="92" x2="1285" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="80" x2="1265" y2="72" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,72 1260,73 1264,77" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="80" x2="1272" y2="72" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,72 1267,73 1271,77" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="114" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D1</text>
+<line x1="1285" y1="92" x2="1320" y2="92" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="92" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="96" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E1 SUBE (V)</text>
+<line x1="1095" y1="124" x2="1165" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="119" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E1_PUERTA</text>
+<line x1="1165" y1="124" x2="1183" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="118" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="124" x2="1237" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R7</text>
+<text x="1201.0" y="142" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="124" x2="1251" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,114 1251,134 1269,124" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="114" x2="1269" y2="134" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="124" x2="1285" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="112" x2="1265" y2="104" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,104 1260,105 1264,109" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="112" x2="1272" y2="104" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,104 1267,105 1271,109" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="146" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D2</text>
+<line x1="1285" y1="124" x2="1320" y2="124" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="124" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E1 PUERTA (A)</text>
+<line x1="1016" y1="259" x2="1042" y2="259" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1042" y1="259" x2="1042" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1042" y1="156" x2="1165" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1159" y="151" font-family="Consolas, monospace" font-size="11.5" fill="#111" text-anchor="end" font-weight="bold" >E1_BAJA</text>
+<line x1="1165" y1="156" x2="1183" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="150" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="156" x2="1237" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="147" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R8</text>
+<text x="1201.0" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="156" x2="1251" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,146 1251,166 1269,156" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="146" x2="1269" y2="166" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="156" x2="1285" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="144" x2="1265" y2="136" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,136 1260,137 1264,141" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="144" x2="1272" y2="136" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,136 1267,137 1271,141" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D3</text>
+<line x1="1285" y1="156" x2="1320" y2="156" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="156" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E1 BAJA (R)</text>
+<line x1="1016" y1="285" x2="1049" y2="285" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1049" y1="285" x2="1049" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1049" y1="188" x2="1165" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1159" y="183" font-family="Consolas, monospace" font-size="11.5" fill="#111" text-anchor="end" font-weight="bold" >E2_SUBE</text>
+<line x1="1165" y1="188" x2="1183" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="182" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="188" x2="1237" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="179" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R9</text>
+<text x="1201.0" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="188" x2="1251" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,178 1251,198 1269,188" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="178" x2="1269" y2="198" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="188" x2="1285" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="176" x2="1265" y2="168" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,168 1260,169 1264,173" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="176" x2="1272" y2="168" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,168 1267,169 1271,173" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D4</text>
+<line x1="1285" y1="188" x2="1320" y2="188" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="188" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E2 SUBE (V)</text>
+<line x1="1095" y1="220" x2="1165" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="215" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E2_PUERTA</text>
+<line x1="1165" y1="220" x2="1183" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="214" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="220" x2="1237" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R10</text>
+<text x="1201.0" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="220" x2="1251" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,210 1251,230 1269,220" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="210" x2="1269" y2="230" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="220" x2="1285" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="208" x2="1265" y2="200" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,200 1260,201 1264,205" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="208" x2="1272" y2="200" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,200 1267,201 1271,205" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="242" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D5</text>
+<line x1="1285" y1="220" x2="1320" y2="220" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="220" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E2 PUERTA (A)</text>
+<line x1="1095" y1="252" x2="1165" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="247" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E2_BAJA</text>
+<line x1="1165" y1="252" x2="1183" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="246" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="252" x2="1237" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="243" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R11</text>
+<text x="1201.0" y="270" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="252" x2="1251" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,242 1251,262 1269,252" fill="#ff2626" stroke="#8b0000" stroke-width="1.8" filter="url(#glow)"/>
+<line x1="1269" y1="242" x2="1269" y2="262" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="252" x2="1285" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="240" x2="1265" y2="232" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,232 1260,233 1264,237" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="240" x2="1272" y2="232" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,232 1267,233 1271,237" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D6</text>
+<line x1="1285" y1="252" x2="1320" y2="252" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="252" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E2 BAJA (R)</text>
+<line x1="1095" y1="284" x2="1165" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="279" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E3_SUBE</text>
+<line x1="1165" y1="284" x2="1183" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="278" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="284" x2="1237" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R12</text>
+<text x="1201.0" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="284" x2="1251" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,274 1251,294 1269,284" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="274" x2="1269" y2="294" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="284" x2="1285" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="272" x2="1265" y2="264" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,264 1260,265 1264,269" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="272" x2="1272" y2="264" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,264 1267,265 1271,269" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="306" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D7</text>
+<line x1="1285" y1="284" x2="1320" y2="284" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="284" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E3 SUBE (V)</text>
+<line x1="1095" y1="316" x2="1165" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="311" font-family="Consolas, monospace" font-size="11.5" fill="#b58900" text-anchor="start" font-weight="bold" >E3_PUERTA</text>
+<line x1="1165" y1="316" x2="1183" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="310" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="316" x2="1237" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="307" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R13</text>
+<text x="1201.0" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="316" x2="1251" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,306 1251,326 1269,316" fill="#ffd000" stroke="#8b0000" stroke-width="1.8" filter="url(#glow)"/>
+<line x1="1269" y1="306" x2="1269" y2="326" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="316" x2="1285" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="304" x2="1265" y2="296" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,296 1260,297 1264,301" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="304" x2="1272" y2="296" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,296 1267,297 1271,301" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="338" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D8</text>
+<line x1="1285" y1="316" x2="1320" y2="316" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1320" cy="316" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<text x="1332" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E3 PUERTA (A)</text>
+<line x1="1095" y1="348" x2="1165" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1098" y="343" font-family="Consolas, monospace" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >E3_BAJA</text>
+<line x1="1165" y1="348" x2="1183" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1183" y="342" width="36" height="12" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1219" y1="348" x2="1237" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1201.0" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >R14</text>
+<text x="1201.0" y="366" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="normal" >220</text>
+<line x1="1237" y1="348" x2="1251" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1251,338 1251,358 1269,348" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1269" y1="338" x2="1269" y2="358" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1269" y1="348" x2="1285" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1257" y1="336" x2="1265" y2="328" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1265,328 1260,329 1264,333" fill="#8b0000" stroke="none" stroke-width="1" />
+<line x1="1264" y1="336" x2="1272" y2="328" stroke="#8b0000" stroke-width="1.4" stroke-linecap="round" />
+<polygon points="1272,328 1267,329 1271,333" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1260" y="370" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="middle" font-weight="bold" >D9</text>
+<line x1="1285" y1="348" x2="1320" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1332" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >E3 BAJA (R)</text>
+<line x1="1320" y1="92" x2="1320" y2="348" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1320" y1="348" x2="1320" y2="362" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1308" y1="362" x2="1332" y2="362" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1312" y1="367" x2="1328" y2="367" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1316" y1="372" x2="1324" y2="372" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1525" y="82" width="390" height="290" rx="0" fill="none" stroke="#4060a0" stroke-width="1.5" stroke-dasharray="7 5"/>
+<rect x="1525" y="82" width="390" height="24" rx="0" fill="#4060a0" stroke="none" stroke-width="1" />
+<text x="1535" y="99" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="start" font-weight="bold" >SOLO 2 BOTONES FISICOS: PASILLO (SUBIR / BAJAR)</text>
+<line x1="1595" y1="148" x2="1755" y2="148" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1595" y1="148" x2="1595" y2="132" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1587,132 1603,132 1595,121" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="1595" y="117" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >POWER (+5V)</text>
+<line x1="1595" y1="148" x2="1595" y2="164" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1589" y="164" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1595" y1="198" x2="1595" y2="214" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1605" y="179.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R15</text>
+<text x="1605" y="191.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="1595" cy="214" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="1595" y1="214" x2="1649" y2="214" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1601" y="209" font-family="Consolas, monospace" font-size="11.5" fill="#8b008b" text-anchor="start" font-weight="bold" >BTN_SUBIR</text>
+<line x1="1595" y1="214" x2="1595" y2="232" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1595" cy="235" r="3" fill="#fff" stroke="#8b0000" stroke-width="1.8" />
+<circle cx="1595" cy="259" r="3" fill="#fff" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1595" y1="262" x2="1595" y2="280" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1584" y1="229" x2="1584" y2="265" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1584" y1="247" x2="1575" y2="247" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1575" y1="241" x2="1575" y2="253" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="1605" y="243" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >BTN1</text>
+<text x="1605" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >SUBIR</text>
+<text x="1605" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#555" text-anchor="start" font-weight="normal" >RA4 (Pin 6)</text>
+<line x1="1595" y1="280" x2="1595" y2="294" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1583" y1="294" x2="1607" y2="294" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1587" y1="299" x2="1603" y2="299" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1591" y1="304" x2="1599" y2="304" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1755" cy="148" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="1755" y1="148" x2="1755" y2="164" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="1749" y="164" width="12" height="34" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1755" y1="198" x2="1755" y2="214" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1765" y="179.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >R16</text>
+<text x="1765" y="191.0" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="1755" cy="214" r="4" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="1755" y1="214" x2="1809" y2="214" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1761" y="209" font-family="Consolas, monospace" font-size="11.5" fill="#8b008b" text-anchor="start" font-weight="bold" >BTN_BAJAR</text>
+<line x1="1755" y1="214" x2="1755" y2="232" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<circle cx="1755" cy="235" r="3" fill="#fff" stroke="#8b0000" stroke-width="1.8" />
+<circle cx="1755" cy="259" r="3" fill="#fff" stroke="#8b0000" stroke-width="1.8" />
+<line x1="1755" y1="262" x2="1755" y2="280" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1744" y1="229" x2="1744" y2="265" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1744" y1="247" x2="1735" y2="247" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1735" y1="241" x2="1735" y2="253" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="1765" y="243" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#00008b" text-anchor="start" font-weight="bold" >BTN2</text>
+<text x="1765" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="start" font-weight="bold" >BAJAR</text>
+<text x="1765" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#555" text-anchor="start" font-weight="normal" >RA5 (Pin 7)</text>
+<line x1="1755" y1="280" x2="1755" y2="294" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1743" y1="294" x2="1767" y2="294" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1747" y1="299" x2="1763" y2="299" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1751" y1="304" x2="1759" y2="304" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1720" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#4060a0" text-anchor="middle" font-weight="bold" >(Puertas B/C y Emergencia * van en el Teclado 4x4)</text>
+<rect x="250" y="82" width="415" height="130" rx="0" fill="none" stroke="#b3261e" stroke-width="1.5" stroke-dasharray="7 5"/>
+<rect x="250" y="82" width="415" height="24" rx="0" fill="#b3261e" stroke="none" stroke-width="1" />
+<text x="260" y="99" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#fff" text-anchor="start" font-weight="bold" >ALARMA SONORA BUZZER 5V (RB5)  —  EMERGENCIA EN TECLA '*'</text>
+<line x1="325" y1="144" x2="392" y2="144" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="325" y="139" font-family="Consolas, monospace" font-size="11.5" fill="#cc0000" text-anchor="start" font-weight="bold" >BUZZER</text>
+<line x1="365" y1="164" x2="392" y2="164" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="365" y1="164" x2="365" y2="187" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="365" y1="187" x2="365" y2="201" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="353" y1="201" x2="377" y2="201" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="357" y1="206" x2="373" y2="206" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="361" y1="211" x2="369" y2="211" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<path d="M 412 136 A 18 18 0 0 0 412 172 Z" fill="#cfc9ad" stroke="#8b0000" stroke-width="2"/>
+<text x="424" y="148" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#00008b" text-anchor="start" font-weight="bold" >BUZ1 (BUZZER - ACTIVE)</text>
+<text x="424" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#b3261e" text-anchor="start" font-weight="bold" >Operating Voltage: 5V</text>
+<text x="424" y="179" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#444" text-anchor="start" font-weight="normal" >Se activa con tecla '*' del teclado</text>
+<text x="1350" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#111" text-anchor="start" font-weight="bold" >LCD1</text>
+<rect x="1350" y="445" width="560" height="215" rx="6" fill="#2e6b3e" stroke="#173820" stroke-width="2.5" />
+<rect x="1374" y="467" width="512" height="132" rx="4" fill="#1b1f1c" stroke="#444" stroke-width="2" />
+<rect x="1388" y="481" width="484" height="104" rx="2" fill="#9be04a" stroke="#4b751d" stroke-width="2" />
+<text x="1406" y="523" font-family="Consolas, monospace" font-size="28" fill="#162e08" text-anchor="start" font-weight="bold" >E1:03^ E2:12v E3:01</text>
+<text x="1406" y="567" font-family="Consolas, monospace" font-size="28" fill="#162e08" text-anchor="start" font-weight="bold" >Piso: 15   [#=OK]</text>
+<text x="1902" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#003380" text-anchor="end" font-weight="bold" >LM016L (LCD 16x2 - Modo 4 bits)</text>
+<text x="1392.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >VSS</text>
+<line x1="1392.0" y1="660" x2="1392.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1388.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >1</text>
+<text x="1428.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >VDD</text>
+<line x1="1428.5" y1="660" x2="1428.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1424.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >2</text>
+<text x="1465.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >VEE</text>
+<line x1="1465.0" y1="660" x2="1465.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1461.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >3</text>
+<text x="1501.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >RS</text>
+<line x1="1501.5" y1="660" x2="1501.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1497.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >4</text>
+<text x="1538.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >RW</text>
+<line x1="1538.0" y1="660" x2="1538.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1534.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >5</text>
+<text x="1574.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >E</text>
+<line x1="1574.5" y1="660" x2="1574.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1570.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >6</text>
+<text x="1611.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D0</text>
+<line x1="1611.0" y1="660" x2="1611.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1607.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >7</text>
+<text x="1647.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D1</text>
+<line x1="1647.5" y1="660" x2="1647.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1643.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >8</text>
+<text x="1684.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D2</text>
+<line x1="1684.0" y1="660" x2="1684.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1680.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >9</text>
+<text x="1720.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D3</text>
+<line x1="1720.5" y1="660" x2="1720.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1716.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >10</text>
+<text x="1757.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D4</text>
+<line x1="1757.0" y1="660" x2="1757.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1753.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >11</text>
+<text x="1793.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D5</text>
+<line x1="1793.5" y1="660" x2="1793.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1789.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >12</text>
+<text x="1830.0" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D6</text>
+<line x1="1830.0" y1="660" x2="1830.0" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1826.0" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >13</text>
+<text x="1866.5" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold" >D7</text>
+<line x1="1866.5" y1="660" x2="1866.5" y2="684" stroke="#8b0000" stroke-width="2" stroke-linecap="round" />
+<text x="1862.5" y="675" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" fill="#333" text-anchor="end" font-weight="normal" >14</text>
+<line x1="1392.0" y1="684" x2="1392.0" y2="805" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1392.0" y1="805" x2="1392.0" y2="819" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1380.0" y1="819" x2="1404.0" y2="819" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1384.0" y1="824" x2="1400.0" y2="824" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1388.0" y1="829" x2="1396.0" y2="829" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1538.0" y1="684" x2="1538.0" y2="722" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1538.0" y1="722" x2="1538.0" y2="736" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1526.0" y1="736" x2="1550.0" y2="736" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1530.0" y1="741" x2="1546.0" y2="741" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1534.0" y1="746" x2="1542.0" y2="746" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1428.5" y1="684" x2="1428.5" y2="710" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1428.5" y1="710" x2="1406.5" y2="710" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1406.5" y1="710" x2="1406.5" y2="694" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1398.5,694 1414.5,694 1406.5,683" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="1406.5" y="679" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >+5V</text>
+<line x1="1475.0" y1="730" x2="1475.0" y2="755" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1475.0" y1="730" x2="1475.0" y2="714" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1467.0,714 1483.0,714 1475.0,703" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="1475.0" y="699" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#111" text-anchor="middle" font-weight="bold" >+5V</text>
+<rect x="1467.0" y="755" width="16" height="56" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="1475.0" y1="811" x2="1475.0" y2="829" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1475.0" y1="829" x2="1475.0" y2="843" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1463.0" y1="843" x2="1487.0" y2="843" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1467.0" y1="848" x2="1483.0" y2="848" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1471.0" y1="853" x2="1479.0" y2="853" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1465.0" y1="684" x2="1465.0" y2="783" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1465.0" y1="783" x2="1467.0" y2="783" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="1467.0,783 1459.0,778 1459.0,788" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="1491.0" y="777" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00008b" text-anchor="start" font-weight="bold" >RV1</text>
+<text x="1491.0" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="normal" >10k Lineal (POT-HG)</text>
+<text x="1491.0" y="806" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-weight="italic" >(Contraste LCD)</text>
+<line x1="1016" y1="467" x2="1175" y2="467" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="462" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_RS</text>
+<line x1="1175" y1="467" x2="1175" y2="825" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1175" y1="825" x2="1501.5" y2="825" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1501.5" y1="825" x2="1501.5" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1016" y1="493" x2="1195" y2="493" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="488" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_E</text>
+<line x1="1195" y1="493" x2="1195" y2="847" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1195" y1="847" x2="1574.5" y2="847" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1574.5" y1="847" x2="1574.5" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1016" y1="519" x2="1215" y2="519" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="514" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D4</text>
+<line x1="1215" y1="519" x2="1215" y2="869" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1215" y1="869" x2="1757.0" y2="869" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1757.0" y1="869" x2="1757.0" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1016" y1="545" x2="1235" y2="545" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="540" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D5</text>
+<line x1="1235" y1="545" x2="1235" y2="891" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1235" y1="891" x2="1793.5" y2="891" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1793.5" y1="891" x2="1793.5" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1016" y1="571" x2="1255" y2="571" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="566" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D6</text>
+<line x1="1255" y1="571" x2="1255" y2="913" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1255" y1="913" x2="1830.0" y2="913" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1830.0" y1="913" x2="1830.0" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1016" y1="597" x2="1275" y2="597" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<text x="1024" y="592" font-family="Consolas, monospace" font-size="11.5" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D7</text>
+<line x1="1275" y1="597" x2="1275" y2="935" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1275" y1="935" x2="1866.5" y2="935" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<line x1="1866.5" y1="935" x2="1866.5" y2="684" stroke="#007a00" stroke-width="2.2" stroke-linecap="round" />
+<rect x="250" y="945" width="865" height="165" rx="6" fill="#f8f6ee" stroke="#7a6f54" stroke-width="1.8" />
+<rect x="250" y="945" width="865" height="28" rx="4" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="266" y="964" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#fff" text-anchor="start" font-weight="bold" >RESUMEN DE CONEXION EN PROTEUS 8  (VERSION DISPLAY LCD 16x2 - LM016L)</text>
+<text x="266" y="995" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >LCD 16x2 (LM016L):</text>
+<text x="440" y="995" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >RD0->RS, RD1->E, RD2->D4, RD3->D5, RD4->D6, RD5->D7  |  VSS/RW a GND, VDD a +5V, VEE a RV1 (10k lineal)</text>
+<text x="266" y="1021" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >Teclado 4x4 (KEYPAD1):</text>
+<text x="440" y="1021" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >A: Sel.Piso | B: Abrir puerta | C: Cerrar puerta | D: Borrar | #: Confirmar | *: Emergencia</text>
+<text x="266" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >9 LEDs + 2 Botones:</text>
+<text x="440" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >3 LEDs/elevador (V=Sube, A=Puerta [RD6,RD7,RB4], R=Baja)  |  Solo 2 botones pasillo: SUBIR(RA4), BAJAR(RA5)</text>
+<text x="266" y="1073" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >Buzzer, UART y PICkit3:</text>
+<text x="440" y="1073" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >BUZZER 5V en RB5  |  UART: RC6/TX y RC7/RX (COMPIM/USB-TTL)  |  ICSP: MCLR, RB6, RB7 libres</text>
+</svg>

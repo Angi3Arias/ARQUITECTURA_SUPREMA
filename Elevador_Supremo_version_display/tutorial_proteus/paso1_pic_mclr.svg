@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfc5a8" stroke-width="0.9"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="sh"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.25"/></filter></defs>
+<rect width="1100" height="620" fill="#dcd2b4"/>
+<rect width="1100" height="620" fill="url(#g)"/>
+<rect x="0" y="0" width="1100" height="64" fill="#1e3a5f"/>
+<text x="24" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff">PASO 1: Colocar PIC18F4550 (U1), Reset MCLR y Reloj 8 MHz</text>
+<text x="24" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c7dcff">Busca PIC18F4550 y RES (10k) con 'P' | Coloca POWER desde Modo Terminales</text>
+<text x="250" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="start" font-weight="bold" >U1</text>
+<rect x="250" y="125" width="290" height="440" rx="0" fill="#dcb998" stroke="#8b0000" stroke-width="2.5" />
+<text x="395.0" y="589" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#111" text-anchor="middle" font-weight="bold" >PIC18F4550</text>
+<rect x="222" y="170" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="236" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >14</text>
+<text x="258" y="184" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RA6/OSC2/CLKO</text>
+<rect x="222" y="200" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="236" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >13</text>
+<text x="258" y="214" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >OSC1/CLKI</text>
+<text x="212" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#555" text-anchor="end" font-weight="italic" >Sin cristal (INTOSC 8 MHz)</text>
+<rect x="222" y="350" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="236" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >39</text>
+<text x="258" y="364" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB6/KBI2/PGC</text>
+<rect x="222" y="383" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="236" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >40</text>
+<text x="258" y="397" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB7/KBI3/PGD</text>
+<rect x="30" y="341" width="180" height="68" rx="5" fill="#fff8d6" stroke="#c9a400" stroke-width="1.5" />
+<text x="120" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#7a5200" text-anchor="middle" font-weight="bold" >LIBRES EN PROTEUS</text>
+<text x="120" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="normal" >(Exclusivos PICkit 3)</text>
+<rect x="540" y="505" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="554" y="519" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >1</text>
+<text x="532" y="519" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RE3/MCLR/VPP</text>
+<line x1="568" y1="515" x2="650" y2="515" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="650" y1="437" x2="650" y2="457" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="642" y="457" width="16" height="38" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="650" y1="495" x2="650" y2="515" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="663" y="474.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >R1</text>
+<text x="663" y="488.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >10k</text>
+<line x1="650" y1="437" x2="650" y2="419" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<polygon points="641,419 659,419 650,406" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="650" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#111" text-anchor="middle" font-weight="bold" >POWER (+5V)</text>
+<rect x="710" y="115" width="350" height="260" rx="5" fill="#f4f4f4" stroke="#666" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="710" y="115" width="350" height="30" rx="4" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="722" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#fff" text-anchor="start" font-weight="bold" >Edit Component - U1 (Doble clic en U1)</text>
+<text x="724" y="173" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="bold" >Part Reference:</text>
+<rect x="845" y="157" width="200" height="24" rx="0" fill="#fff" stroke="#aaa" stroke-width="1" />
+<text x="852" y="173" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="normal" >U1</text>
+<text x="724" y="217" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="bold" >Part Value:</text>
+<rect x="845" y="201" width="200" height="24" rx="0" fill="#fff" stroke="#aaa" stroke-width="1" />
+<text x="852" y="217" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="normal" >PIC18F4550</text>
+<text x="724" y="261" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="bold" >Program File:</text>
+<rect x="845" y="245" width="200" height="24" rx="0" fill="#fff" stroke="#aaa" stroke-width="1" />
+<text x="852" y="261" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="normal" >Elevador.X.production.hex</text>
+<text x="724" y="305" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="bold" >Processor Clock:</text>
+<rect x="845" y="289" width="200" height="24" rx="0" fill="#fff3b0" stroke="#b3261e" stroke-width="2" />
+<text x="852" y="305" font-family="Consolas, monospace" font-size="11" fill="#b3261e" text-anchor="start" font-weight="bold" >8MHz  (CAMBIAR AQUI!)</text>
+<text x="885" y="353" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#003380" text-anchor="middle" font-weight="bold" >[ Aceptar ]</text>
+<rect x="710" y="405" width="350" height="175" rx="6" fill="#fffdf5" stroke="#7a6f54" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="710" y="405" width="350" height="28" rx="4" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="722" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#fff" text-anchor="start" font-weight="bold" >Checklist del Paso 1</text>
+<text x="724" y="455" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >1. VDD y VSS del PIC18F4550 vienen ocultos</text>
+<text x="724" y="477" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >   y conectados automaticamente en Proteus.</text>
+<text x="724" y="499" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >2. Conecta Pin 1 (MCLR) -> R1 (10k) -> POWER.</text>
+<text x="724" y="521" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >3. NO pongas cristal en pines 13 y 14.</text>
+<text x="724" y="543" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >4. Doble clic en U1 y pon Clock = 8MHz.</text>
+</svg>

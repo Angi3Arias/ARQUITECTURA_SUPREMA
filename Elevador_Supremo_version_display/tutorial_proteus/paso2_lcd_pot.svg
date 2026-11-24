@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfc5a8" stroke-width="0.9"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="sh"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.25"/></filter></defs>
+<rect width="1200" height="680" fill="#dcd2b4"/>
+<rect width="1200" height="680" fill="url(#g)"/>
+<rect x="0" y="0" width="1200" height="64" fill="#1e3a5f"/>
+<text x="24" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff">PASO 2: Pantalla LCD 16x2 (LM016L) y Potenciometro 10k Lineal (POT-HG)</text>
+<text x="24" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c7dcff">Modo 4 bits: solo 6 cables desde PORTD (RD0..RD5) | D0..D3 quedan desconectados</text>
+<rect x="60" y="140" width="210" height="290" rx="0" fill="#dcb998" stroke="#8b0000" stroke-width="2.2" />
+<text x="165.0" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#111" text-anchor="middle" font-weight="bold" >U1 (PIC18F4550)</text>
+<text x="165.0" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="normal" >Seccion PORTD</text>
+<rect x="270" y="206" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >19</text>
+<text x="262" y="220" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD0/SPP0</text>
+<rect x="270" y="240" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="254" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >20</text>
+<text x="262" y="254" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD1/SPP1</text>
+<rect x="270" y="274" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >21</text>
+<text x="262" y="288" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD2/SPP2</text>
+<rect x="270" y="308" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >22</text>
+<text x="262" y="322" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD3/SPP3</text>
+<rect x="270" y="342" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >27</text>
+<text x="262" y="356" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD4/SPP4</text>
+<rect x="270" y="376" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="284" y="390" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >28</text>
+<text x="262" y="390" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="end" font-weight="bold" >RD5/SPP5</text>
+<text x="480" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#003380" text-anchor="start" font-weight="bold" >LCD1  (Buscar: LM016L)</text>
+<rect x="480" y="115" width="650" height="230" rx="6" fill="#2e6b3e" stroke="#173820" stroke-width="2.5" filter="url(#sh)"/>
+<rect x="506" y="137" width="598" height="138" rx="4" fill="#1b1f1c" stroke="#444" stroke-width="2" />
+<rect x="522" y="151" width="566" height="110" rx="2" fill="#9be04a" stroke="#4b751d" stroke-width="2" />
+<text x="542" y="197" font-family="Consolas, monospace" font-size="31" fill="#162e08" text-anchor="start" font-weight="bold" >E1:03^ E2:12v E3:01</text>
+<text x="542" y="243" font-family="Consolas, monospace" font-size="31" fill="#162e08" text-anchor="start" font-weight="bold" >Piso: 15   [#=OK]</text>
+<text x="522.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >VSS</text>
+<line x1="522.0" y1="345" x2="522.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="517.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >1</text>
+<text x="565.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >VDD</text>
+<line x1="565.5" y1="345" x2="565.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="560.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >2</text>
+<text x="609.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >VEE</text>
+<line x1="609.0" y1="345" x2="609.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="604.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >3</text>
+<text x="652.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >RS</text>
+<line x1="652.5" y1="345" x2="652.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="647.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >4</text>
+<text x="696.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >RW</text>
+<line x1="696.0" y1="345" x2="696.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="691.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >5</text>
+<text x="739.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >E</text>
+<line x1="739.5" y1="345" x2="739.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="734.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >6</text>
+<text x="783.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D0</text>
+<line x1="783.0" y1="345" x2="783.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="778.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >7</text>
+<text x="783.0" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#b3261e" text-anchor="middle" font-weight="bold" >N.C.</text>
+<text x="826.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D1</text>
+<line x1="826.5" y1="345" x2="826.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="821.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >8</text>
+<text x="826.5" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#b3261e" text-anchor="middle" font-weight="bold" >N.C.</text>
+<text x="870.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D2</text>
+<line x1="870.0" y1="345" x2="870.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="865.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >9</text>
+<text x="870.0" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#b3261e" text-anchor="middle" font-weight="bold" >N.C.</text>
+<text x="913.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D3</text>
+<line x1="913.5" y1="345" x2="913.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="908.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >10</text>
+<text x="913.5" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#b3261e" text-anchor="middle" font-weight="bold" >N.C.</text>
+<text x="957.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D4</text>
+<line x1="957.0" y1="345" x2="957.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="952.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >11</text>
+<text x="1000.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D5</text>
+<line x1="1000.5" y1="345" x2="1000.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="995.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >12</text>
+<text x="1044.0" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D6</text>
+<line x1="1044.0" y1="345" x2="1044.0" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="1039.0" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >13</text>
+<text x="1087.5" y="331" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="bold" >D7</text>
+<line x1="1087.5" y1="345" x2="1087.5" y2="371" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="1082.5" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#333" text-anchor="end" font-weight="normal" >14</text>
+<line x1="522.0" y1="371" x2="522.0" y2="495" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="522.0" y1="495" x2="522.0" y2="511" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="508.0" y1="511" x2="536.0" y2="511" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="513.0" y1="517" x2="531.0" y2="517" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="518.0" y1="523" x2="526.0" y2="523" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="565.5" y1="371" x2="565.5" y2="413" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="565.5" y1="413" x2="543.5" y2="413" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="543.5" y1="413" x2="543.5" y2="395" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<polygon points="534.5,395 552.5,395 543.5,382" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="543.5" y="377" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#111" text-anchor="middle" font-weight="bold" >+5V</text>
+<line x1="696.0" y1="371" x2="696.0" y2="421" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="696.0" y1="421" x2="696.0" y2="437" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="682.0" y1="437" x2="710.0" y2="437" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="687.0" y1="443" x2="705.0" y2="443" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="692.0" y1="449" x2="700.0" y2="449" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="617.0" y1="429" x2="617.0" y2="455" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="617.0" y1="429" x2="617.0" y2="411" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<polygon points="608.0,411 626.0,411 617.0,398" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="617.0" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#111" text-anchor="middle" font-weight="bold" >+5V</text>
+<rect x="608.0" y="455" width="18" height="62" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="617.0" y1="517" x2="617.0" y2="537" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="617.0" y1="537" x2="617.0" y2="553" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="603.0" y1="553" x2="631.0" y2="553" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="608.0" y1="559" x2="626.0" y2="559" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="613.0" y1="565" x2="621.0" y2="565" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="609.0" y1="371" x2="609.0" y2="486" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="609.0" y1="486" x2="608.0" y2="486" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<polygon points="608.0,486 599.0,480 599.0,492" fill="#8b0000" stroke="none" stroke-width="1" />
+<text x="635.0" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >RV1: POT-HG</text>
+<text x="635.0" y="495" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start" font-weight="normal" >10k Lineal</text>
+<text x="635.0" y="510" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#555" text-anchor="start" font-weight="italic" >(Contraste)</text>
+<line x1="298" y1="216" x2="340" y2="216" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="210" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_RS</text>
+<line x1="340" y1="216" x2="340" y2="520" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="340" y1="520" x2="652.5" y2="520" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="652.5" y1="520" x2="652.5" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="298" y1="250" x2="360" y2="250" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="244" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_E</text>
+<line x1="360" y1="250" x2="360" y2="544" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="360" y1="544" x2="739.5" y2="544" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="739.5" y1="544" x2="739.5" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="298" y1="284" x2="380" y2="284" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="278" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D4</text>
+<line x1="380" y1="284" x2="380" y2="568" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="380" y1="568" x2="957.0" y2="568" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="957.0" y1="568" x2="957.0" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="298" y1="318" x2="400" y2="318" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="312" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D5</text>
+<line x1="400" y1="318" x2="400" y2="592" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="400" y1="592" x2="1000.5" y2="592" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="1000.5" y1="592" x2="1000.5" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="298" y1="352" x2="420" y2="352" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="346" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D6</text>
+<line x1="420" y1="352" x2="420" y2="616" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="420" y1="616" x2="1044.0" y2="616" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="1044.0" y1="616" x2="1044.0" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="298" y1="386" x2="440" y2="386" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="306" y="380" font-family="Consolas, monospace" font-size="13" fill="#004499" text-anchor="start" font-weight="bold" >LCD_D7</text>
+<line x1="440" y1="386" x2="440" y2="640" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="440" y1="640" x2="1087.5" y2="640" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="1087.5" y1="640" x2="1087.5" y2="371" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="55" y="480" width="260" height="170" rx="6" fill="#fffdf5" stroke="#7a6f54" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="55" y="480" width="260" height="28" rx="4" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="67" y="499" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#fff" text-anchor="start" font-weight="bold" >Resumen Paso 2</text>
+<text x="69" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >RD0 -> RS (4)  |  RD1 -> E (6)</text>
+<text x="69" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >RD2 -> D4 (11) |  RD3 -> D5 (12)</text>
+<text x="69" y="574" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >RD4 -> D6 (13) |  RD5 -> D7 (14)</text>
+<text x="69" y="596" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >VSS(1) y RW(5) -> GROUND</text>
+<text x="69" y="618" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >VDD(2) -> POWER | VEE(3) -> RV1</text>
+</svg>

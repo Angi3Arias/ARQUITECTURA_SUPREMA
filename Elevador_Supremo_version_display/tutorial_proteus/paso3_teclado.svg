@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="680" viewBox="0 0 1150 680">
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#cfc5a8" stroke-width="0.9"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="sh"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.25"/></filter></defs>
+<rect width="1150" height="680" fill="#dcd2b4"/>
+<rect width="1150" height="680" fill="url(#g)"/>
+<rect x="0" y="0" width="1150" height="64" fill="#1e3a5f"/>
+<text x="24" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff">PASO 3: Teclado Matricial 4x4 (KEYPAD-SMALLCALC) y 4 Pull-Ups 10k</text>
+<text x="24" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c7dcff">Filas A..D van directo a RA0..RA3 | Columnas 1..4 van a RB0..RB3 con 4 resistencias de 10k a POWER</text>
+<text x="140" y="145" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#003380" text-anchor="start" font-weight="bold" >KEYPAD1  (KEYPAD-SMALLCALC)</text>
+<rect x="140" y="155" width="220" height="265" rx="4" fill="#d9d9d9" stroke="#8b0000" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="154" y="171" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="175" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >1</text>
+<text x="175" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(7)</text>
+<rect x="204" y="171" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="225" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >2</text>
+<text x="225" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(8)</text>
+<rect x="254" y="171" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="275" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >3</text>
+<text x="275" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(9)</text>
+<rect x="304" y="171" width="42" height="50" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.4" />
+<text x="325" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold" >A</text>
+<text x="325" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(/)</text>
+<rect x="154" y="231" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="175" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >4</text>
+<text x="175" y="273" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="204" y="231" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="225" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >5</text>
+<text x="225" y="273" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="254" y="231" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="275" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >6</text>
+<text x="275" y="273" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="304" y="231" width="42" height="50" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.4" />
+<text x="325" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold" >B</text>
+<text x="325" y="273" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(*)</text>
+<rect x="154" y="291" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="175" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >7</text>
+<text x="175" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(1)</text>
+<rect x="204" y="291" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="225" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >8</text>
+<text x="225" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(2)</text>
+<rect x="254" y="291" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="275" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >9</text>
+<text x="275" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(3)</text>
+<rect x="304" y="291" width="42" height="50" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.4" />
+<text x="325" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold" >C</text>
+<text x="325" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(-)</text>
+<rect x="154" y="351" width="42" height="50" rx="3" fill="#b85c5c" stroke="#555" stroke-width="1.4" />
+<text x="175" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold" >*</text>
+<text x="175" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(ON/C)</text>
+<rect x="204" y="351" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="225" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >0</text>
+<text x="225" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" ></text>
+<rect x="254" y="351" width="42" height="50" rx="3" fill="#b8b8b8" stroke="#555" stroke-width="1.4" />
+<text x="275" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#111" text-anchor="middle" font-weight="bold" >#</text>
+<text x="275" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(=)</text>
+<rect x="304" y="351" width="42" height="50" rx="3" fill="#5c78b8" stroke="#555" stroke-width="1.4" />
+<text x="325" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold" >D</text>
+<text x="325" y="393" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#eee" text-anchor="middle" font-weight="normal" >(+)</text>
+<rect x="620" y="100" width="230" height="390" rx="0" fill="#dcb998" stroke="#8b0000" stroke-width="2.2" />
+<text x="735.0" y="124" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#111" text-anchor="middle" font-weight="bold" >U1 (PIC18F4550)</text>
+<text x="735.0" y="142" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="normal" >PORTA y PORTB</text>
+<rect x="592" y="162" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >2</text>
+<text x="628" y="176" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RA0/AN0</text>
+<rect x="592" y="194" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >3</text>
+<text x="628" y="208" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RA1/AN1</text>
+<rect x="592" y="226" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >4</text>
+<text x="628" y="240" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RA2/AN2</text>
+<rect x="592" y="258" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >5</text>
+<text x="628" y="272" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RA3/AN3</text>
+<rect x="592" y="325" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >33</text>
+<text x="628" y="339" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB0/INT0</text>
+<rect x="592" y="357" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="371" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >34</text>
+<text x="628" y="371" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB1/INT1</text>
+<rect x="592" y="389" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="403" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >35</text>
+<text x="628" y="403" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB2/INT2</text>
+<rect x="592" y="421" width="28" height="20" rx="0" fill="#e6b5b5" stroke="#8b0000" stroke-width="1.2" />
+<text x="606" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#111" text-anchor="middle" font-weight="normal" >36</text>
+<text x="628" y="435" font-family="Consolas, monospace" font-size="11" fill="#111" text-anchor="start" font-weight="bold" >RB3/AN9</text>
+<line x1="118" y1="196" x2="140" y2="196" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="144" y="200" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="bold" >A</text>
+<line x1="118" y1="196" x2="105" y2="196" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="105" y1="196" x2="105" y2="100" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="105" y1="100" x2="505" y2="100" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="505" y1="100" x2="505" y2="172" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="505" y1="172" x2="592" y2="172" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="525" y="166" font-family="Consolas, monospace" font-size="13" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA1</text>
+<line x1="118" y1="256" x2="140" y2="256" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="144" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="bold" >B</text>
+<line x1="118" y1="256" x2="87" y2="256" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="87" y1="256" x2="87" y2="116" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="87" y1="116" x2="489" y2="116" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="489" y1="116" x2="489" y2="204" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="489" y1="204" x2="592" y2="204" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="525" y="198" font-family="Consolas, monospace" font-size="13" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA2</text>
+<line x1="118" y1="316" x2="140" y2="316" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="144" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="bold" >C</text>
+<line x1="118" y1="316" x2="69" y2="316" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="69" y1="316" x2="69" y2="132" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="69" y1="132" x2="473" y2="132" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="473" y1="132" x2="473" y2="236" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="473" y1="236" x2="592" y2="236" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="525" y="230" font-family="Consolas, monospace" font-size="13" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA3</text>
+<line x1="118" y1="376" x2="140" y2="376" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="144" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="start" font-weight="bold" >D</text>
+<line x1="118" y1="376" x2="51" y2="376" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="51" y1="376" x2="51" y2="148" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="51" y1="148" x2="457" y2="148" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="457" y1="148" x2="457" y2="268" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="457" y1="268" x2="592" y2="268" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="525" y="262" font-family="Consolas, monospace" font-size="13" fill="#8b0000" text-anchor="start" font-weight="bold" >FILA4</text>
+<line x1="175" y1="420" x2="175" y2="442" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="175" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold" >1</text>
+<line x1="175" y1="442" x2="175" y2="508" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="175" y1="508" x2="445" y2="508" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<circle cx="175" cy="508" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="175" y1="508" x2="175" y2="530" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="175" y1="530" x2="175" y2="550" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="167" y="550" width="16" height="38" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="175" y1="588" x2="175" y2="608" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="188" y="567.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >R2</text>
+<text x="188" y="581.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >10k</text>
+<line x1="175" y1="608" x2="380" y2="608" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="445" y1="508" x2="445" y2="335" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="445" y1="335" x2="592" y2="335" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="532" y="329" font-family="Consolas, monospace" font-size="13" fill="#006600" text-anchor="start" font-weight="bold" >COL1</text>
+<line x1="225" y1="420" x2="225" y2="442" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="225" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold" >2</text>
+<line x1="225" y1="442" x2="225" y2="492" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="225" y1="492" x2="469" y2="492" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<circle cx="225" cy="492" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="225" y1="492" x2="225" y2="530" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="225" y1="530" x2="225" y2="550" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="217" y="550" width="16" height="38" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="225" y1="588" x2="225" y2="608" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="238" y="567.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >R3</text>
+<text x="238" y="581.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="225" cy="608" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="469" y1="492" x2="469" y2="367" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="469" y1="367" x2="592" y2="367" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="532" y="361" font-family="Consolas, monospace" font-size="13" fill="#006600" text-anchor="start" font-weight="bold" >COL2</text>
+<line x1="275" y1="420" x2="275" y2="442" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="275" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold" >3</text>
+<line x1="275" y1="442" x2="275" y2="476" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="275" y1="476" x2="493" y2="476" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<circle cx="275" cy="476" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="275" y1="476" x2="275" y2="530" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="275" y1="530" x2="275" y2="550" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="267" y="550" width="16" height="38" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="275" y1="588" x2="275" y2="608" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="288" y="567.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >R4</text>
+<text x="288" y="581.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="275" cy="608" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="493" y1="476" x2="493" y2="399" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="493" y1="399" x2="592" y2="399" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="532" y="393" font-family="Consolas, monospace" font-size="13" fill="#006600" text-anchor="start" font-weight="bold" >COL3</text>
+<line x1="325" y1="420" x2="325" y2="442" stroke="#8b0000" stroke-width="2.2" stroke-linecap="round" />
+<text x="325" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold" >4</text>
+<line x1="325" y1="442" x2="325" y2="460" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="325" y1="460" x2="517" y2="460" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<circle cx="325" cy="460" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="325" y1="460" x2="325" y2="530" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="325" y1="530" x2="325" y2="550" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<rect x="317" y="550" width="16" height="38" rx="0" fill="#fff6c4" stroke="#8b0000" stroke-width="2" />
+<line x1="325" y1="588" x2="325" y2="608" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="338" y="567.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#00008b" text-anchor="start" font-weight="bold" >R5</text>
+<text x="338" y="581.0" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >10k</text>
+<circle cx="325" cy="608" r="4.5" fill="#007a00" stroke="none" stroke-width="1" />
+<line x1="517" y1="460" x2="517" y2="431" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<line x1="517" y1="431" x2="592" y2="431" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<text x="532" y="425" font-family="Consolas, monospace" font-size="13" fill="#006600" text-anchor="start" font-weight="bold" >COL4</text>
+<line x1="380" y1="608" x2="380" y2="590" stroke="#007a00" stroke-width="2.5" stroke-linecap="round" />
+<polygon points="371,590 389,590 380,577" fill="#007a00" stroke="#007a00" stroke-width="1" />
+<text x="380" y="572" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#111" text-anchor="middle" font-weight="bold" >POWER (+5V)</text>
+<rect x="880" y="120" width="245" height="240" rx="6" fill="#fffdf5" stroke="#7a6f54" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="880" y="120" width="245" height="28" rx="4" fill="#2f6690" stroke="none" stroke-width="1" />
+<text x="892" y="139" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#fff" text-anchor="start" font-weight="bold" >Resumen Paso 3</text>
+<text x="894" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >Filas (Salidas PIC):</text>
+<text x="894" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >  A -> RA0 | B -> RA1</text>
+<text x="894" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >  C -> RA2 | D -> RA3</text>
+<text x="894" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >Columnas (Entradas PIC):</text>
+<text x="894" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >  1 -> RB0 | 2 -> RB1</text>
+<text x="894" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >  3 -> RB2 | 4 -> RB3</text>
+<text x="894" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >No olvides las 4 R de 10k</text>
+<text x="894" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222" text-anchor="start" font-weight="normal" >a POWER en las columnas.</text>
+</svg>

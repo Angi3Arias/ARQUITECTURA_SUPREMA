@@ -1,0 +1,480 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<defs><pattern id="wood" width="200" height="40" patternUnits="userSpaceOnUse"><rect width="200" height="40" fill="#5a4636"/><path d="M0 20 Q50 12 100 20 T200 20" stroke="#4d3b2d" stroke-width="3" fill="none"/></pattern><pattern id="holes" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="7" y="7" width="6" height="6" rx="1" fill="#6d6d66"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="shadow"><feDropShadow dx="3" dy="4" stdDeviation="3" flood-opacity="0.45"/></filter></defs>
+<rect x="0" y="0" width="1800" height="1120" rx="0" fill="url(#wood)" stroke="none" stroke-width="1" />
+<text x="900.0" y="48" font-family="Segoe UI, Arial" font-size="28" fill="#fff" text-anchor="middle" font-weight="bold" >ELEVADOR SUPREMO (Version LCD 16x2)  -  Armado fisico en protoboard</text>
+<rect x="420" y="105" width="1300" height="350" rx="10" fill="#f1f0ea" stroke="#c9c7bd" stroke-width="2" filter="url(#shadow)"/>
+<line x1="440" y1="117" x2="1700" y2="117" stroke="#d33" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="155" x2="1700" y2="155" stroke="#33d" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="405" x2="1700" y2="405" stroke="#d33" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="443" x2="1700" y2="443" stroke="#33d" stroke-width="2" stroke-linecap="round" />
+<rect x="430" y="125" width="1280" height="20" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="415" width="1280" height="20" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="175" width="1280" height="100" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="290" width="1280" height="100" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="275" width="1280" height="14" rx="0" fill="#dddbd2" stroke="none" stroke-width="1" />
+<rect x="420" y="545" width="1300" height="350" rx="10" fill="#f1f0ea" stroke="#c9c7bd" stroke-width="2" filter="url(#shadow)"/>
+<line x1="440" y1="557" x2="1700" y2="557" stroke="#d33" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="595" x2="1700" y2="595" stroke="#33d" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="845" x2="1700" y2="845" stroke="#d33" stroke-width="2" stroke-linecap="round" />
+<line x1="440" y1="883" x2="1700" y2="883" stroke="#33d" stroke-width="2" stroke-linecap="round" />
+<rect x="430" y="565" width="1280" height="20" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="855" width="1280" height="20" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="615" width="1280" height="100" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="730" width="1280" height="100" rx="0" fill="url(#holes)" stroke="none" stroke-width="1" />
+<rect x="430" y="715" width="1280" height="14" rx="0" fill="#dddbd2" stroke="none" stroke-width="1" />
+<rect x="557" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="557" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="577" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="577" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="597" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="597" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="617" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="617" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="637" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="637" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="657" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="657" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="677" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="677" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="697" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="697" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="717" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="717" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="737" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="737" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="757" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="757" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="777" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="777" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="797" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="797" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="817" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="817" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="837" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="837" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="857" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="857" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="877" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="877" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="897" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="897" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="917" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="917" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="937" y="239" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="937" y="317" width="6" height="10" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="552" y="247" width="396" height="72" rx="3" fill="#1d1d1f" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<path d="M552 275.0 a8 8 0 0 1 0 16" fill="#3a3a3c" stroke="none" stroke-width="1" />
+<circle cx="568" cy="309" r="3" fill="#3a3a3c" stroke="none" stroke-width="1" />
+<text x="750.0" y="283.0" font-family="Consolas, monospace" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold" >PIC18F4550-I/P</text>
+<text x="750.0" y="301.0" font-family="Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="middle" font-weight="normal" >MICROCHIP  |  40-PIN DIP</text>
+<rect x="433" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="438" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<rect x="453" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="458" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<rect x="473" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="478" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<rect x="493" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="498" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<rect x="513" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="518" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<rect x="533" y="177" width="14" height="16" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<rect x="538" y="171" width="4" height="18" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="490" y="213" font-family="Segoe UI" font-size="12" fill="#333" text-anchor="middle" font-weight="bold" >ICSP</text>
+<line x1="560" y1="135" x2="560" y2="225" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="553.0" y="162.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="553.0" y="169.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="553.0" y="177.0" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="553.0" y="185.0" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<line x1="760" y1="157" x2="760" y2="205" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<line x1="780" y1="135" x2="780" y2="205" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<ellipse cx="770" cy="197" rx="13" ry="11" fill="#e0a020" stroke="#9a6a00"/>
+<text x="770" y="201" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#4a2e00" text-anchor="middle" font-weight="bold" >104</text>
+<line x1="820" y1="157" x2="820" y2="205" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<line x1="840" y1="135" x2="840" y2="205" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<ellipse cx="830" cy="197" rx="13" ry="11" fill="#e0a020" stroke="#9a6a00"/>
+<text x="830" y="201" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#4a2e00" text-anchor="middle" font-weight="bold" >104</text>
+<line x1="1020" y1="270" x2="1020" y2="300" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<line x1="1040" y1="270" x2="1040" y2="300" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<line x1="1060" y1="270" x2="1060" y2="300" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<path d="M1020 300 L1020 415" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1020 300 L1020 415" fill="none" stroke="#ff2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1060 300 L1060 443" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1060 300 L1060 443" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="1040" cy="247" r="26" fill="#b0b5bc" stroke="#5c636e" stroke-width="2" filter="url(#shadow)"/>
+<circle cx="1040" cy="247" r="17" fill="#22262e" stroke="#555" stroke-width="1.5" />
+<line x1="1040" y1="247" x2="1030" y2="236" stroke="#f0f0f0" stroke-width="3" stroke-linecap="round" />
+<text x="1040" y="211" font-family="Consolas" font-size="10" fill="#222" text-anchor="middle" font-weight="bold" >B10K</text>
+<text x="1040" y="321" font-family="Segoe UI" font-size="11" fill="#222" text-anchor="middle" font-weight="bold" >POT 10k</text>
+<text x="1040" y="335" font-family="Segoe UI" font-size="10" fill="#444" text-anchor="middle" font-weight="normal" >Lineal</text>
+<rect x="1150" y="180" width="510" height="215" rx="8" fill="#1f6f3d" stroke="#124224" stroke-width="2.5" filter="url(#shadow)"/>
+<circle cx="1176" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1196" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1216" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1236" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1256" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1276" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1296" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1316" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1336" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1356" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1376" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1396" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1416" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1436" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1456" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<circle cx="1476" cy="194" r="5" fill="#e4c15a" stroke="#8a6c1a" stroke-width="1" />
+<rect x="1174" y="214" width="462" height="146" rx="4" fill="#1a1d1b" stroke="#3d423e" stroke-width="2" />
+<rect x="1190" y="228" width="430" height="118" rx="2" fill="#9be04a" stroke="#4d751f" stroke-width="2" filter="url(#glow)"/>
+<text x="1204" y="276" font-family="Consolas, monospace" font-size="24" fill="#162e08" text-anchor="start" font-weight="bold" >E1:03^ E2:12v E3:01</text>
+<text x="1204" y="322" font-family="Consolas, monospace" font-size="24" fill="#162e08" text-anchor="start" font-weight="bold" >Piso: 15   [#=OK]</text>
+<text x="1644" y="385" font-family="Segoe UI" font-size="11" fill="#d8f5df" text-anchor="end" font-weight="bold" >LCD 16x2 (HD44780)</text>
+<path d="M840 233 C840 119 1211 119 1236 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M840 233 C840 119 1211 119 1236 194" fill="none" stroke="#2a7fff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M860 233 C860 126 1251 126 1276 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M860 233 C860 126 1251 126 1276 194" fill="none" stroke="#00b050" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M880 233 C880 133 1351 133 1376 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M880 233 C880 133 1351 133 1376 194" fill="none" stroke="#ff8800" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M900 233 C900 140 1371 140 1396 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M900 233 C900 140 1371 140 1396 194" fill="none" stroke="#ffee00" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M920 233 C920 147 1391 147 1416 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M920 233 C920 147 1391 147 1416 194" fill="none" stroke="#9b59ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M940 233 C940 154 1411 154 1436 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M940 233 C940 154 1411 154 1436 194" fill="none" stroke="#00cccc" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1040 300 C1040 370 1161 163 1216 194" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1040 300 C1040 370 1161 163 1216 194" fill="none" stroke="#ff55aa" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="480" y1="635" x2="480" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="500" y1="635" x2="500" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="490" cy="627" rx="12" ry="14" fill="#22dd22" opacity="1" stroke="#00000044" filter="url(#glow)"/>
+<circle cx="490" cy="627" r="22" fill="#22dd22" stroke="none" stroke-width="1" opacity="0.25"/>
+<line x1="500" y1="695" x2="500" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="493.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="493.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="493.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="493.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="520" y1="635" x2="520" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="540" y1="635" x2="540" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="530" cy="627" rx="12" ry="14" fill="#ffd000" opacity="0.35" stroke="#00000044" />
+<line x1="540" y1="695" x2="540" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="533.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="533.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="533.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="533.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="560" y1="635" x2="560" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="580" y1="635" x2="580" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="570" cy="627" rx="12" ry="14" fill="#ff2222" opacity="0.35" stroke="#00000044" />
+<line x1="580" y1="695" x2="580" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="573.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="573.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="573.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="573.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="640" y1="635" x2="640" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="660" y1="635" x2="660" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="650" cy="627" rx="12" ry="14" fill="#22dd22" opacity="0.35" stroke="#00000044" />
+<line x1="660" y1="695" x2="660" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="653.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="653.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="653.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="653.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="680" y1="635" x2="680" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="700" y1="635" x2="700" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="690" cy="627" rx="12" ry="14" fill="#ffd000" opacity="0.35" stroke="#00000044" />
+<line x1="700" y1="695" x2="700" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="693.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="693.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="693.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="693.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="720" y1="635" x2="720" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="740" y1="635" x2="740" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="730" cy="627" rx="12" ry="14" fill="#ff2222" opacity="1" stroke="#00000044" filter="url(#glow)"/>
+<circle cx="730" cy="627" r="22" fill="#ff2222" stroke="none" stroke-width="1" opacity="0.25"/>
+<line x1="740" y1="695" x2="740" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="733.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="733.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="733.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="733.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="800" y1="635" x2="800" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="820" y1="635" x2="820" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="810" cy="627" rx="12" ry="14" fill="#22dd22" opacity="0.35" stroke="#00000044" />
+<line x1="820" y1="695" x2="820" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="813.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="813.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="813.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="813.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="840" y1="635" x2="840" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="860" y1="635" x2="860" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="850" cy="627" rx="12" ry="14" fill="#ffd000" opacity="1" stroke="#00000044" filter="url(#glow)"/>
+<circle cx="850" cy="627" r="22" fill="#ffd000" stroke="none" stroke-width="1" opacity="0.25"/>
+<line x1="860" y1="695" x2="860" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="853.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="853.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="853.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="853.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<line x1="880" y1="635" x2="880" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<line x1="900" y1="635" x2="900" y2="675" stroke="#b9b9b9" stroke-width="2" stroke-linecap="round" />
+<ellipse cx="890" cy="627" rx="12" ry="14" fill="#ff2222" opacity="0.35" stroke="#00000044" />
+<line x1="900" y1="695" x2="900" y2="883" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="893.0" y="771.0" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="893.0" y="778.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="893.0" y="786.0" width="14" height="4" rx="0" fill="#f00" stroke="none" stroke-width="1" />
+<rect x="893.0" y="794.0" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<text x="520" y="797" font-family="Segoe UI" font-size="16" fill="#222" text-anchor="middle" font-weight="bold" >E1</text>
+<text x="520" y="815" font-family="Segoe UI" font-size="10.5" fill="#444" text-anchor="middle" font-weight="bold" >V  A  R</text>
+<text x="680" y="797" font-family="Segoe UI" font-size="16" fill="#222" text-anchor="middle" font-weight="bold" >E2</text>
+<text x="680" y="815" font-family="Segoe UI" font-size="10.5" fill="#444" text-anchor="middle" font-weight="bold" >V  A  R</text>
+<text x="840" y="797" font-family="Segoe UI" font-size="16" fill="#222" text-anchor="middle" font-weight="bold" >E3</text>
+<text x="840" y="815" font-family="Segoe UI" font-size="10.5" fill="#444" text-anchor="middle" font-weight="bold" >V  A  R</text>
+<rect x="996" y="695" width="44" height="54" rx="4" fill="#2a2a2a" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<circle cx="1018" cy="722" r="14" fill="#2a8f4d" stroke="#111" stroke-width="2" />
+<rect x="998" y="695" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="1034" y="695" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="998" y="743" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="1034" y="743" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<text x="1018" y="771" font-family="Segoe UI" font-size="11.5" fill="#222" text-anchor="middle" font-weight="bold" >SUB</text>
+<line x1="1036" y1="557" x2="1036" y2="680" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1029.0" y="600.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1029.0" y="607.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1029.0" y="615.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1029.0" y="623.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<rect x="1096" y="695" width="44" height="54" rx="4" fill="#2a2a2a" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<circle cx="1118" cy="722" r="14" fill="#cc3333" stroke="#111" stroke-width="2" />
+<rect x="1098" y="695" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="1134" y="695" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="1098" y="743" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<rect x="1134" y="743" width="6" height="6" rx="0" fill="#c8c8c8" stroke="none" stroke-width="1" />
+<text x="1118" y="771" font-family="Segoe UI" font-size="11.5" fill="#222" text-anchor="middle" font-weight="bold" >BAJ</text>
+<line x1="1136" y1="557" x2="1136" y2="680" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1129.0" y="600.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1129.0" y="607.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1129.0" y="615.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1129.0" y="623.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<circle cx="1220" cy="810" r="24" fill="#1c1c1e" stroke="#444" stroke-width="2" filter="url(#shadow)"/>
+<circle cx="1220" cy="810" r="6" fill="#0a0a0a" stroke="#555" stroke-width="1" />
+<text x="1210" y="801" font-family="Segoe UI" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold" >+</text>
+<text x="1220" y="848" font-family="Segoe UI" font-size="10.5" fill="#b3261e" text-anchor="middle" font-weight="bold" >BUZZER 5V</text>
+<rect x="1310" y="673" width="300" height="24" rx="3" fill="#1a1a1a" stroke="none" stroke-width="1" />
+<rect x="1317" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1320" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >R1</text>
+<rect x="1357" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1360" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >R2</text>
+<rect x="1397" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1400" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >R3</text>
+<rect x="1437" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1440" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >R4</text>
+<rect x="1477" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1480" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >C1</text>
+<line x1="1480" y1="557" x2="1480" y2="650" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1473.0" y="585.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1473.0" y="592.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1473.0" y="600.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1473.0" y="608.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<rect x="1517" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1520" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >C2</text>
+<line x1="1520" y1="557" x2="1520" y2="650" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1513.0" y="585.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1513.0" y="592.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1513.0" y="600.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1513.0" y="608.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<rect x="1557" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1560" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >C3</text>
+<line x1="1560" y1="557" x2="1560" y2="650" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1553.0" y="585.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1553.0" y="592.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1553.0" y="600.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1553.0" y="608.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<rect x="1597" y="679" width="6" height="12" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="1600" y="665" font-family="Consolas" font-size="11" fill="#333" text-anchor="middle" font-weight="bold" >C4</text>
+<line x1="1600" y1="557" x2="1600" y2="650" stroke="#b9b9b9" stroke-width="3" stroke-linecap="round" />
+<rect x="1593.0" y="585.5" width="14" height="36" rx="6" fill="#e8cfa0" stroke="#b49a6a" stroke-width="1" />
+<rect x="1593.0" y="592.5" width="14" height="4" rx="0" fill="#a52a2a" stroke="none" stroke-width="1" />
+<rect x="1593.0" y="600.5" width="14" height="4" rx="0" fill="#000" stroke="none" stroke-width="1" />
+<rect x="1593.0" y="608.5" width="14" height="4" rx="0" fill="#ff8c00" stroke="none" stroke-width="1" />
+<path d="M1320 693 C1320 730 1375 730 1375 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1320 693 C1320 730 1375 730 1375 770" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1360 693 C1360 730 1393 730 1393 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1360 693 C1360 730 1393 730 1393 770" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1400 693 C1400 730 1411 730 1411 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1400 693 C1400 730 1411 730 1411 770" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1440 693 C1440 730 1429 730 1429 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1440 693 C1440 730 1429 730 1429 770" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1480 693 C1480 730 1447 730 1447 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1480 693 C1480 730 1447 730 1447 770" fill="none" stroke="#4da6ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1520 693 C1520 730 1465 730 1465 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1520 693 C1520 730 1465 730 1465 770" fill="none" stroke="#4da6ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1560 693 C1560 730 1483 730 1483 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1560 693 C1560 730 1483 730 1483 770" fill="none" stroke="#4da6ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1600 693 C1600 730 1501 730 1501 770" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M1600 693 C1600 730 1501 730 1501 770" fill="none" stroke="#4da6ff" stroke-width="4.5" stroke-linecap="round"/>
+<rect x="1300" y="760" width="290" height="275" rx="12" fill="#1f2430" stroke="#394256" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="1445.0" y="784" font-family="Segoe UI" font-size="13" fill="#cfd8ea" text-anchor="middle" font-weight="bold" >TECLADO MATRICIAL 4x4</text>
+<rect x="1325" y="798" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1351" y="828" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >1</text>
+<rect x="1387" y="798" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1413" y="828" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >2</text>
+<rect x="1449" y="798" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1475" y="828" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >3</text>
+<rect x="1511" y="798" width="52" height="46" rx="6" fill="#2b4c7e" stroke="#55617a" stroke-width="1.5" />
+<text x="1537" y="828" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >A</text>
+<rect x="1325" y="854" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1351" y="884" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >4</text>
+<rect x="1387" y="854" width="52" height="46" rx="6" fill="#2a8f4d" stroke="#55617a" stroke-width="1.5" />
+<text x="1413" y="884" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >5</text>
+<rect x="1449" y="854" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1475" y="884" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >6</text>
+<rect x="1511" y="854" width="52" height="46" rx="6" fill="#2b4c7e" stroke="#55617a" stroke-width="1.5" />
+<text x="1537" y="884" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >B</text>
+<rect x="1325" y="910" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1351" y="940" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >7</text>
+<rect x="1387" y="910" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1413" y="940" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >8</text>
+<rect x="1449" y="910" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1475" y="940" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >9</text>
+<rect x="1511" y="910" width="52" height="46" rx="6" fill="#2b4c7e" stroke="#55617a" stroke-width="1.5" />
+<text x="1537" y="940" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >C</text>
+<rect x="1325" y="966" width="52" height="46" rx="6" fill="#7a2b2b" stroke="#55617a" stroke-width="1.5" />
+<text x="1351" y="996" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >*</text>
+<rect x="1387" y="966" width="52" height="46" rx="6" fill="#323a4c" stroke="#55617a" stroke-width="1.5" />
+<text x="1413" y="996" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >0</text>
+<rect x="1449" y="966" width="52" height="46" rx="6" fill="#7a2b2b" stroke="#55617a" stroke-width="1.5" />
+<text x="1475" y="996" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >#</text>
+<rect x="1511" y="966" width="52" height="46" rx="6" fill="#2b4c7e" stroke="#55617a" stroke-width="1.5" />
+<text x="1537" y="996" font-family="Segoe UI" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" >D</text>
+<path d="M680 340 C680 495 480 505 480 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M680 340 C680 495 480 505 480 655" fill="none" stroke="#22aa22" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M700 340 C700 495 520 505 520 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M700 340 C700 495 520 505 520 655" fill="none" stroke="#e0b000" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M720 340 C720 495 560 505 560 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M720 340 C720 495 560 505 560 655" fill="none" stroke="#dd2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M740 340 C740 495 640 505 640 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M740 340 C740 495 640 505 640 655" fill="none" stroke="#22aa22" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M760 340 C760 495 680 505 680 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M760 340 C760 495 680 505 680 655" fill="none" stroke="#e0b000" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M780 340 C780 495 720 505 720 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M780 340 C780 495 720 505 720 655" fill="none" stroke="#dd2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M800 340 C800 495 800 505 800 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M800 340 C800 495 800 505 800 655" fill="none" stroke="#22aa22" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M820 340 C820 495 840 505 840 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M820 340 C820 495 840 505 840 655" fill="none" stroke="#e0b000" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M840 340 C840 495 880 505 880 655" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M840 340 C840 495 880 505 880 655" fill="none" stroke="#dd2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M660 340 C660 465 1000 495 1000 695" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M660 340 C660 465 1000 495 1000 695" fill="none" stroke="#c060ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M680 340 C680 465 1100 495 1100 695" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M680 340 C680 465 1100 495 1100 695" fill="none" stroke="#c060ff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M720 225 C720 135 1160 505 1220 786" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M720 225 C720 135 1160 505 1220 786" fill="none" stroke="#ffcc00" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M580 340 C580 485 1270 505 1320 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M580 340 C580 485 1270 505 1320 673" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M600 340 C600 485 1310 505 1360 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M600 340 C600 485 1310 505 1360 673" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M620 340 C620 485 1350 505 1400 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M620 340 C620 485 1350 505 1400 673" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M640 340 C640 485 1390 505 1440 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M640 340 C640 485 1390 505 1440 673" fill="none" stroke="#ff9933" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M820 225 C820 140 1400 475 1480 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M820 225 C820 140 1400 475 1480 673" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M800 225 C800 140 1440 475 1520 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M800 225 C800 140 1440 475 1520 673" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M780 225 C780 140 1480 475 1560 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M780 225 C780 140 1480 475 1560 673" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M760 225 C760 140 1520 475 1600 673" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M760 225 C760 140 1520 475 1600 673" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+<rect x="70" y="145" width="130" height="250" rx="22" fill="#2b2d31" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<rect x="82" y="159" width="106" height="60" rx="8" fill="#3b3e44" stroke="none" stroke-width="1" />
+<text x="135" y="197" font-family="Segoe UI" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold" >PICkit 3</text>
+<circle cx="98" cy="245" r="6" fill="#2f2" stroke="none" stroke-width="1" filter="url(#glow)"/>
+<text x="112" y="250" font-family="Segoe UI" font-size="12" fill="#ccc" text-anchor="start" font-weight="normal" >Power</text>
+<circle cx="98" cy="271" r="6" fill="#fa0" stroke="none" stroke-width="1" filter="url(#glow)"/>
+<text x="112" y="276" font-family="Segoe UI" font-size="12" fill="#ccc" text-anchor="start" font-weight="normal" >Active</text>
+<circle cx="98" cy="297" r="6" fill="#f33" stroke="none" stroke-width="1" filter="url(#glow)"/>
+<text x="112" y="302" font-family="Segoe UI" font-size="12" fill="#ccc" text-anchor="start" font-weight="normal" >Status</text>
+<circle cx="135" cy="340" r="14" fill="#555" stroke="#777" stroke-width="2" />
+<rect x="105" y="383" width="60" height="22" rx="0" fill="#111" stroke="none" stroke-width="1" />
+<polygon points="110,387 120,387 115,395" fill="#fff" stroke="none" stroke-width="1" />
+<path d="M135 145 C135 85 30 105 10 65" fill="none" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+<text x="135" y="125" font-family="Segoe UI" font-size="13" fill="#fff" text-anchor="start" font-weight="normal" >USB a PC (MPLAB X)</text>
+<path d="M112 405 C112 475 320 125 440 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M112 405 C112 475 320 125 440 175" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M121 405 C121 475 340 125 460 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M121 405 C121 475 340 125 460 175" fill="none" stroke="#ff3333" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M130 405 C130 475 360 125 480 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M130 405 C130 475 360 125 480 175" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M139 405 C139 475 380 125 500 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M139 405 C139 475 380 125 500 175" fill="none" stroke="#ffcc00" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M148 405 C148 475 400 125 520 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M148 405 C148 475 400 125 520 175" fill="none" stroke="#33aa33" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M157 405 C157 475 420 125 540 175" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M157 405 C157 475 420 125 540 175" fill="none" stroke="#3366ff" stroke-width="4.5" stroke-linecap="round"/>
+<rect x="60" y="585" width="200" height="130" rx="10" fill="#1f4e8c" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<text x="160" y="625" font-family="Segoe UI" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold" >FUENTE</text>
+<text x="160" y="651" font-family="Segoe UI" font-size="16" fill="#ffe066" text-anchor="middle" font-weight="bold" >+5V DC / 1A</text>
+<circle cx="120" cy="693" r="10" fill="#d22" stroke="none" stroke-width="1" />
+<circle cx="200" cy="693" r="10" fill="#222" stroke="#888" stroke-width="1" />
+<path d="M120 693 C120 775 340 665 450 567" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M120 693 C120 775 340 665 450 567" fill="none" stroke="#ff2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M200 693 C200 785 360 685 450 605" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M200 693 C200 785 360 685 450 605" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M430 567 C360 445 360 495 450 417" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M430 567 C360 445 360 495 450 417" fill="none" stroke="#ff2222" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M430 605 C330 485 330 515 450 455" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M430 605 C330 485 330 515 450 455" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+<rect x="36" y="791" width="26" height="44" rx="2" fill="#c4c9d1" stroke="#6c737d" stroke-width="1.5" />
+<rect x="42" y="800" width="10" height="8" rx="0" fill="#555" stroke="none" stroke-width="1" />
+<rect x="42" y="818" width="10" height="8" rx="0" fill="#555" stroke="none" stroke-width="1" />
+<rect x="60" y="765" width="195" height="96" rx="8" fill="#a81c1c" stroke="#6e1111" stroke-width="2" filter="url(#shadow)"/>
+<text x="156" y="791" font-family="Segoe UI" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold" >MODULO USB-TTL</text>
+<text x="156" y="810" font-family="Consolas" font-size="11" fill="#ffe066" text-anchor="middle" font-weight="bold" >CP2102 / CH340 (5V)</text>
+<text x="156" y="829" font-family="Segoe UI" font-size="10.5" fill="#ffd0d0" text-anchor="middle" font-weight="normal" >USB 2 -> GUI Python</text>
+<rect x="255" y="783" width="14" height="8" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="248" y="791" font-family="Consolas" font-size="9.5" fill="#fff" text-anchor="end" font-weight="bold" >RX</text>
+<rect x="255" y="809" width="14" height="8" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="248" y="817" font-family="Consolas" font-size="9.5" fill="#fff" text-anchor="end" font-weight="bold" >TX</text>
+<rect x="255" y="835" width="14" height="8" rx="0" fill="#e4c15a" stroke="none" stroke-width="1" />
+<text x="248" y="843" font-family="Consolas" font-size="9.5" fill="#fff" text-anchor="end" font-weight="bold" >GND</text>
+<path d="M269 787 C360 725 580 565 780 227" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M269 787 C360 725 580 565 780 227" fill="none" stroke="#00bfff" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M269 813 C380 745 620 575 800 227" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M269 813 C380 745 620 575 800 227" fill="none" stroke="#33dd88" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M269 839 C340 875 360 885 450 883" fill="none" stroke="#00000055" stroke-width="6.5" stroke-linecap="round" transform="translate(2,3)"/>
+<path d="M269 839 C340 875 360 885 450 883" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="740" y1="283" x2="635" y2="495" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="740" cy="283" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="631" y="477" width="220" height="76" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="641" y="495" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >PIC18F4550</text>
+<text x="641" y="517" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >Oscilador interno 8 MHz</text>
+<text x="641" y="539" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >(sin cristal)</text>
+<line x1="500" y1="180" x2="225" y2="455" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="500" cy="180" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="221" y="437" width="250" height="76" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="231" y="455" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >Header ICSP</text>
+<text x="231" y="477" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >1 MCLR  2 VDD  3 GND</text>
+<text x="231" y="499" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >4 PGD  5 PGC  6 NC</text>
+<line x1="1405.0" y1="280" x2="1420" y2="72" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="1405.0" cy="280" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="1416" y="54" width="320" height="54" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="1426" y="72" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >Pantalla LCD 16x2 (2.26")</text>
+<text x="1426" y="94" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >Solo 6 pines (RD0..RD5) + POT 10k</text>
+<line x1="600" y1="627" x2="415" y2="970" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="600" cy="627" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="411" y="952" width="305" height="98" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="421" y="970" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >3 LEDs por elevador (9 total)</text>
+<text x="421" y="992" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >V=Sube </text>
+<text x="421" y="1014" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > A=Puerta </text>
+<text x="421" y="1036" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > R=Baja</text>
+<line x1="1060" y1="725" x2="755" y2="970" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="1060" cy="725" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="751" y="952" width="320" height="76" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="761" y="970" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >2 Botones Pasillo + Buzzer 5V</text>
+<text x="761" y="992" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >SUB(RA4), BAJ(RA5) </text>
+<text x="761" y="1014" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > BUZZ(RB5)</text>
+<line x1="1590" y1="895" x2="1580" y2="970" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="1590" cy="895" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="1576" y="952" width="205" height="76" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="1586" y="970" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >Teclado 4x4</text>
+<text x="1586" y="992" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >A:Piso B:Abr C:Cer</text>
+<text x="1586" y="1014" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >D:Borrar #:OK *:EMG</text>
+<line x1="156" y1="861" x2="60" y2="955" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
+<circle cx="156" cy="861" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
+<rect x="56" y="937" width="265" height="54" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<text x="66" y="955" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >Modulo USB-TTL (En vivo)</text>
+<text x="66" y="977" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >RX->RC6, TX->RC7, GND->GND</text>
+</svg>
