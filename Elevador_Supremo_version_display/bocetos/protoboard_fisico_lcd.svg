@@ -455,10 +455,10 @@
 <text x="1426" y="94" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >Solo 6 pines (RD0..RD5) + POT 10k</text>
 <line x1="600" y1="627" x2="415" y2="970" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
 <circle cx="600" cy="627" r="5" fill="#ffe066" stroke="none" stroke-width="1" />
-<rect x="411" y="952" width="305" height="98" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
+<rect x="411" y="952" width="325" height="98" rx="6" fill="#fff8d0" stroke="#c9a400" stroke-width="2" filter="url(#shadow)"/>
 <text x="421" y="970" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="bold" >3 LEDs por elevador (9 total)</text>
 <text x="421" y="992" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" >V=Sube </text>
-<text x="421" y="1014" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > A=Puerta </text>
+<text x="421" y="1014" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > A=Espera(parpadea) </text>
 <text x="421" y="1036" font-family="Segoe UI, Arial" font-size="14" fill="#3a2a00" text-anchor="start" font-weight="normal" > R=Baja</text>
 <line x1="1060" y1="725" x2="755" y2="970" stroke="#ffe066" stroke-width="2" stroke-linecap="round" />
 <circle cx="1060" cy="725" r="5" fill="#ffe066" stroke="none" stroke-width="1" />

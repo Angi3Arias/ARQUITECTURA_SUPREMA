@@ -1,23 +1,24 @@
 # Tutorial Paso a Paso en Proteus 8 — Elevador Supremo (Versión Display LCD 16x2)
 
-Esta guía te lleva **parte por parte** para armar el circuito completo del **Elevador Supremo** (3 elevadores, $N$ pisos, Pantalla LCD 16x2, Teclado 4x4, 5 Botones, Buzzer 5 V, 6 LEDs y `COMPIM` para Python) en **Proteus 8 Professional** usando el **PIC18F4550**.
+Esta guía te lleva **parte por parte** para armar el circuito completo del **Elevador Supremo** (3 elevadores, $N$ pisos, Pantalla LCD 16x2, Teclado 4x4, **2 Botones de Pasillo**, Buzzer 5 V, **9 LEDs** y `COMPIM` para Python) en **Proteus 8 Professional** usando el **PIC18F4550**.
 
 ---
 
-## Preparación: Agregar los 10 componentes en `DEVICES`
+## Preparación: Agregar los 11 componentes en `DEVICES`
 
 En Proteus 8, selecciona el **Modo Componentes** (barra izquierda) y presiona la tecla **`P`** (*Pick Devices*) para agregar uno por uno:
 
 1. `PIC18F4550` (x1)
 2. `LM016L` (x1 — Pantalla LCD 16x2)
 3. `POT-HG` (x1 — Potenciómetro 10k lineal interactivo)
-4. `KEYPAD-SMALLCALC` (x1 — Teclado matricial 4x4)
-5. `BUTTON` (x5 — Subir, Bajar, Abrir, Cerrar y Emergencia)
-6. `BUZZER` (x1 — Alarma sonora 5 V)
+4. `KEYPAD-SMALLCALC` (x1 — Teclado matricial 4x4: `A`=Sel.Piso, `B`=Abrir, `C`=Cerrar, `D`=Borrar, `#`=Confirmar, `*`=Emergencia)
+5. `BUTTON` (x2 — solo **`SUBIR`** y **`BAJAR`** en pasillo)
+6. `BUZZER` (x1 — Alarma sonora 5 V, librería `ACTIVE`)
 7. `LED-GREEN` (x3 — Sube)
-8. `LED-RED` (x3 — Baja)
-9. `RES` (x16 — 10 de `10k` y 6 de `220`)
-10. `COMPIM` (x1 — Puerto serial 9600 bps para enlazar con Python)
+8. `LED-YELLOW` (x3 — Espera / Puerta abierta, **parpadea**)
+9. `LED-RED` (x3 — Baja)
+10. `RES` (x16 — **7** de `10k` y **9** de `220`)
+11. `COMPIM` (x1 — Puerto serial 9600 bps para enlazar con Python)
 
 *(Los símbolos `POWER`, `GROUND` y etiquetas `DEFAULT` se sacan del **Modo Terminales** en la barra izquierda).*
 
@@ -79,34 +80,32 @@ En Proteus 8, selecciona el **Modo Componentes** (barra izquierda) y presiona la
 
 ---
 
-## Paso 4: Conectar los 6 LEDs de Dirección (2 por Elevador: Verde = Sube, Rojo = Baja)
+## Paso 4: Conectar los 9 LEDs (3 por Elevador: Verde = Sube, Amarillo = Espera/Parpadea, Rojo = Baja)
 
-1. Arriba a la derecha de `U1`, coloca **6 resistencias `RES` (`R6–R11`) de `220`** en fila horizontal, seguidas por **3 `LED-GREEN`** (Sube) y **3 `LED-RED`** (Baja).
+1. Arriba a la derecha de `U1`, coloca **9 resistencias `RES` (`R6–R14`) de `220`**, seguidas por **3 `LED-GREEN`** (Sube), **3 `LED-YELLOW`** (Espera / Puerta abierta — **parpadea** mientras espera) y **3 `LED-RED`** (Baja).
 2. Une todos los cátodos (lado de la raya del LED) juntos hacia un solo **`GROUND`**.
 3. Conecta cada resistencia a su pin del `PIC18F4550`:
-   - **Elevador 1:** `RC0` (Pin 15) $\rightarrow$ `R6` $\rightarrow$ **`D1` (`LED-GREEN`, Sube)** | `RC1` (Pin 16) $\rightarrow$ `R7` $\rightarrow$ **`D2` (`LED-RED`, Baja)**
-   - **Elevador 2:** `RC2` (Pin 17) $\rightarrow$ `R8` $\rightarrow$ **`D3` (`LED-GREEN`, Sube)** | `RE0` (Pin 8, etiqueta `E2_BAJA`) $\rightarrow$ `R9` $\rightarrow$ **`D4` (`LED-RED`, Baja)**
-   - **Elevador 3:** `RE1` (Pin 9, etiqueta `E3_SUBE`) $\rightarrow$ `R10` $\rightarrow$ **`D5` (`LED-GREEN`, Sube)** | `RE2` (Pin 10, etiqueta `E3_BAJA`) $\rightarrow$ `R11` $\rightarrow$ **`D6` (`LED-RED`, Baja)**
+   - **Elevador 1:** `RC0` (Pin 15) $\rightarrow$ **`LED-GREEN` (Sube)** | `RD6` (Pin 29, `E1_PUERTA`) $\rightarrow$ **`LED-YELLOW` (Espera/Parpadea)** | `RC1` (Pin 16) $\rightarrow$ **`LED-RED` (Baja)**
+   - **Elevador 2:** `RC2` (Pin 17) $\rightarrow$ **`LED-GREEN` (Sube)** | `RD7` (Pin 30, `E2_PUERTA`) $\rightarrow$ **`LED-YELLOW` (Espera/Parpadea)** | `RE0` (Pin 8, `E2_BAJA`) $\rightarrow$ **`LED-RED` (Baja)**
+   - **Elevador 3:** `RE1` (Pin 9, `E3_SUBE`) $\rightarrow$ **`LED-GREEN` (Sube)** | `RB4` (Pin 37, `E3_PUERTA`) $\rightarrow$ **`LED-YELLOW` (Espera/Parpadea)** | `RE2` (Pin 10, `E3_BAJA`) $\rightarrow$ **`LED-RED` (Baja)**
 
-![Paso 4: 6 LEDs de dirección](tutorial_proteus/paso4_leds.png)
+![Paso 4: 9 LEDs (Verde, Amarillo espera y Rojo)](tutorial_proteus/paso4_leds.png)
 
 ---
 
-## Paso 5: Conectar los 5 Botones (`BUTTON`) y el `BUZZER` 5 V
+## Paso 5: Conectar los 2 Botones de Pasillo (`BUTTON`) y el `BUZZER` 5 V
 
-1. Coloca **5 bloques Pull-Up iguales**: `POWER` $\rightarrow$ **`RES` (`10k`)** $\rightarrow$ nodo con etiqueta $\rightarrow$ **`BUTTON`** $\rightarrow$ **`GROUND`**.
+1. Coloca **solo 2 bloques Pull-Up iguales**: `POWER` $\rightarrow$ **`RES` (`10k`)** $\rightarrow$ nodo con etiqueta $\rightarrow$ **`BUTTON`** $\rightarrow$ **`GROUND`**.
 2. Pon el **mismo nombre de etiqueta** (`LBL` o terminal `DEFAULT`) en el botón y en el pin correspondiente de `U1`:
    - **`BTN_SUBIR`** (`BTN1`, Pasillo ▲) $\rightarrow$ **`RA4`** (Pin 6)
    - **`BTN_BAJAR`** (`BTN2`, Pasillo ▼) $\rightarrow$ **`RA5`** (Pin 7)
-   - **`BTN_ABRIR`** (`BTN3`, Puerta ◀\|▶) $\rightarrow$ **`RD6`** (Pin 29)
-   - **`BTN_CERRAR`** (`BTN4`, Puerta ▶\|◀) $\rightarrow$ **`RD7`** (Pin 30)
-   - **`BTN_EMG`** (`BTN5`, Paro de Emergencia) $\rightarrow$ **`RB4`** (Pin 37)
-3. Coloca **`BUZZER` (`LS1`)**:
+   - *(Ya no hay botones físicos aparte para abrir, cerrar ni emergencia: **`A`** selecciona piso, **`B`** abre puerta, **`C`** cierra puerta, **`D`** borra si te equivocas, **`#`** confirma y **`*`** activa el paro de emergencia).*
+3. Coloca **`BUZZER` (`LS1`, librería `ACTIVE`)**:
    - Un lado con etiqueta **`BUZZER`** hacia **`RB5`** (Pin 38) de `U1`.
    - El otro lado a **`GROUND`**.
    - **Paso obligatorio:** Haz **doble clic en el `BUZZER`** y cambia **`Operating Voltage`** de `12V` a **`5V`** (si no lo cambias, no sonará).
 
-![Paso 5: 5 Botones y Buzzer 5V](tutorial_proteus/paso5_botones_buzzer.png)
+![Paso 5: 2 Botones de pasillo y Buzzer 5V](tutorial_proteus/paso5_botones_buzzer.png)
 
 ---
 

@@ -351,110 +351,120 @@ def paso3():
         s.lbl(ux - 88, rb_y[c], f"COL{c + 1}", "start", "#006600")
     s.power(kx + 35 + 3 * 50 + 55, y_pu, "POWER (+5V)")
 
-    s.note_box(880, 120, 245, 240, "Resumen Paso 3", [
+    s.note_box(880, 120, 245, 290, "Resumen Paso 3", [
         "Filas (Salidas PIC):",
         "  A -> RA0 | B -> RA1",
         "  C -> RA2 | D -> RA3",
         "Columnas (Entradas PIC):",
         "  1 -> RB0 | 2 -> RB1",
         "  3 -> RB2 | 4 -> RB3",
-        "No olvides las 4 R de 10k",
-        "a POWER en las columnas.",
+        "4 R de 10k a POWER en cols.",
+        "A:Piso B:Abr C:Cer D:Borrar",
+        "#:Confirmar  *:Emergencia",
     ])
     s.save("paso3_teclado.svg")
 
 
-# ---------------- PASO 4: 6 LEDS DE DIRECCION (2 POR ELEVADOR) ----------------
+# ---------------- PASO 4: 9 LEDS (3 POR ELEVADOR: VERDE, AMARILLO ESPERA, ROJO) ----------------
 def paso4():
-    s = P8SVG(1150, 620, "PASO 4: Los 6 LEDs de Direccion (2 por Elevador: Verde = Sube, Rojo = Baja)",
-              "Busca LED-GREEN (x3), LED-RED (x3) y RES de 220 Ohm (x6) | Todos los catodos van juntos a GROUND")
-    ux, uy, uw, uh = 60, 105, 225, 450
+    s = P8SVG(1150, 790, "PASO 4: Los 9 LEDs (3 por Elevador: Verde=Sube, Amarillo=Espera/Parpadea, Rojo=Baja)",
+              "Busca LED-GREEN (x3), LED-YELLOW (x3), LED-RED (x3) y RES de 220 Ohm (x9) | Todos los catodos van a GROUND")
+    ux, uy, uw, uh = 60, 95, 225, 610
     s.rect(ux, uy, uw, uh, fill=BODY, stroke=STRK, sw=2.2)
     s.text(ux + uw / 2, uy + 24, "U1 (PIC18F4550)", 13, "#111", "middle", "bold")
-    s.text(ux + uw / 2, uy + 42, "PORTC y PORTE", 11, "#555", "middle")
+    s.text(ux + uw / 2, uy + 42, "PORTC, PORTD, PORTB, PORTE", 10.5, "#555", "middle")
 
-    pins = [(15, "RC0", "E1_SUBE"), (16, "RC1", "E1_BAJA"), (17, "RC2", "E2_SUBE"),
-            (8, "RE0", "E2_BAJA"), (9, "RE1", "E3_SUBE"), (10, "RE2", "E3_BAJA")]
-    leds = [("#1fe01f", True, "D1", "Elevador 1 SUBE (LED-GREEN)"),
-            ("#ff2626", False, "D2", "Elevador 1 BAJA (LED-RED)"),
-            ("#1fe01f", False, "D3", "Elevador 2 SUBE (LED-GREEN)"),
-            ("#ff2626", True, "D4", "Elevador 2 BAJA (LED-RED)"),
-            ("#1fe01f", False, "D5", "Elevador 3 SUBE (LED-GREEN)"),
-            ("#ff2626", False, "D6", "Elevador 3 BAJA (LED-RED)")]
-    xgnd = 740
+    pins = [
+        (15, "RC0", "E1_SUBE"),
+        (29, "RD6", "E1_PUERTA"),
+        (16, "RC1", "E1_BAJA"),
+        (17, "RC2", "E2_SUBE"),
+        (30, "RD7", "E2_PUERTA"),
+        (8,  "RE0", "E2_BAJA"),
+        (9,  "RE1", "E3_SUBE"),
+        (37, "RB4", "E3_PUERTA"),
+        (10, "RE2", "E3_BAJA"),
+    ]
+    leds = [
+        ("#1fe01f", True,  "D1", "E1 SUBE (LED-GREEN)"),
+        ("#ffd000", False, "D2", "E1 ESPERA / PARPADEA (LED-YELLOW)"),
+        ("#ff2626", False, "D3", "E1 BAJA (LED-RED)"),
+        ("#1fe01f", False, "D4", "E2 SUBE (LED-GREEN)"),
+        ("#ffd000", True,  "D5", "E2 ESPERA / PARPADEA (LED-YELLOW)"),
+        ("#ff2626", False, "D6", "E2 BAJA (LED-RED)"),
+        ("#1fe01f", False, "D7", "E3 SUBE (LED-GREEN)"),
+        ("#ffd000", False, "D8", "E3 ESPERA / PARPADEA (LED-YELLOW)"),
+        ("#ff2626", True,  "D9", "E3 BAJA (LED-RED)"),
+    ]
+    xgnd = 735
     for i, ((pnum, pnm, net), (col, lit, dref, desc)) in enumerate(zip(pins, leds)):
-        py = uy + 82 + i * 62
+        py = uy + 72 + i * 58
         s.pic_pin(ux + uw, py, pnum, pnm, "right")
         s.line(ux + uw + 28, py, 460, py)
-        s.lbl(350, py, net, "start", "#8b0000" if i >= 3 else "#111")
+        lbl_col = "#b58900" if "PUERTA" in net else ("#8b0000" if i >= 5 else "#111")
+        s.lbl(340, py, net, "start", lbl_col)
         s.res_h(460, py, f"R{i + 6}", "220", 90)
         s.led_h(550, py, col, lit, dref)
         s.line(606, py, xgnd, py)
-        if i < 5:
+        if i < 8:
             s.junc(xgnd, py)
-        s.text(xgnd + 20, py + 5, desc, 13, "#111", "start", "bold")
-    s.line(xgnd, uy + 82, xgnd, uy + 82 + 5 * 62)
-    s.gnd(xgnd, uy + 82 + 5 * 62)
+        s.text(xgnd + 18, py + 5, desc, 12.5, "#111", "start", "bold")
+    s.line(xgnd, uy + 72, xgnd, uy + 72 + 8 * 58)
+    s.gnd(xgnd, uy + 72 + 8 * 58)
 
-    s.note_box(760, 485, 355, 110, "Tip en Proteus", [
-        "En tu esquema completo, RC0..RC2 salen arriba",
-        "y RE0..RE2 abajo; usa etiquetas DEFAULT (E2_BAJA,",
-        "E3_SUBE, E3_BAJA) para no cruzar cables.",
+    s.note_box(760, 668, 365, 102, "Tip en Proteus (9 LEDs)", [
+        "Verde = Sube | Amarillo = Espera (parpadea)",
+        "Rojo = Baja | Usa etiquetas DEFAULT en RD6,",
+        "RD7, RB4 y RE0..RE2 para no cruzar cables.",
     ])
     s.save("paso4_leds.svg")
 
 
-# ---------------- PASO 5: 5 BOTONES + BUZZER 5V ----------------
+# ---------------- PASO 5: SOLO 2 BOTONES DE PASILLO + BUZZER 5V ----------------
 def paso5():
-    s = P8SVG(1200, 620, "PASO 5: Los 5 Botones (Pasillo, Puerta y Emergencia) + Buzzer 5 V",
-              "Todos los botones llevan pull-up 10k a POWER y boton a GROUND | El BUZZER debe cambiarse a 5V")
-    # 5 botones en fila
+    s = P8SVG(1200, 620, "PASO 5: Solo 2 Botones de Pasillo (SUBIR / BAJAR) + Buzzer 5 V",
+              "Puertas (B/C), Borrar (D) y Emergencia (*) van en el Teclado 4x4 | El BUZZER debe cambiarse a 5V")
+    # Solo 2 botones fisicos de pasillo
     btns = [
-        ("BTN1", "BTN_SUBIR",  "SUBIR",      "Pin 6 (RA4)"),
-        ("BTN2", "BTN_BAJAR",  "BAJAR",      "Pin 7 (RA5)"),
-        ("BTN3", "BTN_ABRIR",  "ABRIR",      "Pin 29 (RD6)"),
-        ("BTN4", "BTN_CERRAR", "CERRAR",     "Pin 30 (RD7)"),
-        ("BTN5", "BTN_EMG",    "EMERGENCIA", "Pin 37 (RB4)"),
+        ("BTN1", "BTN_SUBIR", "SUBIR (Pasillo)", "Pin 6 (RA4)"),
+        ("BTN2", "BTN_BAJAR", "BAJAR (Pasillo)", "Pin 7 (RA5)"),
     ]
     ry = 155
-    s.line(85, ry, 85 + 4 * 155, ry)
-    s.power(85, ry, "POWER (+5V)")
+    s.line(150, ry, 420, ry)
+    s.power(150, ry, "POWER (+5V)")
     for i, (ref, net, txt, sub) in enumerate(btns):
-        bx = 85 + i * 155
+        bx = 150 + i * 270
         if i > 0:
             s.junc(bx, ry)
-        s.res_v(bx, ry, f"R{12 + i}", "10k", 78)
+        s.res_v(bx, ry, f"R{15 + i}", "10k", 78)
         ny = ry + 78
         s.junc(bx, ny)
-        s.line(bx, ny, bx + 78, ny)
-        s.lbl(bx + 8, ny, net, "start", "#b3261e" if i == 4 else "#8b008b")
+        s.line(bx, ny, bx + 95, ny)
+        s.lbl(bx + 10, ny, net, "start", "#8b008b")
         s.button_v(bx, ny, ref, txt, sub)
         s.gnd(bx, ny + 76)
 
-    # Bloque Buzzer 5V a la derecha (simbolo real de Proteus: media luna con 2 patitas a la izquierda)
-    bzx, bzy = 935, 240
-    s.rect(835, 115, 330, 260, fill="#fff8f8", stroke="#b3261e", sw=2, rx=6, ex='stroke-dasharray="7 5"')
-    s.rect(835, 115, 330, 28, fill="#b3261e", rx=4)
-    s.text(850, 134, "ALARMA SONORA (BUZZER ACTIVE 5V)", 11.5, "#fff", "start", "bold")
-    # Patita arriba (+) -> etiqueta BUZZER (RB5)
-    s.line(855, bzy - 14, bzx - 10, bzy - 14)
-    s.lbl(855, bzy - 14, "BUZZER", "start", "#b3261e")
-    # Patita abajo (-) -> GROUND
-    s.line(880, bzy + 14, bzx - 10, bzy + 14)
-    s.line(880, bzy + 14, 880, bzy + 66)
-    s.gnd(880, bzy + 66)
-    # Simbolo real media luna (domo) de BUZZER en Proteus 8
+    # Bloque Buzzer 5V a la derecha
+    bzx, bzy = 875, 240
+    s.rect(745, 115, 395, 260, fill="#fff8f8", stroke="#b3261e", sw=2, rx=6, ex='stroke-dasharray="7 5"')
+    s.rect(745, 115, 395, 28, fill="#b3261e", rx=4)
+    s.text(762, 134, "ALARMA SONORA (BUZZER ACTIVE 5V — RB5)", 11.5, "#fff", "start", "bold")
+    s.line(775, bzy - 14, bzx - 10, bzy - 14)
+    s.lbl(775, bzy - 14, "BUZZER", "start", "#b3261e")
+    s.line(810, bzy + 14, bzx - 10, bzy + 14)
+    s.line(810, bzy + 14, 810, bzy + 66)
+    s.gnd(810, bzy + 66)
     s.a(f'<path d="M {bzx + 14} {bzy - 26} A 26 26 0 0 0 {bzx + 14} {bzy + 26} Z" fill="#cfc9ad" stroke="{STRK}" stroke-width="2.5"/>')
-    s.text(bzx + 26, bzy - 10, "LS1 (BUZZER)", 12.5, "#00008b", "start", "bold")
-    s.text(bzx + 26, bzy + 8,  "Libreria: ACTIVE", 11, "#111", "start", "bold")
-    s.text(bzx + 26, bzy + 26, "Doble clic ->", 11, "#333", "start")
-    s.text(bzx + 26, bzy + 44, "Cambiar 12V -> 5V", 11.5, "#b3261e", "start", "bold")
+    s.text(bzx + 28, bzy - 10, "LS1 (BUZZER)", 12.5, "#00008b", "start", "bold")
+    s.text(bzx + 28, bzy + 8,  "Libreria: ACTIVE", 11, "#111", "start", "bold")
+    s.text(bzx + 28, bzy + 26, "Doble clic ->", 11, "#333", "start")
+    s.text(bzx + 28, bzy + 44, "Cambiar 12V -> 5V", 11.5, "#b3261e", "start", "bold")
 
-    s.note_box(55, 425, 1110, 165, "Como funciona cada boton en Proteus y en Fisico", [
-        "• BTN1 (SUBIR - RA4) y BTN2 (BAJAR - RA5): Se presionan ANTES de entrar al elevador para indicar direccion.",
-        "• BTN3 (ABRIR - RD6) y BTN4 (CERRAR - RD7): Se presionan DENTRO del elevador para abrir o cerrar la puerta.",
-        "• BTN5 (EMERGENCIA - RB4): Interrupcion inmediata -> congela los 3 elevadores, parpadean LEDs rojos y suena el BUZZER (RB5).",
-        "• Todos los botones entregan 1 (5V) sueltos y 0 (GND) al presionarlos. Pon etiquetas con el mismo nombre en U1.",
+    s.note_box(55, 425, 1085, 165, "Botones fisicos vs. Teclado 4x4 (Version Definitiva)", [
+        "• Solo hay 2 botones fisicos: BTN1 (SUBIR - RA4) y BTN2 (BAJAR - RA5), con pull-up 10k a POWER y boton a GROUND.",
+        "• Ningun elevador se despacha hasta presionar SUBIR o BAJAR (despues de ingresar tu piso con 'A' + '#' en el teclado).",
+        "• Abrir puerta ('B'), Cerrar ('C'), Borrar ('D') y Paro de Emergencia ('*') se controlan desde el Teclado 4x4.",
+        "• Al activar Emergencia ('*'), se congelan los 3 elevadores, parpadean los 3 LEDs rojos y suena el BUZZER 5V (RB5).",
     ])
     s.save("paso5_botones_buzzer.svg")
 

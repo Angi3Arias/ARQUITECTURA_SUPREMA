@@ -518,7 +518,7 @@ def proteus_lcd():
     notes = [
         ("LCD 16x2 (LM016L):", "RD0->RS, RD1->E, RD2->D4, RD3->D5, RD4->D6, RD5->D7  |  VSS/RW a GND, VDD a +5V, VEE a RV1 (10k lineal)"),
         ("Teclado 4x4 (KEYPAD1):", "A: Sel.Piso | B: Abrir puerta | C: Cerrar puerta | D: Borrar | #: Confirmar | *: Emergencia"),
-        ("9 LEDs + 2 Botones:", "3 LEDs/elevador (V=Sube, A=Puerta [RD6,RD7,RB4], R=Baja)  |  Solo 2 botones pasillo: SUBIR(RA4), BAJAR(RA5)"),
+        ("9 LEDs + 2 Botones:", "3 LEDs/elevador (V=Sube, A=Espera/Parpadea [RD6,RD7,RB4], R=Baja)  |  Solo 2 botones: SUBIR(RA4), BAJAR(RA5)"),
         ("Buzzer, UART y PICkit3:", "BUZZER 5V en RB5  |  UART: RC6/TX y RC7/RX (COMPIM/USB-TTL)  |  ICSP: MCLR, RB6, RB7 libres"),
     ]
     for i, (k, v) in enumerate(notes):
@@ -820,7 +820,7 @@ def protoboard_lcd():
     callout(hx(AX, 15), AY + 178, 635, 495, "PIC18F4550|Oscilador interno 8 MHz|(sin cristal)", 220)
     callout(hx(AX, 3), AY + 75, 225, 455, "Header ICSP|1 MCLR  2 VDD  3 GND|4 PGD  5 PGC  6 NC", 250)
     callout(lx + lw / 2, ly + 100, 1420, 72, "Pantalla LCD 16x2 (2.26\")|Solo 6 pines (RD0..RD5) + POT 10k", 320)
-    callout(hx(BX, 8), BY + 82, 415, 970, "3 LEDs por elevador (9 total)|V=Sube | A=Puerta | R=Baja", 305)
+    callout(hx(BX, 8), BY + 82, 415, 970, "3 LEDs por elevador (9 total)|V=Sube | A=Espera(parpadea) | R=Baja", 325)
     callout(hx(BX, 31), BY + 180, 755, 970, "2 Botones Pasillo + Buzzer 5V|SUB(RA4), BAJ(RA5) | BUZZ(RB5)", 320)
     callout(kpad_x + kpad_w, kpad_y + 135, 1580, 970, "Teclado 4x4|A:Piso B:Abr C:Cer|D:Borrar #:OK *:EMG", 205)
     callout(tx + 96, ty + 96, 60, 955, "Modulo USB-TTL (En vivo)|RX->RC6, TX->RC7, GND->GND", 265)

@@ -11,7 +11,7 @@
 | **Botones de Pasillo** | `BUTTON` | **2** | `BTN1` (`SUBIR`) $\rightarrow$ `RA4` y `BTN2` (`BAJAR`) $\rightarrow$ `RA5` (ambos con pull-up `10k`). |
 | **Buzzer 5 V** | `BUZZER` *(librería `ACTIVE`)* | **1** | `Operating Voltage = 5V`. Patita arriba a `RB5`, patita abajo a `GROUND`. |
 | **LED Verde (Sube)** | `LED-GREEN` | **3** | `RC0` (E1), `RC2` (E2), `RE1` (E3) $\rightarrow$ `220 Ω` $\rightarrow$ `GROUND`. |
-| **LED Amarillo (Puerta Abierta)** | `LED-YELLOW` | **3** | `RD6` (E1), `RD7` (E2), `RB4` (E3) $\rightarrow$ `220 Ω` $\rightarrow$ `GROUND`. |
+| **LED Amarillo (Espera / Puerta)** | `LED-YELLOW` | **3** | `RD6` (E1), `RD7` (E2), `RB4` (E3) $\rightarrow$ `220 Ω` $\rightarrow$ `GROUND` (**parpadea** mientras espera). |
 | **LED Rojo (Baja)** | `LED-RED` | **3** | `RC1` (E1), `RE0` (E2), `RE2` (E3) $\rightarrow$ `220 Ω` $\rightarrow$ `GROUND`. |
 | **Resistencias** | `RES` | **16** | **7** de **`10k`** (4 teclado + 2 botones + 1 `MCLR`) y **9** de **`220`** (para los 9 LEDs). |
 | **Puerto Serial (GUI Python)** | `COMPIM` *(físico: USB-TTL)* | **1** | `RC6/TX` $\rightarrow$ Pin 3 (`TXD`), `RC7/RX` $\rightarrow$ Pin 2 (`RXD`), `9600 bps`. |

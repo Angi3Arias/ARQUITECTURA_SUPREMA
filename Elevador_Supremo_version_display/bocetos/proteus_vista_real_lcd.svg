@@ -728,7 +728,7 @@
 <text x="266" y="1021" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >Teclado 4x4 (KEYPAD1):</text>
 <text x="440" y="1021" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >A: Sel.Piso | B: Abrir puerta | C: Cerrar puerta | D: Borrar | #: Confirmar | *: Emergencia</text>
 <text x="266" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >9 LEDs + 2 Botones:</text>
-<text x="440" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >3 LEDs/elevador (V=Sube, A=Puerta [RD6,RD7,RB4], R=Baja)  |  Solo 2 botones pasillo: SUBIR(RA4), BAJAR(RA5)</text>
+<text x="440" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >3 LEDs/elevador (V=Sube, A=Espera/Parpadea [RD6,RD7,RB4], R=Baja)  |  Solo 2 botones: SUBIR(RA4), BAJAR(RA5)</text>
 <text x="266" y="1073" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#8b0000" text-anchor="start" font-weight="bold" >Buzzer, UART y PICkit3:</text>
 <text x="440" y="1073" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start" font-weight="normal" >BUZZER 5V en RB5  |  UART: RC6/TX y RC7/RX (COMPIM/USB-TTL)  |  ICSP: MCLR, RB6, RB7 libres</text>
 </svg>

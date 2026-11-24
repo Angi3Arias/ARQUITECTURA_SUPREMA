@@ -840,7 +840,7 @@ class ElevadorSupremoApp:
                     l2 = "ERROR:No existe!"
                 elif wait_e.boarding_count > 0 and not self.keypad_buffer:
                     secs = max(1, int((wait_e.boarding_timer * 120) / 1000) + 1)
-                    l2 = f"E{wait_e.idx} Q:{len(wait_e.dest_stops)} +P/C {secs}s"
+                    l2 = f"E{wait_e.idx} Cola:{len(wait_e.dest_stops)} {secs}s C"
                 else:
                     d_txt = self.keypad_buffer.ljust(2, "_")
                     l2 = f"E{wait_e.idx} Dest:{d_txt} #=OK"
