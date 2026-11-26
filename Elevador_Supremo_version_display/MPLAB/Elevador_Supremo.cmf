@@ -1,0 +1,1713 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$startup.o
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$Elevador_Supremo.o
+cinit CODE 0 3146 3146 98 1 2
+intcode_body CODE 0 38AC 38AC 56 1 2
+text0 CODE 0 2AB8 2AB8 138 1 2
+text1 CODE 0 2CEE 2CEE D4 1 2
+text2 CODE 0 12 12 7BC 1 2
+text3 CODE 0 3624 3624 62 1 2
+text4 CODE 0 1860 1860 474 1 2
+text5 CODE 0 3800 3800 56 1 2
+text6 CODE 0 2BF0 2BF0 FE 1 2
+text7 CODE 0 2DC2 2DC2 D0 1 2
+text8 CODE 0 39E4 39E4 44 1 2
+text9 CODE 0 3B6E 3B6E 22 1 2
+text10 CODE 0 2660 2660 1B0 1 2
+text11 CODE 0 2968 2968 150 1 2
+text12 CODE 0 3AA4 3AA4 2C 1 2
+text13 CODE 0 1368 1368 4F8 1 2
+text14 CODE 0 248E 248E 1D2 1 2
+text15 CODE 0 3686 3686 60 1 2
+text16 CODE 0 30AC 30AC 9A 1 2
+text17 CODE 0 3A28 3A28 42 1 2
+text18 CODE 0 31DE 31DE 92 1 2
+text19 CODE 0 37A6 37A6 5A 1 2
+text20 CODE 0 1CD4 1CD4 338 1 2
+text21 CODE 0 7CE 7CE 67E 1 2
+text22 CODE 0 35C0 35C0 64 1 2
+text23 CODE 0 355A 355A 66 1 2
+text24 CODE 0 3856 3856 56 1 2
+text25 CODE 0 3270 3270 8C 1 2
+text26 CODE 0 200C 200C 266 1 2
+text27 CODE 0 36E6 36E6 60 1 2
+text28 CODE 0 E4C E4C 51C 1 2
+text29 CODE 0 3AFA 3AFA 28 1 2
+text30 CODE 0 3956 3956 48 1 2
+text31 CODE 0 3B22 3B22 26 1 2
+text32 CODE 0 2F58 2F58 B4 1 2
+text33 CODE 0 3746 3746 60 1 2
+text34 CODE 0 3BE6 3BE6 C 1 2
+text35 CODE 0 2272 2272 21C 1 2
+text36 CODE 0 2810 2810 158 1 2
+text37 CODE 0 33FC 33FC 7A 1 2
+text38 CODE 0 2E92 2E92 C6 1 2
+text39 CODE 0 399E 399E 46 1 2
+text40 CODE 0 3BF2 3BF2 C 1 2
+text41 CODE 0 3AD0 3AD0 2A 1 2
+text42 CODE 0 300C 300C A0 1 2
+text43 CODE 0 3902 3902 54 1 2
+text44 CODE 0 3BAC 3BAC 18 1 2
+text45 CODE 0 34EC 34EC 6E 1 2
+text46 CODE 0 32FC 32FC 80 1 2
+text47 CODE 0 3B48 3B48 26 1 2
+text48 CODE 0 3B90 3B90 1C 1 2
+text49 CODE 0 3476 3476 76 1 2
+text50 CODE 0 3A6A 3A6A 3A 1 2
+text51 CODE 0 337C 337C 80 1 2
+idataCOMRAM CODE 0 3BFE 3BFE 2 1 1
+cstackCOMRAM COMRAM 1 2 2 54 1 1
+cstackBANK0 BANK0 1 AF AF 39 1 1
+bssBANK0 BANK0 1 60 60 4F 1 1
+bssBANK1 BANK1 1 100 100 A1 1 1
+bssBANK2 BANK2 1 200 200 100 1 1
+intcode CODE 0 8 8 6 1 2
+idataBANK0 CODE 0 3BC4 3BC4 11 1 1
+idataBANK1 CODE 0 3BD5 3BD5 11 1 1
+dataBANK0 BANK0 1 E8 E8 11 1 1
+dataBANK1 BANK1 1 1A1 1A1 11 1 1
+dataCOMRAM COMRAM 1 59 59 2 1 1
+bssCOMRAM COMRAM 1 56 56 3 1 1
+mediumconst MEDIUMCONST 0 7E3A 7E3A 1C6 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F9-FF 1
+RAM 1B2-1FF 1
+RAM 300-7FF 1
+SFR F60-FFF 1
+BANK0 F9-FF 1
+BANK1 1B2-1FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 3C00-7E39 1
+IDLOC 200000-200007 1
+SMALLCONST 3C00-7E39 1
+CODE 4-7 1
+CODE 3C00-7E39 1
+BIGRAM 5B-5F 1
+BIGRAM F9-FF 1
+BIGRAM 1B2-1FF 1
+BIGRAM 300-7FF 1
+BIGSFR F60-FFF 1
+COMRAM 5B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 3C00-7E39 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$startup.o
+E init CODE >101:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\startup.s
+0 reset_vec CODE >66:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\startup.s
+$Elevador_Supremo.o
+8 intcode CODE >17498:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+8 intcode CODE >85:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38AC intcode_body CODE >85:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38B6 intcode_body CODE >86:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38BC intcode_body CODE >87:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38C0 intcode_body CODE >88:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38C4 intcode_body CODE >90:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38C6 intcode_body CODE >91:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38CA intcode_body CODE >92:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38D2 intcode_body CODE >93:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38DA intcode_body CODE >94:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38EA intcode_body CODE >95:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38EE intcode_body CODE >98:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38F2 intcode_body CODE >99:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38F4 intcode_body CODE >100:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38F6 intcode_body CODE >103:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+337C text51 CODE >132:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+337E text51 CODE >134:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3390 text51 CODE >135:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33A8 text51 CODE >136:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33C4 text51 CODE >137:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33E6 text51 CODE >138:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33FA text51 CODE >139:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A6A text50 CODE >141:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A6C text50 CODE >142:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A76 text50 CODE >143:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A86 text50 CODE >144:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3AA2 text50 CODE >145:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3476 text49 CODE >147:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3476 text49 CODE >148:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+348A text49 CODE >149:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+34AA text49 CODE >150:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+34C2 text49 CODE >151:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+34EA text49 CODE >152:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B90 text48 CODE >189:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B90 text48 CODE >190:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B94 text48 CODE >191:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B9E text48 CODE >192:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BA4 text48 CODE >193:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BA6 text48 CODE >194:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BA8 text48 CODE >195:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BAA text48 CODE >196:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B48 text47 CODE >202:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B4A text47 CODE >203:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B50 text47 CODE >204:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B58 text47 CODE >205:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B68 text47 CODE >206:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B6C text47 CODE >207:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32FC text46 CODE >7:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+32FC text46 CODE >13:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+32FE text46 CODE >14:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3302 text46 CODE >15:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+330A text46 CODE >16:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+330E text46 CODE >18:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3312 text46 CODE >19:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+331A text46 CODE >20:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+331E text46 CODE >22:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3324 text46 CODE >23:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+332C text46 CODE >24:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3330 text46 CODE >25:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3332 text46 CODE >26:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3338 text46 CODE >27:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+333A text46 CODE >25:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+333E text46 CODE >30:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3344 text46 CODE >31:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3350 text46 CODE >32:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3358 text46 CODE >33:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+335A text46 CODE >35:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3360 text46 CODE >36:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3364 text46 CODE >38:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+336A text46 CODE >39:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+3372 text46 CODE >40:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+337A text46 CODE >41:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+34EC text45 CODE >7:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+34EC text45 CODE >12:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+34EE text45 CODE >13:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+34F2 text45 CODE >14:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+34FA text45 CODE >15:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+34FE text45 CODE >17:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3502 text45 CODE >18:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+350A text45 CODE >19:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3512 text45 CODE >20:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3516 text45 CODE >21:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3518 text45 CODE >22:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+351E text45 CODE >23:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3520 text45 CODE >21:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3524 text45 CODE >26:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3530 text45 CODE >27:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3538 text45 CODE >28:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+353E text45 CODE >29:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3542 text45 CODE >31:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3548 text45 CODE >32:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3550 text45 CODE >33:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3558 text45 CODE >34:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+3BAC text44 CODE >106:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3902 text43 CODE >213:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3902 text43 CODE >214:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+390C text43 CODE >215:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3922 text43 CODE >216:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3944 text43 CODE >217:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3954 text43 CODE >218:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+300C text42 CODE >220:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+300C text42 CODE >222:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3012 text42 CODE >223:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3024 text42 CODE >224:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3034 text42 CODE >225:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3088 text42 CODE >226:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3AD0 text41 CODE >209:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3AD0 text41 CODE >210:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BF2 text40 CODE >198:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BF2 text40 CODE >199:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BFC text40 CODE >200:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+399E text39 CODE >295:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+399E text39 CODE >296:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+39AC text39 CODE >297:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+39B8 text39 CODE >298:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+39CA text39 CODE >299:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+39E2 text39 CODE >300:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2E92 text38 CODE >229:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2E92 text38 CODE >231:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2EB2 text38 CODE >232:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2EE4 text38 CODE >233:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F04 text38 CODE >234:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F36 text38 CODE >235:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F56 text38 CODE >236:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33FC text37 CODE >244:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+33FC text37 CODE >245:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3406 text37 CODE >246:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+343E text37 CODE >247:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3458 text37 CODE >248:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3472 text37 CODE >249:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3474 text37 CODE >250:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2810 text36 CODE >252:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2810 text36 CODE >254:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+283C text36 CODE >255:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2852 text36 CODE >256:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+288A text36 CODE >257:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+28B0 text36 CODE >258:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+28DE text36 CODE >260:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+28F4 text36 CODE >261:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2914 text36 CODE >262:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+293A text36 CODE >263:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2966 text36 CODE >266:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2272 text35 CODE >309:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2272 text35 CODE >312:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2280 text35 CODE >313:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+228C text35 CODE >314:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2292 text35 CODE >315:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22AA text35 CODE >316:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22BA text35 CODE >317:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22D2 text35 CODE >318:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22E2 text35 CODE >319:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22E8 text35 CODE >320:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22FC text35 CODE >321:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2314 text35 CODE >322:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+231A text35 CODE >323:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2326 text35 CODE >324:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+232C text35 CODE >325:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+234C text35 CODE >326:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2354 text35 CODE >327:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+23BE text35 CODE >328:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2420 text35 CODE >329:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2438 text35 CODE >330:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+243E text35 CODE >331:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2452 text35 CODE >332:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2458 text35 CODE >333:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+246C text35 CODE >334:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2480 text35 CODE >335:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+248C text35 CODE >336:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BE6 text34 CODE >108:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3746 text33 CODE >110:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3746 text33 CODE >111:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3750 text33 CODE >112:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3766 text33 CODE >113:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+378C text33 CODE >114:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37A4 text33 CODE >115:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F58 text32 CODE >117:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F58 text32 CODE >119:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2FE0 text32 CODE >120:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3006 text32 CODE >121:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+300A text32 CODE >122:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B22 text31 CODE >3:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strcpy.c
+3B22 text31 CODE >5:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strcpy.c
+3B26 text31 CODE >6:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strcpy.c
+3956 text30 CODE >124:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3956 text30 CODE >126:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3966 text30 CODE >127:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+397C text30 CODE >128:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3992 text30 CODE >129:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+399C text30 CODE >130:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3AFA text29 CODE >107:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E4C text28 CODE >381:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E4C text28 CODE >382:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E58 text28 CODE >383:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E60 text28 CODE >384:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E90 text28 CODE >385:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+EAC text28 CODE >386:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+EC8 text28 CODE >388:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+EE0 text28 CODE >389:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+EE8 text28 CODE >390:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+EF8 text28 CODE >391:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+F08 text28 CODE >392:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+F2E text28 CODE >395:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+F72 text28 CODE >396:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+F94 text28 CODE >399:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+FA8 text28 CODE >400:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+FCA text28 CODE >401:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+100E text28 CODE >402:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1024 text28 CODE >405:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+103C text28 CODE >406:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1050 text28 CODE >407:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+107E text28 CODE >408:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+10C2 text28 CODE >412:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+10CA text28 CODE >413:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+10DE text28 CODE >414:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+10F6 text28 CODE >415:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1124 text28 CODE >416:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1168 text28 CODE >420:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1170 text28 CODE >421:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1184 text28 CODE >422:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+11A6 text28 CODE >423:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+11EA text28 CODE >427:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1202 text28 CODE >428:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1216 text28 CODE >429:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1218 text28 CODE >430:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1226 text28 CODE >431:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+122E text28 CODE >432:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1296 text28 CODE >433:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12C2 text28 CODE >434:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12CA text28 CODE >436:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12E2 text28 CODE >437:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12F6 text28 CODE >438:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1366 text28 CODE >440:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36E6 text27 CODE >363:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36E6 text27 CODE >365:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+373E text27 CODE >366:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3744 text27 CODE >367:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+200C text26 CODE >482:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+200C text26 CODE >483:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2012 text26 CODE >484:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2036 text26 CODE >485:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+203E text26 CODE >487:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+205C text26 CODE >488:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2062 text26 CODE >489:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2068 text26 CODE >490:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2068 text26 CODE >492:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+206E text26 CODE >493:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+20A2 text26 CODE >494:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+20D2 text26 CODE >495:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+20EE text26 CODE >496:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+211E text26 CODE >497:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+214A text26 CODE >498:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+214E text26 CODE >500:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2154 text26 CODE >501:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2168 text26 CODE >502:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2174 text26 CODE >503:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2188 text26 CODE >504:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2198 text26 CODE >505:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+21A8 text26 CODE >506:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+21B2 text26 CODE >508:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+21C8 text26 CODE >509:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+21FA text26 CODE >510:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+220A text26 CODE >511:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+221A text26 CODE >514:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+222E text26 CODE >516:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+224E text26 CODE >517:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2258 text26 CODE >518:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+226C text26 CODE >519:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2270 text26 CODE >520:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3270 text25 CODE >284:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3270 text25 CODE >285:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+327E text25 CODE >286:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+328A text25 CODE >287:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+329C text25 CODE >288:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32A8 text25 CODE >289:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32BE text25 CODE >290:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32D0 text25 CODE >291:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32E2 text25 CODE >292:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+32FA text25 CODE >293:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3856 text24 CODE >268:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3856 text24 CODE >269:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3864 text24 CODE >270:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3870 text24 CODE >271:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3886 text24 CODE >272:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3898 text24 CODE >273:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+38AA text24 CODE >274:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+355A text23 CODE >339:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+355A text23 CODE >341:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3596 text23 CODE >342:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+35BE text23 CODE >343:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+35C0 text22 CODE >369:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+35C0 text22 CODE >370:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+35C6 text22 CODE >371:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+361A text22 CODE >372:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3622 text22 CODE >373:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+7CE text21 CODE >443:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+7CE text21 CODE >444:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+7E8 text21 CODE >445:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+7FC text21 CODE >447:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+810 text21 CODE >448:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+850 text21 CODE >450:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+864 text21 CODE >451:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+878 text21 CODE >452:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+8A0 text21 CODE >453:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+90E text21 CODE >454:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+97A text21 CODE >456:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+990 text21 CODE >457:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+9CC text21 CODE >458:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+9E4 text21 CODE >459:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+A92 text21 CODE >461:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+AA8 text21 CODE >462:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+AD2 text21 CODE >463:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+B38 text21 CODE >464:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+BAC text21 CODE >466:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+BCE text21 CODE >467:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+C0A text21 CODE >468:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+C12 text21 CODE >469:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+CC8 text21 CODE >471:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+D26 text21 CODE >473:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+D3C text21 CODE >474:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+D5E text21 CODE >475:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+DC8 text21 CODE >478:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+DEA text21 CODE >479:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+E4A text21 CODE >480:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CD4 text20 CODE >548:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CD4 text20 CODE >549:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CE2 text20 CODE >551:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CFA text20 CODE >552:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1D12 text20 CODE >554:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1D3A text20 CODE >557:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1D40 text20 CODE >558:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1D70 text20 CODE >559:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1DAC text20 CODE >560:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1DC0 text20 CODE >563:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1DC6 text20 CODE >564:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1DFA text20 CODE >565:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E02 text20 CODE >566:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E04 text20 CODE >568:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E18 text20 CODE >570:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E20 text20 CODE >571:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E2A text20 CODE >572:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E5A text20 CODE >574:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E88 text20 CODE >575:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1E9C text20 CODE >576:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1EAC text20 CODE >577:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1EBC text20 CODE >578:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1EC8 text20 CODE >579:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1EEA text20 CODE >580:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1EEC text20 CODE >581:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1F28 text20 CODE >582:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1F56 text20 CODE >583:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1F74 text20 CODE >584:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1F88 text20 CODE >585:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1F9C text20 CODE >586:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1FAC text20 CODE >587:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1FAC text20 CODE >588:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1FCC text20 CODE >589:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2006 text20 CODE >591:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+200A text20 CODE >592:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37A6 text19 CODE >594:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37A6 text19 CODE >596:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37AC text19 CODE >597:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37D6 text19 CODE >598:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37EA text19 CODE >599:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+37FE text19 CODE >600:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+31DE text18 CODE >873:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+31DE text18 CODE >874:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+31E4 text18 CODE >875:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+31FC text18 CODE >876:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3212 text18 CODE >877:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3266 text18 CODE >879:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+326E text18 CODE >880:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A28 text17 CODE >302:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A2A text17 CODE >303:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A38 text17 CODE >304:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A44 text17 CODE >305:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A5C text17 CODE >306:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3A68 text17 CODE >307:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+30AC text16 CODE >345:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+30AC text16 CODE >346:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+30B2 text16 CODE >347:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+30BA text16 CODE >348:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+30F8 text16 CODE >349:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3112 text16 CODE >350:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+311A text16 CODE >351:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3144 text16 CODE >352:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3686 text15 CODE >354:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3686 text15 CODE >355:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3688 text15 CODE >356:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3690 text15 CODE >357:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36C4 text15 CODE >358:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36D0 text15 CODE >355:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36E0 text15 CODE >360:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+36E4 text15 CODE >361:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+248E text14 CODE >602:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+248E text14 CODE >603:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+24A8 text14 CODE >604:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+24E2 text14 CODE >605:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+251E text14 CODE >607:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2554 text14 CODE >608:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2582 text14 CODE >609:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+25A0 text14 CODE >611:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+25B6 text14 CODE >612:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+25C8 text14 CODE >613:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+25DC text14 CODE >614:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+25F2 text14 CODE >615:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2606 text14 CODE >616:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2616 text14 CODE >617:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2622 text14 CODE >618:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2638 text14 CODE >621:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+265A text14 CODE >622:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+265E text14 CODE >623:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1368 text13 CODE >625:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+136A text13 CODE >627:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1372 text13 CODE >628:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1380 text13 CODE >629:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1396 text13 CODE >630:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13A8 text13 CODE >631:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13BC text13 CODE >632:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13C2 text13 CODE >633:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13C8 text13 CODE >636:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13CE text13 CODE >637:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13D8 text13 CODE >639:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+13F8 text13 CODE >641:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1404 text13 CODE >642:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1410 text13 CODE >643:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1422 text13 CODE >644:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1440 text13 CODE >645:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+145A text13 CODE >646:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+149A text13 CODE >647:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+14C6 text13 CODE >648:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+14D4 text13 CODE >652:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+14DC text13 CODE >653:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+152E text13 CODE >655:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1536 text13 CODE >657:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+153E text13 CODE >658:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+157E text13 CODE >659:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+15AE text13 CODE >660:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+15C6 text13 CODE >661:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+15DC text13 CODE >666:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+15E4 text13 CODE >667:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1602 text13 CODE >668:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1616 text13 CODE >669:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1668 text13 CODE >670:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+169A text13 CODE >671:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+16C6 text13 CODE >674:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+16CE text13 CODE >675:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+16EC text13 CODE >676:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1718 text13 CODE >677:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1724 text13 CODE >678:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+174C text13 CODE >679:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1760 text13 CODE >680:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1790 text13 CODE >681:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+17BE text13 CODE >682:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+17C0 text13 CODE >683:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+17E0 text13 CODE >684:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1802 text13 CODE >689:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+180A text13 CODE >690:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+182C text13 CODE >691:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1844 text13 CODE >692:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+185E text13 CODE >694:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3AA4 text12 CODE >3:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+3AA4 text12 CODE >5:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+3AAC text12 CODE >6:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+3AAE text12 CODE >7:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+3ABE text12 CODE >6:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+2968 text11 CODE >522:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2968 text11 CODE >524:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+296A text11 CODE >525:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2984 text11 CODE >526:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+298A text11 CODE >527:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2996 text11 CODE >528:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+29AE text11 CODE >530:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+29B6 text11 CODE >531:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A02 text11 CODE >532:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A0A text11 CODE >533:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A10 text11 CODE >534:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A20 text11 CODE >535:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A30 text11 CODE >536:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A40 text11 CODE >537:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A50 text11 CODE >538:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A60 text11 CODE >539:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A70 text11 CODE >540:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A84 text11 CODE >541:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A8E text11 CODE >542:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2A9A text11 CODE >543:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AB2 text11 CODE >544:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AB6 text11 CODE >545:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2660 text10 CODE >882:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2660 text10 CODE >883:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2662 text10 CODE >884:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2672 text10 CODE >885:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2678 text10 CODE >887:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2688 text10 CODE >888:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+268E text10 CODE >889:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2698 text10 CODE >891:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+26AE text10 CODE >892:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+26C2 text10 CODE >893:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+26DA text10 CODE >894:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+26E0 text10 CODE >895:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+26F8 text10 CODE >896:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+270C text10 CODE >897:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2720 text10 CODE >898:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2736 text10 CODE >900:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2746 text10 CODE >901:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+274A text10 CODE >902:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2784 text10 CODE >903:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+279A text10 CODE >905:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27A6 text10 CODE >906:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27B6 text10 CODE >907:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27E0 text10 CODE >908:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27E6 text10 CODE >909:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27EA text10 CODE >911:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27EE text10 CODE >912:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+27F6 text10 CODE >913:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2804 text10 CODE >883:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B6E text9 CODE >238:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B6E text9 CODE >239:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B7C text9 CODE >240:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3B8E text9 CODE >242:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+39E4 text8 CODE >4:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+39E4 text8 CODE >11:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+39EC text8 CODE >12:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+39F4 text8 CODE >13:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+39F6 text8 CODE >14:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+3A06 text8 CODE >15:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+3A16 text8 CODE >13:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+2DC2 text7 CODE >3:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+2DC2 text7 CODE >5:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+2DDA text7 CODE >6:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+2E56 text7 CODE >7:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+2E90 text7 CODE >8:D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+2BF0 text6 CODE >154:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BF2 text6 CODE >155:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2C08 text6 CODE >158:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2C46 text6 CODE >159:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2C68 text6 CODE >160:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2C6A text6 CODE >161:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2C8A text6 CODE >162:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CA2 text6 CODE >163:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CBE text6 CODE >164:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CEC text6 CODE >165:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3800 text5 CODE >276:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3800 text5 CODE >277:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+380E text5 CODE >278:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+381A text5 CODE >279:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3830 text5 CODE >280:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3842 text5 CODE >281:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3854 text5 CODE >282:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1860 text4 CODE >697:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1860 text4 CODE >698:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1874 text4 CODE >699:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+18A2 text4 CODE >700:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+18A4 text4 CODE >701:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+18B0 text4 CODE >702:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+18BC text4 CODE >704:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+191A text4 CODE >705:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1974 text4 CODE >707:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+19A2 text4 CODE >708:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+19C0 text4 CODE >710:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+19D4 text4 CODE >711:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+19D8 text4 CODE >712:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A06 text4 CODE >713:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A0A text4 CODE >714:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A22 text4 CODE >716:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A2C text4 CODE >717:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A5A text4 CODE >718:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A5E text4 CODE >719:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A72 text4 CODE >720:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A8C text4 CODE >722:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AA2 text4 CODE >723:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AA6 text4 CODE >724:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AD4 text4 CODE >725:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AD8 text4 CODE >726:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AF0 text4 CODE >728:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1AFA text4 CODE >729:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B28 text4 CODE >730:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B2C text4 CODE >731:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B40 text4 CODE >732:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B5A text4 CODE >734:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B5A text4 CODE >735:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B5E text4 CODE >736:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B8C text4 CODE >737:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B90 text4 CODE >738:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BA4 text4 CODE >739:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BBC text4 CODE >741:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BC0 text4 CODE >742:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BEE text4 CODE >743:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BF2 text4 CODE >744:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1BF8 text4 CODE >749:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C08 text4 CODE >750:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C10 text4 CODE >751:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C1A text4 CODE >753:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C20 text4 CODE >754:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C34 text4 CODE >755:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C44 text4 CODE >756:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C54 text4 CODE >757:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C60 text4 CODE >758:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C82 text4 CODE >759:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C84 text4 CODE >760:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1C98 text4 CODE >761:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CAC text4 CODE >762:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CCE text4 CODE >764:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CD2 text4 CODE >765:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3624 text3 CODE >375:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3624 text3 CODE >376:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+362A text3 CODE >377:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+367C text3 CODE >378:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3684 text3 CODE >379:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12 text2 CODE >767:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12 text2 CODE >771:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3C text2 CODE >772:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+42 text2 CODE >773:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+4C text2 CODE >774:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+4E text2 CODE >775:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+6A text2 CODE >777:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+70 text2 CODE >778:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+86 text2 CODE >779:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+BE text2 CODE >780:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+D2 text2 CODE >781:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+104 text2 CODE >782:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+106 text2 CODE >783:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+128 text2 CODE >785:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+12E text2 CODE >787:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+144 text2 CODE >788:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+19A text2 CODE >789:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1A6 text2 CODE >790:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1B6 text2 CODE >791:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1CA text2 CODE >792:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+1FC text2 CODE >793:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22C text2 CODE >794:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+22E text2 CODE >799:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+242 text2 CODE >800:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+262 text2 CODE >801:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+278 text2 CODE >804:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+29E text2 CODE >805:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AE text2 CODE >806:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BA text2 CODE >807:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BC text2 CODE >810:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2E2 text2 CODE >811:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2F2 text2 CODE >813:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+346 text2 CODE >814:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+398 text2 CODE >816:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3BE text2 CODE >820:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3D4 text2 CODE >824:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3DA text2 CODE >825:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3FA text2 CODE >826:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3FC text2 CODE >827:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+40C text2 CODE >828:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+41C text2 CODE >829:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+42C text2 CODE >830:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+43C text2 CODE >832:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+448 text2 CODE >833:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+450 text2 CODE >834:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+460 text2 CODE >835:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+472 text2 CODE >836:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+488 text2 CODE >837:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+492 text2 CODE >838:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+4B2 text2 CODE >839:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+4B8 text2 CODE >840:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+4F6 text2 CODE >841:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+51E text2 CODE >842:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+52E text2 CODE >843:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+544 text2 CODE >844:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+560 text2 CODE >845:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+59C text2 CODE >846:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+59E text2 CODE >847:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+5C4 text2 CODE >848:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+5D4 text2 CODE >849:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+5EA text2 CODE >851:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+602 text2 CODE >853:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+616 text2 CODE >857:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+63E text2 CODE >858:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+670 text2 CODE >859:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+6A8 text2 CODE >862:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+6D0 text2 CODE >863:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+702 text2 CODE >864:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+73A text2 CODE >867:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+762 text2 CODE >868:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+794 text2 CODE >869:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+7CC text2 CODE >870:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CEE text1 CODE >172:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CEE text1 CODE >174:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CF0 text1 CODE >176:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CF6 text1 CODE >177:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2CFE text1 CODE >178:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2D18 text1 CODE >179:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2D1E text1 CODE >180:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2D38 text1 CODE >181:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2D68 text1 CODE >182:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2D84 text1 CODE >183:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2DA6 text1 CODE >184:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2DBA text1 CODE >185:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2DBE text1 CODE >186:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2DC0 text1 CODE >187:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AB8 text0 CODE >919:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AB8 text0 CODE >920:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2ABC text0 CODE >921:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AC8 text0 CODE >925:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2ACC text0 CODE >927:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AD2 text0 CODE >928:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AD6 text0 CODE >929:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AD8 text0 CODE >930:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2ADC text0 CODE >932:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AE2 text0 CODE >934:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AE4 text0 CODE >936:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AEA text0 CODE >938:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2AF4 text0 CODE >939:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B0C text0 CODE >941:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B10 text0 CODE >942:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B14 text0 CODE >943:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B18 text0 CODE >944:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B1C text0 CODE >947:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B24 text0 CODE >948:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B38 text0 CODE >949:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B3C text0 CODE >952:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B54 text0 CODE >953:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B6A text0 CODE >954:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B80 text0 CODE >955:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B96 text0 CODE >958:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2B9C text0 CODE >959:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BA0 text0 CODE >960:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BA4 text0 CODE >961:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BAC text0 CODE >962:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BB0 text0 CODE >963:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BB8 text0 CODE >964:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BCE text0 CODE >966:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+2BD2 text0 CODE >967:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+3146 cinit CODE >1337:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3146 cinit CODE >1339:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3146 cinit CODE >1342:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3146 cinit CODE >1493:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3148 cinit CODE >1494:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+314A cinit CODE >1495:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+314C cinit CODE >1496:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+314E cinit CODE >1497:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3150 cinit CODE >1498:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3152 cinit CODE >1499:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3156 cinit CODE >1500:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+315A cinit CODE >1501:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+315A cinit CODE >1502:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+315C cinit CODE >1503:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3160 cinit CODE >1504:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3162 cinit CODE >1505:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3164 cinit CODE >1506:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3166 cinit CODE >1510:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3168 cinit CODE >1511:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+316A cinit CODE >1512:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+316C cinit CODE >1513:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+316E cinit CODE >1514:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3170 cinit CODE >1515:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3172 cinit CODE >1516:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3176 cinit CODE >1517:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+317A cinit CODE >1518:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+317A cinit CODE >1519:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+317C cinit CODE >1520:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3180 cinit CODE >1521:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3182 cinit CODE >1522:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3184 cinit CODE >1523:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3186 cinit CODE >1527:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3188 cinit CODE >1528:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+318A cinit CODE >1529:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+318C cinit CODE >1530:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+318E cinit CODE >1531:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3190 cinit CODE >1532:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3192 cinit CODE >1533:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3194 cinit CODE >1534:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+3198 cinit CODE >1535:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+319A cinit CODE >1536:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+319E cinit CODE >1540:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31A2 cinit CODE >1541:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31A6 cinit CODE >1542:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31A6 cinit CODE >1543:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31A8 cinit CODE >1544:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31AA cinit CODE >1545:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31AC cinit CODE >1546:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31AE cinit CODE >1547:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31B0 cinit CODE >1548:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31B2 cinit CODE >1551:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31B6 cinit CODE >1552:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31B8 cinit CODE >1553:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31B8 cinit CODE >1554:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31BA cinit CODE >1555:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31BC cinit CODE >1556:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31BE cinit CODE >1559:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31C2 cinit CODE >1560:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31C4 cinit CODE >1561:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31C4 cinit CODE >1562:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31C6 cinit CODE >1563:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31C8 cinit CODE >1564:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31CA cinit CODE >1567:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31CC cinit CODE >1568:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31CE cinit CODE >1569:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D0 cinit CODE >1575:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D0 cinit CODE >1577:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D2 cinit CODE >1578:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D4 cinit CODE >1580:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D6 cinit CODE >1581:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31D8 cinit CODE >1582:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+31DA cinit CODE >1583:D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\Elevador_Supremo.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 Elevador_Supremo.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 Elevador_Supremo.o
+__Lmediumconst 7E3A 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+__end_of_reiniciar_sistema 2AB8 0 CODE 0 text11 Elevador_Supremo.o
+_msg_lcd 1A1 0 BANK1 1 dataBANK1 Elevador_Supremo.o
+__Hspace_0 8000 0 ABS 0 - Elevador_Supremo.o
+__Hspace_1 300 0 ABS 0 - Elevador_Supremo.o
+__Hspace_2 0 0 ABS 0 - Elevador_Supremo.o
+__Hspace_4 60000E 0 ABS 0 - Elevador_Supremo.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 Elevador_Supremo.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 Elevador_Supremo.o
+_UART_TxFree 3BF2 0 CODE 0 text40 Elevador_Supremo.o
+_cola_espera E8 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+tiene_paradas@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+tiene_paradas@p D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+isr@next 6 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+LCD_Linea@i 29 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+LCD_Linea@l 13 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+cambiar_num_pisos@e 41 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+cambiar_num_pisos@n 37 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+cambiar_num_pisos@p 3F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hibigdata 0 0 CODE 0 ibigdata Elevador_Supremo.o
+__mediumconst 7E3A 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+?_parse_2d 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_cambiar_num_pisos 200C 0 CODE 0 text26 Elevador_Supremo.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data Elevador_Supremo.o
+__L__absolute__ 0 0 ABS 0 __absolute__ Elevador_Supremo.o
+main@t E7 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_elev_esperando 3686 0 CODE 0 text15 Elevador_Supremo.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst Elevador_Supremo.o
+_atender_llegada 1860 0 CODE 0 text4 Elevador_Supremo.o
+_LATA F89 0 ABS 0 - Elevador_Supremo.o
+_LATB F8A 0 ABS 0 - Elevador_Supremo.o
+_LATC F8B 0 ABS 0 - Elevador_Supremo.o
+_LATD F8C 0 ABS 0 - Elevador_Supremo.o
+_LATE F8D 0 ABS 0 - Elevador_Supremo.o
+___sp 0 0 STACK 2 stack startup.o
+_beep 3BE6 0 CODE 0 text34 Elevador_Supremo.o
+_main 2AB8 0 CODE 0 text0 Elevador_Supremo.o
+_modo 56 0 COMRAM 1 bssCOMRAM Elevador_Supremo.o
+_piso EE 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+_vabs 3AFA 0 CODE 0 text29 Elevador_Supremo.o
+_emergencia 58 0 COMRAM 1 bssCOMRAM Elevador_Supremo.o
+btemp 1 0 ABS 0 - Elevador_Supremo.o
+atender_llegada@had_pickup 42 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+dig@v F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+___stack_hi 0 0 STACK 2 stack startup.o
+___stack_lo 0 0 STACK 2 stack startup.o
+isr@c 5 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+start E 0 CODE 0 init startup.o
+atender_llegada@mask 45 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM Elevador_Supremo.o
+_objetivo 72 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+siguiente_objetivo@d 13 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+siguiente_objetivo@e B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+siguiente_objetivo@p 1F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_poner_msg 300C 0 CODE 0 text32 Elevador_Supremo.o
+actualizar_todo@l1 AF 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+actualizar_todo@l2 C0 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+UART_EnviarEstado@e 35 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EnviarEstado@p 33 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EnviarEstado@ds 2D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EnviarEstado@pk 29 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+agregar_cola_espera@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+agregar_cola_espera@i B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 Elevador_Supremo.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 Elevador_Supremo.o
+_LCD_Byte 3A6A 0 CODE 0 text50 Elevador_Supremo.o
+_LCD_Init 3476 0 CODE 0 text49 Elevador_Supremo.o
+llamar_pasillo_piso@fl 37 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hpowerup 0 0 CODE 0 powerup Elevador_Supremo.o
+UART_EmitDeq@tipo 23 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_TECLAS 7E5B 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+__end_of_actualizar_todo 7CE 0 CODE 0 text2 Elevador_Supremo.o
+___awmod@sign C 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_UART_EmitCfg 39E4 0 CODE 0 text39 Elevador_Supremo.o
+__end_of_UART_EmitDeq 3856 0 CODE 0 text5 Elevador_Supremo.o
+__end_of_UART_EmitDsp 32FC 0 CODE 0 text25 Elevador_Supremo.o
+__end_of_UART_EmitEmg 3A6A 0 CODE 0 text17 Elevador_Supremo.o
+__end_of_UART_EmitEnq 38AC 0 CODE 0 text24 Elevador_Supremo.o
+_leer_teclado 2CEE 0 CODE 0 text1 Elevador_Supremo.o
+LCD_Linea@cache 27 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_procesar_tecla$1146 42 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM Elevador_Supremo.o
+estado_char@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_encolar_destino_cabina 2660 0 CODE 0 text14 Elevador_Supremo.o
+__accesstop 60 0 ABS 0 - startup.o
+__end_of_LCD_Byte 3AA4 0 CODE 0 text50 Elevador_Supremo.o
+__end_of_LCD_Init 34EC 0 CODE 0 text49 Elevador_Supremo.o
+intlevel0 0 0 CODE 0 text startup.o
+intlevel1 0 0 CODE 0 text startup.o
+intlevel2 0 0 CODE 0 text startup.o
+intlevel3 0 0 CODE 0 text startup.o
+vabs@x 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+reiniciar_sistema@e 3A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM Elevador_Supremo.o
+_poner_msg 2F58 0 CODE 0 text32 Elevador_Supremo.o
+_OSCCONbits FD3 0 ABS 0 - Elevador_Supremo.o
+costo_elevador@lejano 2B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM Elevador_Supremo.o
+_UART_Put2d 3902 0 CODE 0 text43 Elevador_Supremo.o
+UART_PutHex5@mask 1D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_tx_head 97 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_tx_ring 200 0 BANK2 1 bssBANK2 Elevador_Supremo.o
+_tx_tail 96 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+__Hifardata 0 0 CODE 0 ifardata Elevador_Supremo.o
+_elev_activo 8F 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+___awdiv@sign C 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hclrtext 0 0 ABS 0 clrtext Elevador_Supremo.o
+__end_of_elev_esperando 36E6 0 CODE 0 text15 Elevador_Supremo.o
+__pidataCOMRAM 3BFE 0 CODE 0 idataCOMRAM Elevador_Supremo.o
+_piso_usr 91 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+__end_of_UART_EnviarEstado 248E 0 CODE 0 text35 Elevador_Supremo.o
+_ADCON0 FC2 0 ABS 0 - Elevador_Supremo.o
+_ADCON1 FC1 0 ABS 0 - Elevador_Supremo.o
+_reiniciar_sistema 2968 0 CODE 0 text11 Elevador_Supremo.o
+___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+?_elev_esperando F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+___inthi_sp 0 0 STACK 2 stack startup.o
+___intlo_sp 0 0 STACK 2 stack startup.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM Elevador_Supremo.o
+_reloj_piso 6C 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+__Hintcode_body 0 0 ABS 0 intcode_body Elevador_Supremo.o
+UART_EmitDsp@chosen 2B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+costo_elevador@dir 15 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_actualizar_todo 12 0 CODE 0 text2 Elevador_Supremo.o
+msg_elev@pos_num 18 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs Elevador_Supremo.o
+LCD_Linea@txt 12 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_ProcessRx@c B9 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+UART_ProcessRx@d BA 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+UART_ProcessRx@e B7 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_BAUDCONbits FB8 0 ABS 0 - Elevador_Supremo.o
+__Hmediumconst 8000 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+LCD_Byte@dato 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+actualizar_todo@e E2 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+actualizar_todo@w E0 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+__Hintcodelo 18 0 CODE 0 intcodelo Elevador_Supremo.o
+_puerta_nivel$998 15 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_puerta_nivel$999 17 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of___awdiv 337C 0 CODE 0 text46 Elevador_Supremo.o
+__end_of___awmod 355A 0 CODE 0 text45 Elevador_Supremo.o
+_uart_rx 9B 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_llamar_pasillo_piso$1111 42 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_llamar_pasillo_piso$1113 44 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_llamar_pasillo_piso$1123 46 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_siguiente_objetivo 1368 0 CODE 0 text28 Elevador_Supremo.o
+__end_of_leer_teclado 2DC2 0 CODE 0 text1 Elevador_Supremo.o
+__end_of_LCD_Nib 33FC 0 CODE 0 text51 Elevador_Supremo.o
+__end_of_UART_Put2d 3956 0 CODE 0 text43 Elevador_Supremo.o
+UART_PutChar@next 1C 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM Elevador_Supremo.o
+memcpy@tmp D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+procesar_tecla@e 49 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+procesar_tecla@k 48 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+procesar_tecla@w 44 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lintcodelo 18 0 CODE 0 intcodelo Elevador_Supremo.o
+atender_llegada@had_dest 3D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDsp@dir_c 2A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_msg_elev 3956 0 CODE 0 text30 Elevador_Supremo.o
+start_initialization 3146 0 CODE 0 cinit Elevador_Supremo.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM Elevador_Supremo.o
+cambiar_num_pisos@podadas 3D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+leer_teclado@f A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+leer_teclado@t 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_TRISBbits F93 0 ABS 0 - Elevador_Supremo.o
+_TRISCbits F94 0 ABS 0 - Elevador_Supremo.o
+_TRISEbits F96 0 ABS 0 - Elevador_Supremo.o
+_UART_EnviarEstado$1041 31 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+llamar_pasillo_piso@e 50 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_UART_PutChar 3B48 0 CODE 0 text47 Elevador_Supremo.o
+_UART_PutHex5 2E92 0 CODE 0 text38 Elevador_Supremo.o
+__end_of_msg_elev 399E 0 CODE 0 text30 Elevador_Supremo.o
+_direccion 78 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+___rparam_used 1 0 ABS 0 - Elevador_Supremo.o
+__end_of_memcpy 3A28 0 CODE 0 text8 Elevador_Supremo.o
+__end_of_memset 3AD0 0 CODE 0 text12 Elevador_Supremo.o
+_estado_char 33FC 0 CODE 0 text37 Elevador_Supremo.o
+_siguiente_objetivo E4C 0 CODE 0 text28 Elevador_Supremo.o
+_cont_buzz 89 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_cont_parp 8B 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_cont_uart 87 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_SPPCON F65 0 ABS 0 - Elevador_Supremo.o
+__pcstackBANK0 AF 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_TECLAS 7E4B 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+elev_esperando@e 13 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_PutInt@tmp 1F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_UART_EnviarEstado 2272 0 CODE 0 text35 Elevador_Supremo.o
+__end_of_UART_PumpTx 3B90 0 CODE 0 text9 Elevador_Supremo.o
+__end_of_UART_PutInt 30AC 0 CODE 0 text42 Elevador_Supremo.o
+__end_of_UART_PutStr 3AFA 0 CODE 0 text41 Elevador_Supremo.o
+isa$xinst 0 0 ABS 0 - startup.o
+?_tiene_paradas 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_LCD_Linea 2CEE 0 CODE 0 text6 Elevador_Supremo.o
+__Hbank0 0 0 ABS 0 bank0 Elevador_Supremo.o
+__Hbank1 0 0 ABS 0 bank1 Elevador_Supremo.o
+__Hbank2 0 0 ABS 0 bank2 Elevador_Supremo.o
+__Hbank3 0 0 ABS 0 bank3 Elevador_Supremo.o
+__Hbank4 0 0 ABS 0 bank4 Elevador_Supremo.o
+__Hbank5 0 0 ABS 0 bank5 Elevador_Supremo.o
+__Hbank6 0 0 ABS 0 bank6 Elevador_Supremo.o
+__Hbank7 0 0 ABS 0 bank7 Elevador_Supremo.o
+__Hcinit 0 0 ABS 0 cinit Elevador_Supremo.o
+__Hconst 0 0 CONST 0 const Elevador_Supremo.o
+__end_of_strcpy 3B48 0 CODE 0 text31 Elevador_Supremo.o
+__Hidata 0 0 CODE 0 idata Elevador_Supremo.o
+__Hidloc 0 0 ABS 0 idloc Elevador_Supremo.o
+__Hnvbit 0 0 COMRAM 1 nvbit Elevador_Supremo.o
+__Hparam 0 0 COMRAM 1 rparam Elevador_Supremo.o
+__Hrdata 0 0 COMRAM 1 rdata Elevador_Supremo.o
+__Hstack 0 0 STACK 2 stack Elevador_Supremo.o
+__Htext0 0 0 ABS 0 text0 Elevador_Supremo.o
+__Htext1 0 0 ABS 0 text1 Elevador_Supremo.o
+__Htext2 0 0 ABS 0 text2 Elevador_Supremo.o
+__Htext3 0 0 ABS 0 text3 Elevador_Supremo.o
+__Htext4 0 0 ABS 0 text4 Elevador_Supremo.o
+__Htext5 0 0 ABS 0 text5 Elevador_Supremo.o
+__Htext6 0 0 ABS 0 text6 Elevador_Supremo.o
+__Htext7 0 0 ABS 0 text7 Elevador_Supremo.o
+__Htext8 0 0 ABS 0 text8 Elevador_Supremo.o
+__Htext9 0 0 ABS 0 text9 Elevador_Supremo.o
+_num_pisos 59 0 COMRAM 1 dataCOMRAM Elevador_Supremo.o
+__end_of_quitar_cola_espera 3146 0 CODE 0 text16 Elevador_Supremo.o
+__end_of_UART_TxFree 3BFE 0 CODE 0 text40 Elevador_Supremo.o
+__Hbigbss 0 0 BIGRAM 1 bigbss Elevador_Supremo.o
+__Hbigram 0 0 ABS 0 bigram Elevador_Supremo.o
+__Hbigsfr 0 0 ABS 0 bigsfr Elevador_Supremo.o
+__smallconst 7E3A 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+__Hcomram 0 0 ABS 0 comram Elevador_Supremo.o
+__Hconfig 30000E 0 CONFIG 4 config Elevador_Supremo.o
+poner_2d@p 11 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+poner_2d@v 12 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lbank0 0 0 ABS 0 bank0 Elevador_Supremo.o
+__Lbank1 0 0 ABS 0 bank1 Elevador_Supremo.o
+__Lbank2 0 0 ABS 0 bank2 Elevador_Supremo.o
+__Lbank3 0 0 ABS 0 bank3 Elevador_Supremo.o
+__Lbank4 0 0 ABS 0 bank4 Elevador_Supremo.o
+__Lbank5 0 0 ABS 0 bank5 Elevador_Supremo.o
+__Lbank6 0 0 ABS 0 bank6 Elevador_Supremo.o
+__Lbank7 0 0 ABS 0 bank7 Elevador_Supremo.o
+__Lcinit 0 0 ABS 0 cinit Elevador_Supremo.o
+__Lconst 0 0 CONST 0 const Elevador_Supremo.o
+__Lidata 0 0 CODE 0 idata Elevador_Supremo.o
+__Lidloc 0 0 ABS 0 idloc Elevador_Supremo.o
+__Lnvbit 0 0 COMRAM 1 nvbit Elevador_Supremo.o
+_estado_char$994 B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lparam 0 0 COMRAM 1 rparam Elevador_Supremo.o
+__Lrdata 0 0 COMRAM 1 rdata Elevador_Supremo.o
+__Lstack 0 0 STACK 2 stack Elevador_Supremo.o
+__Ltext0 0 0 ABS 0 text0 Elevador_Supremo.o
+__Ltext1 0 0 ABS 0 text1 Elevador_Supremo.o
+__Ltext2 0 0 ABS 0 text2 Elevador_Supremo.o
+__Ltext3 0 0 ABS 0 text3 Elevador_Supremo.o
+__Ltext4 0 0 ABS 0 text4 Elevador_Supremo.o
+__Ltext5 0 0 ABS 0 text5 Elevador_Supremo.o
+__Ltext6 0 0 ABS 0 text6 Elevador_Supremo.o
+__Ltext7 0 0 ABS 0 text7 Elevador_Supremo.o
+__Ltext8 0 0 ABS 0 text8 Elevador_Supremo.o
+__Ltext9 0 0 ABS 0 text9 Elevador_Supremo.o
+UART_EmitCfg@podadas 2A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitCfg@n 28 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDeq@e 1F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitEnq@e 1F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hfarbss 0 0 FARRAM 0 farbss Elevador_Supremo.o
+contar_destinos@c D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+contar_destinos@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+contar_destinos@p F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+poner_msg@i B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+poner_msg@s 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lintcode_body 0 0 ABS 0 intcode_body Elevador_Supremo.o
+_LCD_Linea 2BF0 0 CODE 0 text6 Elevador_Supremo.o
+_PORTAbits F80 0 ABS 0 - Elevador_Supremo.o
+_PORTBbits F81 0 ABS 0 - Elevador_Supremo.o
+_PORTEbits F84 0 ABS 0 - Elevador_Supremo.o
+__end_of_strncmp 2E92 0 CODE 0 text7 Elevador_Supremo.o
+memcpy@d1 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memcpy@s1 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_INTCONbits FF2 0 ABS 0 - Elevador_Supremo.o
+__Habs1 0 0 ABS 0 abs1 Elevador_Supremo.o
+__Hdata 0 0 ABS 0 data Elevador_Supremo.o
+__Hheap 0 0 HEAP 7 heap Elevador_Supremo.o
+__Hinit 12 0 CODE 0 init Elevador_Supremo.o
+__Hrbit 0 0 COMRAM 1 rbit Elevador_Supremo.o
+__Hrbss 0 0 COMRAM 1 rbss Elevador_Supremo.o
+__Htemp 0 0 COMRAM 1 temp Elevador_Supremo.o
+__Htext 0 0 ABS 0 text Elevador_Supremo.o
+__Labs1 0 0 ABS 0 abs1 Elevador_Supremo.o
+__Ldata 0 0 ABS 0 data Elevador_Supremo.o
+__Lheap 0 0 HEAP 7 heap Elevador_Supremo.o
+__Linit E 0 CODE 0 init Elevador_Supremo.o
+__Lrbit 0 0 COMRAM 1 rbit Elevador_Supremo.o
+__Lrbss 0 0 COMRAM 1 rbss Elevador_Supremo.o
+__Ltemp 0 0 COMRAM 1 temp Elevador_Supremo.o
+__Ltext 0 0 ABS 0 text Elevador_Supremo.o
+memcpy@d E 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memcpy@n B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memcpy@s 10 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+llamar_pasillo@dir 54 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_subir_ant F6 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+memset@dest 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memset@c 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memset@n B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+memset@p D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 Elevador_Supremo.o
+int$flags 1 0 ABS 0 - Elevador_Supremo.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM Elevador_Supremo.o
+_tecla_ant 9A 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+llamar_pasillo_piso@bit 4F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+llamar_pasillo_piso@dir 39 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hintret 0 0 ABS 0 intret Elevador_Supremo.o
+__Hirdata 0 0 CODE 0 irdata Elevador_Supremo.o
+__S0 8000 0 ABS 0 - Elevador_Supremo.o
+__S1 300 0 ABS 0 - Elevador_Supremo.o
+__S4 0 0 ABS 0 - Elevador_Supremo.o
+__S5 0 0 ABS 0 - Elevador_Supremo.o
+_buf 84 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_dig 3BAC 0 CODE 0 text44 Elevador_Supremo.o
+_isr 8 0 CODE 0 intcode Elevador_Supremo.o
+__end_of_UART_PutChar 3B6E 0 CODE 0 text47 Elevador_Supremo.o
+__end_of_UART_PutHex5 2F58 0 CODE 0 text38 Elevador_Supremo.o
+_quitar_cola_espera 30AC 0 CODE 0 text16 Elevador_Supremo.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM Elevador_Supremo.o
+__Lbigdata 0 0 BIGRAM 1 bigdata Elevador_Supremo.o
+__Hnvrram 0 0 COMRAM 1 nvrram Elevador_Supremo.o
+_estado 7E 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+__end_of_dig 3BC4 0 CODE 0 text44 Elevador_Supremo.o
+__end_of_isr 3902 0 CODE 0 intcode_body Elevador_Supremo.o
+int_func 38AC 0 CODE 0 intcode_body Elevador_Supremo.o
+?_contar_destinos 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lintentry 0 0 ABS 0 intentry Elevador_Supremo.o
+__end_ofUART_PutHex5@HEX 7E4B 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+_rx_head 99 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_rx_ring 100 0 BANK1 1 bssBANK1 Elevador_Supremo.o
+_rx_tail 98 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_costo_elevador 7CE 0 CODE 0 text21 Elevador_Supremo.o
+_uart_rx_len 95 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+strcpy@d A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hramtop 800 0 RAM 0 ramtop Elevador_Supremo.o
+__Hrparam 0 0 COMRAM 1 rparam Elevador_Supremo.o
+UART_PutInt@i 26 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_PutInt@v 1D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_PutStr@s 1D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_contar_destinos 3686 0 CODE 0 text3 Elevador_Supremo.o
+__pdataBANK0 E8 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+__pdataBANK1 1A1 0 BANK1 1 dataBANK1 Elevador_Supremo.o
+__activetblptr 2 0 ABS 0 - Elevador_Supremo.o
+__Hstruct 0 0 COMRAM 1 struct Elevador_Supremo.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 Elevador_Supremo.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 Elevador_Supremo.o
+__LbssBANK2 0 0 ABS 0 bssBANK2 Elevador_Supremo.o
+_actualizar_todo$1187 D7 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1195 D8 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1202 D1 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1203 D9 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1204 DA 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1205 DB 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1206 D3 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1207 DC 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1208 DD 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1209 DE 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1210 D5 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_actualizar_todo$1211 DF 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_reiniciar_sistema$1100 38 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Htext10 0 0 ABS 0 text10 Elevador_Supremo.o
+__Htext11 0 0 ABS 0 text11 Elevador_Supremo.o
+__Htext12 0 0 ABS 0 text12 Elevador_Supremo.o
+__Htext13 0 0 ABS 0 text13 Elevador_Supremo.o
+__Htext14 0 0 ABS 0 text14 Elevador_Supremo.o
+__Htext15 0 0 ABS 0 text15 Elevador_Supremo.o
+__Htext16 0 0 ABS 0 text16 Elevador_Supremo.o
+__Htext17 0 0 ABS 0 text17 Elevador_Supremo.o
+__Htext18 0 0 ABS 0 text18 Elevador_Supremo.o
+__Htext19 0 0 ABS 0 text19 Elevador_Supremo.o
+__Htext20 0 0 ABS 0 text20 Elevador_Supremo.o
+__Htext21 0 0 ABS 0 text21 Elevador_Supremo.o
+__Htext22 0 0 ABS 0 text22 Elevador_Supremo.o
+__Htext23 0 0 ABS 0 text23 Elevador_Supremo.o
+__Htext24 0 0 ABS 0 text24 Elevador_Supremo.o
+__Htext25 0 0 ABS 0 text25 Elevador_Supremo.o
+__Htext26 0 0 ABS 0 text26 Elevador_Supremo.o
+__Htext27 0 0 ABS 0 text27 Elevador_Supremo.o
+__Htext28 0 0 ABS 0 text28 Elevador_Supremo.o
+__Htext29 0 0 ABS 0 text29 Elevador_Supremo.o
+__Htext30 0 0 ABS 0 text30 Elevador_Supremo.o
+__Htext31 0 0 ABS 0 text31 Elevador_Supremo.o
+__Htext32 0 0 ABS 0 text32 Elevador_Supremo.o
+__Htext33 0 0 ABS 0 text33 Elevador_Supremo.o
+__Htext34 0 0 ABS 0 text34 Elevador_Supremo.o
+__Htext35 0 0 ABS 0 text35 Elevador_Supremo.o
+__Htext36 0 0 ABS 0 text36 Elevador_Supremo.o
+__Htext37 0 0 ABS 0 text37 Elevador_Supremo.o
+__Htext38 0 0 ABS 0 text38 Elevador_Supremo.o
+__Htext39 0 0 ABS 0 text39 Elevador_Supremo.o
+__Htext40 0 0 ABS 0 text40 Elevador_Supremo.o
+__Htext41 0 0 ABS 0 text41 Elevador_Supremo.o
+__Htext42 0 0 ABS 0 text42 Elevador_Supremo.o
+__Htext43 0 0 ABS 0 text43 Elevador_Supremo.o
+__Htext44 0 0 ABS 0 text44 Elevador_Supremo.o
+__Htext45 0 0 ABS 0 text45 Elevador_Supremo.o
+__Htext46 0 0 ABS 0 text46 Elevador_Supremo.o
+__Htext47 0 0 ABS 0 text47 Elevador_Supremo.o
+__Htext48 0 0 ABS 0 text48 Elevador_Supremo.o
+__Htext49 0 0 ABS 0 text49 Elevador_Supremo.o
+__Htext50 0 0 ABS 0 text50 Elevador_Supremo.o
+__Htext51 0 0 ABS 0 text51 Elevador_Supremo.o
+_agregar_cola_espera 355A 0 CODE 0 text23 Elevador_Supremo.o
+encolar_destino_cabina@num 39 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+msg_elev@num 1A 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+___awmod@counter B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_RCSTAbits FAB 0 ABS 0 - Elevador_Supremo.o
+_PIE1bits F9D 0 ABS 0 - Elevador_Supremo.o
+_UART_EmitEmg$1033 21 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_cola_esp_len 93 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+_memcpy 39E4 0 CODE 0 text8 Elevador_Supremo.o
+_memset 3AA4 0 CODE 0 text12 Elevador_Supremo.o
+procesar_tecla@num 46 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__ptext10 2660 0 CODE 0 text10 Elevador_Supremo.o
+__ptext11 2968 0 CODE 0 text11 Elevador_Supremo.o
+__ptext12 3AA4 0 CODE 0 text12 Elevador_Supremo.o
+__ptext13 1368 0 CODE 0 text13 Elevador_Supremo.o
+__ptext14 248E 0 CODE 0 text14 Elevador_Supremo.o
+__ptext15 3686 0 CODE 0 text15 Elevador_Supremo.o
+__ptext16 30AC 0 CODE 0 text16 Elevador_Supremo.o
+__ptext17 3A28 0 CODE 0 text17 Elevador_Supremo.o
+__ptext18 31DE 0 CODE 0 text18 Elevador_Supremo.o
+__ptext19 37A6 0 CODE 0 text19 Elevador_Supremo.o
+__ptext20 1CD4 0 CODE 0 text20 Elevador_Supremo.o
+__ptext21 7CE 0 CODE 0 text21 Elevador_Supremo.o
+__ptext22 35C0 0 CODE 0 text22 Elevador_Supremo.o
+__ptext23 355A 0 CODE 0 text23 Elevador_Supremo.o
+__ptext24 3856 0 CODE 0 text24 Elevador_Supremo.o
+__ptext25 3270 0 CODE 0 text25 Elevador_Supremo.o
+__ptext26 200C 0 CODE 0 text26 Elevador_Supremo.o
+__ptext27 36E6 0 CODE 0 text27 Elevador_Supremo.o
+__ptext28 E4C 0 CODE 0 text28 Elevador_Supremo.o
+__ptext29 3AFA 0 CODE 0 text29 Elevador_Supremo.o
+__ptext30 3956 0 CODE 0 text30 Elevador_Supremo.o
+__ptext31 3B22 0 CODE 0 text31 Elevador_Supremo.o
+__ptext32 2F58 0 CODE 0 text32 Elevador_Supremo.o
+__ptext33 3746 0 CODE 0 text33 Elevador_Supremo.o
+__ptext34 3BE6 0 CODE 0 text34 Elevador_Supremo.o
+__ptext35 2272 0 CODE 0 text35 Elevador_Supremo.o
+__ptext36 2810 0 CODE 0 text36 Elevador_Supremo.o
+__ptext37 33FC 0 CODE 0 text37 Elevador_Supremo.o
+__ptext38 2E92 0 CODE 0 text38 Elevador_Supremo.o
+__ptext39 399E 0 CODE 0 text39 Elevador_Supremo.o
+__ptext40 3BF2 0 CODE 0 text40 Elevador_Supremo.o
+__ptext41 3AD0 0 CODE 0 text41 Elevador_Supremo.o
+__ptext42 300C 0 CODE 0 text42 Elevador_Supremo.o
+__ptext43 3902 0 CODE 0 text43 Elevador_Supremo.o
+__ptext44 3BAC 0 CODE 0 text44 Elevador_Supremo.o
+__ptext45 34EC 0 CODE 0 text45 Elevador_Supremo.o
+__ptext46 32FC 0 CODE 0 text46 Elevador_Supremo.o
+__ptext47 3B48 0 CODE 0 text47 Elevador_Supremo.o
+__ptext48 3B90 0 CODE 0 text48 Elevador_Supremo.o
+__ptext49 3476 0 CODE 0 text49 Elevador_Supremo.o
+__ptext50 3A6A 0 CODE 0 text50 Elevador_Supremo.o
+__ptext51 337C 0 CODE 0 text51 Elevador_Supremo.o
+_bajar_ant F4 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+___awdiv 32FC 0 CODE 0 text46 Elevador_Supremo.o
+___awmod 34EC 0 CODE 0 text45 Elevador_Supremo.o
+__pintcode_body 38AC 0 CODE 0 intcode_body Elevador_Supremo.o
+__Lbigbss 0 0 BIGRAM 1 bigbss Elevador_Supremo.o
+__Lbigram 0 0 ABS 0 bigram Elevador_Supremo.o
+__Lbigsfr 0 0 ABS 0 bigsfr Elevador_Supremo.o
+UART_ProcessRx@fl_1225 B3 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+?_vabs 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lcomram 0 0 ABS 0 comram Elevador_Supremo.o
+__Lconfig 0 0 CONFIG 4 config Elevador_Supremo.o
+strncmp@l 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+strncmp@n B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+strncmp@r 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_LCD_Nib 337C 0 CODE 0 text51 Elevador_Supremo.o
+_LATAbits F89 0 ABS 0 - Elevador_Supremo.o
+_LATBbits F8A 0 ABS 0 - Elevador_Supremo.o
+_LATCbits F8B 0 ABS 0 - Elevador_Supremo.o
+_LATDbits F8C 0 ABS 0 - Elevador_Supremo.o
+_LATEbits F8D 0 ABS 0 - Elevador_Supremo.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi Elevador_Supremo.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo Elevador_Supremo.o
+llamar_pasillo@fl AF 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_contar_paradas 35C0 0 CODE 0 text22 Elevador_Supremo.o
+puerta_nivel@e 11 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+puerta_nivel@r 19 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_tiene_paradas 36E6 0 CODE 0 text27 Elevador_Supremo.o
+__Lfarbss 0 0 FARRAM 0 farbss Elevador_Supremo.o
+___inthi_stack_hi 0 0 STACK 2 stack startup.o
+___inthi_stack_lo 0 0 STACK 2 stack startup.o
+_strcpy 3B22 0 CODE 0 text31 Elevador_Supremo.o
+__Lfardata 0 0 FARRAM 0 fardata Elevador_Supremo.o
+isa$std 1 0 ABS 0 - startup.o
+costo_elevador@carga 29 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+LCD_Linea@fila 26 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+costo_elevador@inter 2D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_PutHex5@HEX 7E3B 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+costo_elevador@p_usr 13 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_llamar_pasillo 37A6 0 CODE 0 text19 Elevador_Supremo.o
+__end_of_costo_elevador E4C 0 CODE 0 text21 Elevador_Supremo.o
+stackhi 0 0 ABS 0 - startup.o
+stacklo 0 0 ABS 0 - startup.o
+__Lintcode 8 0 CODE 0 intcode Elevador_Supremo.o
+__Lintret 0 0 ABS 0 intret Elevador_Supremo.o
+__Lirdata 0 0 CODE 0 irdata Elevador_Supremo.o
+_contar_destinos 3624 0 CODE 0 text3 Elevador_Supremo.o
+_UART_ProcessRx$1223 B5 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+_siguiente_objetivo$1075 15 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_siguiente_objetivo$1076 17 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+LCD_Nib@n 8 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+strcpy@dest 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lspace_0 0 0 ABS 0 - Elevador_Supremo.o
+__Lspace_1 0 0 ABS 0 - Elevador_Supremo.o
+__Lspace_2 0 0 ABS 0 - Elevador_Supremo.o
+__Lspace_4 0 0 ABS 0 - Elevador_Supremo.o
+?_costo_elevador 11 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+main@ms E5 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+__pbssCOMRAM 56 0 COMRAM 1 bssCOMRAM Elevador_Supremo.o
+msg_elev@plantilla 16 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitEmg@act 20 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 Elevador_Supremo.o
+UART_PutChar@c 1B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_PIR1bits F9E 0 ABS 0 - Elevador_Supremo.o
+llamar_pasillo_piso@dir_c 4E 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_buf_len 8D 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+llamar_pasillo_piso@costos 48 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM Elevador_Supremo.o
+llamar_pasillo_piso@mejor 52 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+llamar_pasillo_piso@nueva 3F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+end_of_initialization 31D0 0 CODE 0 cinit Elevador_Supremo.o
+_llamar_pasillo_piso 1CD4 0 CODE 0 text20 Elevador_Supremo.o
+__Lnvrram 0 0 COMRAM 1 nvrram Elevador_Supremo.o
+__Hintentry 0 0 ABS 0 intentry Elevador_Supremo.o
+UART_EmitEnq@tipo 23 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+___awdiv@quotient D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+?___awdiv 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+?___awmod 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+isr@dummy 4 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+encolar_destino_cabina@w 37 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_paradas 140 0 BANK1 1 bssBANK1 Elevador_Supremo.o
+__end_of_estado_char 3476 0 CODE 0 text37 Elevador_Supremo.o
+__Hreset_vec 4 0 CODE 0 reset_vec Elevador_Supremo.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 Elevador_Supremo.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 Elevador_Supremo.o
+__HbssBANK2 0 0 ABS 0 bssBANK2 Elevador_Supremo.o
+___awmod@dividend 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lramtop 800 0 RAM 0 ramtop Elevador_Supremo.o
+__end_of_UART_Init 3BAC 0 CODE 0 text48 Elevador_Supremo.o
+__Lrparam 0 0 COMRAM 1 rparam Elevador_Supremo.o
+__end_of_contar_paradas 3624 0 CODE 0 text22 Elevador_Supremo.o
+__pcinit 3146 0 CODE 0 cinit Elevador_Supremo.o
+_parpadeo F8 0 BANK0 1 dataBANK0 Elevador_Supremo.o
+_parse_2d 31DE 0 CODE 0 text18 Elevador_Supremo.o
+__ptext0 2AB8 0 CODE 0 text0 Elevador_Supremo.o
+__ptext1 2CEE 0 CODE 0 text1 Elevador_Supremo.o
+__ptext2 12 0 CODE 0 text2 Elevador_Supremo.o
+__ptext3 3624 0 CODE 0 text3 Elevador_Supremo.o
+__ptext4 1860 0 CODE 0 text4 Elevador_Supremo.o
+__ptext5 3800 0 CODE 0 text5 Elevador_Supremo.o
+__ptext6 2BF0 0 CODE 0 text6 Elevador_Supremo.o
+__ptext7 2DC2 0 CODE 0 text7 Elevador_Supremo.o
+__ptext8 39E4 0 CODE 0 text8 Elevador_Supremo.o
+__ptext9 3B6E 0 CODE 0 text9 Elevador_Supremo.o
+__Lstruct 0 0 COMRAM 1 struct Elevador_Supremo.o
+__end_of_agregar_cola_espera 35C0 0 CODE 0 text23 Elevador_Supremo.o
+__Ltext10 0 0 ABS 0 text10 Elevador_Supremo.o
+__Ltext11 0 0 ABS 0 text11 Elevador_Supremo.o
+__Ltext12 0 0 ABS 0 text12 Elevador_Supremo.o
+__Ltext13 0 0 ABS 0 text13 Elevador_Supremo.o
+__Ltext14 0 0 ABS 0 text14 Elevador_Supremo.o
+__Ltext15 0 0 ABS 0 text15 Elevador_Supremo.o
+__Ltext16 0 0 ABS 0 text16 Elevador_Supremo.o
+__Ltext17 0 0 ABS 0 text17 Elevador_Supremo.o
+__Ltext18 0 0 ABS 0 text18 Elevador_Supremo.o
+__Ltext19 0 0 ABS 0 text19 Elevador_Supremo.o
+__Ltext20 0 0 ABS 0 text20 Elevador_Supremo.o
+__Ltext21 0 0 ABS 0 text21 Elevador_Supremo.o
+__Ltext22 0 0 ABS 0 text22 Elevador_Supremo.o
+__Ltext23 0 0 ABS 0 text23 Elevador_Supremo.o
+__Ltext24 0 0 ABS 0 text24 Elevador_Supremo.o
+__Ltext25 0 0 ABS 0 text25 Elevador_Supremo.o
+__Ltext26 0 0 ABS 0 text26 Elevador_Supremo.o
+__Ltext27 0 0 ABS 0 text27 Elevador_Supremo.o
+__Ltext28 0 0 ABS 0 text28 Elevador_Supremo.o
+__Ltext29 0 0 ABS 0 text29 Elevador_Supremo.o
+__Ltext30 0 0 ABS 0 text30 Elevador_Supremo.o
+__Ltext31 0 0 ABS 0 text31 Elevador_Supremo.o
+__Ltext32 0 0 ABS 0 text32 Elevador_Supremo.o
+__Ltext33 0 0 ABS 0 text33 Elevador_Supremo.o
+__Ltext34 0 0 ABS 0 text34 Elevador_Supremo.o
+__Ltext35 0 0 ABS 0 text35 Elevador_Supremo.o
+__Ltext36 0 0 ABS 0 text36 Elevador_Supremo.o
+__Ltext37 0 0 ABS 0 text37 Elevador_Supremo.o
+__Ltext38 0 0 ABS 0 text38 Elevador_Supremo.o
+__Ltext39 0 0 ABS 0 text39 Elevador_Supremo.o
+__Ltext40 0 0 ABS 0 text40 Elevador_Supremo.o
+__Ltext41 0 0 ABS 0 text41 Elevador_Supremo.o
+__Ltext42 0 0 ABS 0 text42 Elevador_Supremo.o
+__Ltext43 0 0 ABS 0 text43 Elevador_Supremo.o
+__Ltext44 0 0 ABS 0 text44 Elevador_Supremo.o
+__Ltext45 0 0 ABS 0 text45 Elevador_Supremo.o
+__Ltext46 0 0 ABS 0 text46 Elevador_Supremo.o
+__Ltext47 0 0 ABS 0 text47 Elevador_Supremo.o
+__Ltext48 0 0 ABS 0 text48 Elevador_Supremo.o
+__Ltext49 0 0 ABS 0 text49 Elevador_Supremo.o
+__Ltext50 0 0 ABS 0 text50 Elevador_Supremo.o
+__Ltext51 0 0 ABS 0 text51 Elevador_Supremo.o
+atender_llegada@fl 46 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__ramtop 800 0 RAM 0 ramtop startup.o
+__end_of_llamar_pasillo 3800 0 CODE 0 text19 Elevador_Supremo.o
+contar_paradas@c D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+contar_paradas@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+contar_paradas@p F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lpowerup 0 0 CODE 0 powerup Elevador_Supremo.o
+?_contar_paradas 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data Elevador_Supremo.o
+__end_of_parse_2d 3270 0 CODE 0 text18 Elevador_Supremo.o
+UART_Put2d@v 1D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__H__absolute__ 0 0 ABS 0 __absolute__ Elevador_Supremo.o
+__Lreset_vec 0 0 CODE 0 reset_vec Elevador_Supremo.o
+_UART_Init 3B90 0 CODE 0 text48 Elevador_Supremo.o
+siguiente_objetivo@max_p 1D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+siguiente_objetivo@mejor 19 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+siguiente_objetivo@min_p 1B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_strncmp 2DC2 0 CODE 0 text7 Elevador_Supremo.o
+_encolar_destino_cabina 248E 0 CODE 0 text14 Elevador_Supremo.o
+___heap_hi 0 0 ABS 0 - startup.o
+___heap_lo 0 0 ABS 0 - startup.o
+msg_elev@e 14 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+msg_elev@m 1C 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_puerta_nivel 2810 0 CODE 0 text36 Elevador_Supremo.o
+___param_bank 0 0 ABS 0 - Elevador_Supremo.o
+___intlo_stack_hi 0 0 STACK 2 stack startup.o
+___intlo_stack_lo 0 0 STACK 2 stack startup.o
+__Hbigdata 0 0 BIGRAM 1 bigdata Elevador_Supremo.o
+strcpy@src 8 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of__initialization 31D0 0 CODE 0 cinit Elevador_Supremo.o
+___awmod@divisor 9 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_LCD_Linea$925 24 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Libigdata 0 0 CODE 0 ibigdata Elevador_Supremo.o
+atender_llegada@mas_arriba 3E 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_cambiar_num_pisos 2272 0 CODE 0 text26 Elevador_Supremo.o
+parse_2d@s 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+parse_2d@v C 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__pidataBANK0 3BC4 0 CODE 0 idataBANK0 Elevador_Supremo.o
+__pidataBANK1 3BD5 0 CODE 0 idataBANK1 Elevador_Supremo.o
+LCD_Byte@v B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Lclrtext 0 0 ABS 0 clrtext Elevador_Supremo.o
+UART_ProcessRx@fl B1 0 BANK0 1 cstackBANK0 Elevador_Supremo.o
+atender_llegada@e 37 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+atender_llegada@p 43 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_UART_ProcessRx 2660 0 CODE 0 text10 Elevador_Supremo.o
+_procesar_tecla 1368 0 CODE 0 text13 Elevador_Supremo.o
+__pcstackCOMRAM 2 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_TXSTAbits FAC 0 ABS 0 - Elevador_Supremo.o
+quitar_cola_espera@e 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+quitar_cola_espera@i B 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+quitar_cola_espera@j D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__pmediumconst 7E3A 0 MEDIUMCONST 0 mediumconst Elevador_Supremo.o
+costo_elevador@e 11 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+costo_elevador@p 2F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_prev_l1 190 0 BANK1 1 bssBANK1 Elevador_Supremo.o
+_prev_l2 17F 0 BANK1 1 bssBANK1 Elevador_Supremo.o
+__end_of_beep 3BF2 0 CODE 0 text34 Elevador_Supremo.o
+__end_of_main 2BF0 0 CODE 0 text0 Elevador_Supremo.o
+__end_of_vabs 3B22 0 CODE 0 text29 Elevador_Supremo.o
+__pintcode 8 0 CODE 0 intcode Elevador_Supremo.o
+_CMCON FB4 0 ABS 0 - Elevador_Supremo.o
+_RCREG FAE 0 ABS 0 - Elevador_Supremo.o
+_SPBRG FAF 0 ABS 0 - Elevador_Supremo.o
+_TRISA F92 0 ABS 0 - Elevador_Supremo.o
+_TRISD F95 0 ABS 0 - Elevador_Supremo.o
+_TXREG FAD 0 ABS 0 - Elevador_Supremo.o
+encolar_destino_cabina@nueva 3F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__HRAM 0 0 ABS 0 - Elevador_Supremo.o
+__Hbss 0 0 RAM 1 bss Elevador_Supremo.o
+__Hram 0 0 ABS 0 ram Elevador_Supremo.o
+__Hsfr 0 0 ABS 0 sfr Elevador_Supremo.o
+__LRAM 1 0 ABS 0 - Elevador_Supremo.o
+__Lbss 0 0 RAM 1 bss Elevador_Supremo.o
+__Lram 0 0 ABS 0 ram Elevador_Supremo.o
+__Lsfr 0 0 ABS 0 sfr Elevador_Supremo.o
+__end_of_tiene_paradas 3746 0 CODE 0 text27 Elevador_Supremo.o
+__end_of_llamar_pasillo_piso 200C 0 CODE 0 text20 Elevador_Supremo.o
+__end_of_atender_llegada 1CD4 0 CODE 0 text4 Elevador_Supremo.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 Elevador_Supremo.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 Elevador_Supremo.o
+_poner_2d 3746 0 CODE 0 text33 Elevador_Supremo.o
+UART_EmitDeq@fl 21 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+_reloj_puerta 66 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+beep@t 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDsp@c0 2D 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDsp@c1 2F 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDsp@c2 31 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+UART_EmitDsp@fl 28 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi Elevador_Supremo.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo Elevador_Supremo.o
+?_strncmp 7 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__initialization 3146 0 CODE 0 cinit Elevador_Supremo.o
+_UART_EmitCfg 399E 0 CODE 0 text39 Elevador_Supremo.o
+_UART_EmitDeq 3800 0 CODE 0 text5 Elevador_Supremo.o
+_UART_EmitDsp 3270 0 CODE 0 text25 Elevador_Supremo.o
+_UART_EmitEmg 3A28 0 CODE 0 text17 Elevador_Supremo.o
+_UART_EmitEnq 3856 0 CODE 0 text24 Elevador_Supremo.o
+btemp0 1 0 ABS 0 - Elevador_Supremo.o
+btemp1 2 0 ABS 0 - Elevador_Supremo.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 Elevador_Supremo.o
+__pbssBANK2 200 0 BANK2 1 bssBANK2 Elevador_Supremo.o
+UART_EmitEnq@fl 21 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__pdataCOMRAM 59 0 COMRAM 1 dataCOMRAM Elevador_Supremo.o
+__Hfardata 0 0 FARRAM 0 fardata Elevador_Supremo.o
+__end_of_poner_2d 37A6 0 CODE 0 text33 Elevador_Supremo.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst Elevador_Supremo.o
+_UART_PumpTx 3B6E 0 CODE 0 text9 Elevador_Supremo.o
+_UART_PutInt 300C 0 CODE 0 text42 Elevador_Supremo.o
+_UART_PutStr 3AD0 0 CODE 0 text41 Elevador_Supremo.o
+__Lifardata 0 0 CODE 0 ifardata Elevador_Supremo.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs Elevador_Supremo.o
+__end_of_UART_ProcessRx 2810 0 CODE 0 text10 Elevador_Supremo.o
+llamar_pasillo_piso@best 40 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+__end_of_puerta_nivel 2968 0 CODE 0 text36 Elevador_Supremo.o
+__Hintcode E 0 CODE 0 intcode Elevador_Supremo.o
+__end_of_procesar_tecla 1860 0 CODE 0 text13 Elevador_Supremo.o
+_encolados 60 0 BANK0 1 bssBANK0 Elevador_Supremo.o
+atender_llegada@mas_abajo 40 0 COMRAM 1 cstackCOMRAM Elevador_Supremo.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 1 1
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMRAM 1 2 2 59 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 99 1
+bssBANK1 1 100 100 B2 1
+bssBANK2 1 200 200 100 1
+intcode 0 8 8 3BF8 1
+mediumconst 0 7E3A 7E3A 1C6 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

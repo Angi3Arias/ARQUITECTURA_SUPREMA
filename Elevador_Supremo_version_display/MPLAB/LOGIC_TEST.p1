@@ -1,0 +1,3867 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T36 __interrupt ]
+"4390 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[s S175 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S175 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE SPPIE ]
+"4400
+[s S176 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S176 . . TX1IE RC1IE . PSPIE ]
+"4389
+[u S174 `S175 1 `S176 1 ]
+[n S174 . . . ]
+"4408
+[v _PIE1bits `VS174 ~T0 @X0 0 e@3997 ]
+"4474
+[s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S178 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
+"4484
+[s S179 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S179 . . TX1IF RC1IF . PSPIF ]
+"4473
+[u S177 `S178 1 `S179 1 ]
+[n S177 . . . ]
+"4492
+[v _PIR1bits `VS177 ~T0 @X0 0 e@3998 ]
+"4947
+[s S196 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S196 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"4957
+[s S197 :3 `uc 1 :1 `uc 1 ]
+[n S197 . . ADEN ]
+"4961
+[s S198 :5 `uc 1 :1 `uc 1 ]
+[n S198 . . SRENA ]
+"4965
+[s S199 :6 `uc 1 :1 `uc 1 ]
+[n S199 . . RC8_9 ]
+"4969
+[s S200 :6 `uc 1 :1 `uc 1 ]
+[n S200 . . RC9 ]
+"4973
+[s S201 :1 `uc 1 ]
+[n S201 . RCD8 ]
+"4946
+[u S195 `S196 1 `S197 1 `S198 1 `S199 1 `S200 1 `S201 1 ]
+[n S195 . . . . . . . ]
+"4977
+[v _RCSTAbits `VS195 ~T0 @X0 0 e@4011 ]
+"5414
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
+"3079
+[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S130 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"3089
+[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S131 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"3078
+[u S129 `S130 1 `S131 1 ]
+[n S129 . . . ]
+"3100
+[v _LATBbits `VS129 ~T0 @X0 0 e@3978 ]
+"33 D:\PROGRAMAS\ARQ\XC8_6.20\pic\include\c99/string.h
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"3269 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[s S136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S136 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"3279
+[s S137 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S137 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
+"3268
+[u S135 `S136 1 `S137 1 ]
+[n S135 . . . ]
+"3290
+[v _LATDbits `VS135 ~T0 @X0 0 e@3980 ]
+[v F205 `(v ~T0 @X0 1 tf1`ul ]
+"20 D:\PROGRAMAS\ARQ\XC8_6.20\pic\include/builtins.h
+[v __delay `JF205 ~T0 @X0 0 e ]
+[p i __delay ]
+"40 D:\PROGRAMAS\ARQ\XC8_6.20\pic\include\c99/string.h
+[v _strncmp `(i ~T0 @X0 0 ef3`*Cuc`*Cuc`ui ]
+"27
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"3427 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"2973
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"2320
+[s S101 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S101 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
+"2329
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
+"2338
+[s S103 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . . VREFM VREFP . LVDIN ]
+"2345
+[s S104 :5 `uc 1 :1 `uc 1 ]
+[n S104 . . HLVDIN ]
+"2349
+[s S105 :1 `uc 1 ]
+[n S105 . ULPWUIN ]
+"2319
+[u S100 `S101 1 `S102 1 `S103 1 `S104 1 `S105 1 ]
+[n S100 . . . . . . ]
+"2353
+[v _PORTAbits `VS100 ~T0 @X0 0 e@3968 ]
+"2832
+[s S121 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S121 . RE0 RE1 RE2 RE3 . RDPU ]
+"2840
+[s S122 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S122 . CK1SPP CK2SPP OESPP ]
+"2845
+[s S123 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S123 . PD2 PC2 CCP10 CCP9E . CCP2E ]
+"2853
+[s S124 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S124 . RDE WRE CS PC3E . PA2E ]
+"2861
+[s S125 :2 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S125 . . PB2 . RE7 ]
+"2831
+[u S120 `S121 1 `S122 1 `S123 1 `S124 1 `S125 1 ]
+[n S120 . . . . . . ]
+"2868
+[v _PORTEbits `VS120 ~T0 @X0 0 e@3972 ]
+"3858
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
+"3866
+[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S155 . RC0 RC1 RC2 . RC6 RC7 ]
+"3857
+[u S153 `S154 1 `S155 1 ]
+[n S153 . . . ]
+"3875
+[v _TRISCbits `VS153 ~T0 @X0 0 e@3988 ]
+"5426
+[v _SPBRG `Vuc ~T0 @X0 0 e@4015 ]
+"5157
+[s S210 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S210 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"5167
+[s S211 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S211 . TX9D1 TRMT1 BRGH1 SENDB1 SYNC1 TXEN1 TX91 CSRC1 ]
+"5177
+[s S212 :6 `uc 1 :1 `uc 1 ]
+[n S212 . . TX8_9 ]
+"5181
+[s S213 :1 `uc 1 ]
+[n S213 . TXD8 ]
+"5156
+[u S209 `S210 1 `S211 1 `S212 1 `S213 1 ]
+[n S209 . . . . . ]
+"5185
+[v _TXSTAbits `VS209 ~T0 @X0 0 e@4012 ]
+"6073
+[s S247 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S247 . ABDEN WUE . BRG16 TXCKP RXDTP RCIDL ABDOVF ]
+"6083
+[s S248 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S248 . . SCKP . RCMT ]
+"6089
+[s S249 :5 `uc 1 :1 `uc 1 ]
+[n S249 . . RXCKP ]
+"6093
+[s S250 :1 `uc 1 :1 `uc 1 ]
+[n S250 . . W4E ]
+"6072
+[u S246 `S247 1 `S248 1 `S249 1 `S250 1 ]
+[n S246 . . . . . ]
+"6098
+[v _BAUDCONbits `VS246 ~T0 @X0 0 e@4024 ]
+"8588
+[s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S360 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"8598
+[s S361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S361 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"8608
+[s S362 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S362 . . GIEL GIEH ]
+"8587
+[u S359 `S360 1 `S361 1 `S362 1 ]
+[n S359 . . . . ]
+"8614
+[v _INTCONbits `VS359 ~T0 @X0 0 e@4082 ]
+"5402
+[v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
+"29 D:\PROGRAMAS\ARQ\XC8_6.20\pic\include\c99/string.h
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"3381 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[s S139 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S139 . LATE0 LATE1 LATE2 ]
+"3386
+[s S140 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S140 . LE0 LE1 LE2 ]
+"3380
+[u S138 `S139 1 `S140 1 ]
+[n S138 . . . ]
+"3392
+[v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
+"2979
+[s S127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S127 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+"2988
+[s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S128 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 ]
+"2978
+[u S126 `S127 1 `S128 1 ]
+[n S126 . . . ]
+"2998
+[v _LATAbits `VS126 ~T0 @X0 0 e@3977 ]
+"3191
+[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S133 . LATC0 LATC1 LATC2 . LATC6 LATC7 ]
+"3199
+[s S134 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S134 . LC0 LC1 LC2 . LC6 LC7 ]
+"3190
+[u S132 `S133 1 `S134 1 ]
+[n S132 . . . ]
+"3208
+[v _LATCbits `VS132 ~T0 @X0 0 e@3979 ]
+[p mainexit ]
+"7992
+[s S344 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S344 . SCS IOFS OSTS IRCF IDLEN ]
+"7999
+[s S345 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S345 . SCS0 SCS1 FLTS . IRCF0 IRCF1 IRCF2 ]
+"7991
+[u S343 `S344 1 `S345 1 ]
+[n S343 . . . ]
+"8009
+[v _OSCCONbits `VS343 ~T0 @X0 0 e@4051 ]
+"6666
+[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
+"6581
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"5587
+[v _CMCON `Vuc ~T0 @X0 0 e@4020 ]
+"223
+[v _SPPCON `Vuc ~T0 @X0 0 e@3941 ]
+"3636
+[s S148 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S148 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"3646
+[s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S149 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"3635
+[u S147 `S148 1 `S149 1 ]
+[n S147 . . . ]
+"3657
+[v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
+"4001
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"4234
+[s S166 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S166 . TRISE0 TRISE1 TRISE2 ]
+"4239
+[s S167 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S167 . RE0 RE1 RE2 ]
+"4233
+[u S165 `S166 1 `S167 1 ]
+[n S165 . . . ]
+"4245
+[v _TRISEbits `VS165 ~T0 @X0 0 e@3990 ]
+"3073
+[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
+"3185
+[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
+"3263
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"3375
+[v _LATE `Vuc ~T0 @X0 0 e@3981 ]
+"2459
+[s S107 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S107 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"2469
+[s S108 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S108 . INT0 INT1 INT2 . PGM PGC PGD ]
+"2478
+[s S109 :3 `uc 1 :1 `uc 1 ]
+[n S109 . . CCP2_PA2 ]
+"2458
+[u S106 `S107 1 `S108 1 `S109 1 ]
+[n S106 . . . . ]
+"2483
+[v _PORTBbits `VS106 ~T0 @X0 0 e@3969 ]
+"7 ./config.h
+[p x PLLDIV  =  1        ]
+"8
+[p x CPUDIV  =  OSC1_PLL2 ]
+"9
+[p x USBDIV  =  1        ]
+"12
+[p x FOSC  =  INTOSCIO_EC  ]
+"13
+[p x FCMEN  =  OFF       ]
+"14
+[p x IESO  =  OFF        ]
+"17
+[p x PWRT  =  OFF        ]
+"18
+[p x BOR  =  ON          ]
+"19
+[p x BORV  =  3          ]
+"20
+[p x VREGEN  =  OFF      ]
+"23
+[p x WDT  =  OFF         ]
+"24
+[p x WDTPS  =  32768     ]
+"27
+[p x CCP2MX  =  ON       ]
+"28
+[p x PBADEN  =  OFF      ]
+"29
+[p x LPT1OSC  =  OFF     ]
+"31
+[p x MCLRE  =  OFF       ]
+"34
+[p x STVREN  =  ON       ]
+"35
+[p x LVP  =  OFF         ]
+"36
+[p x ICPRT  =  OFF       ]
+"37
+[p x XINST  =  OFF       ]
+"40
+[p x CP0  =  OFF         ]
+"41
+[p x CP1  =  OFF         ]
+"42
+[p x CP2  =  OFF         ]
+"43
+[p x CP3  =  OFF         ]
+"46
+[p x CPB  =  OFF         ]
+"47
+[p x CPD  =  OFF         ]
+"50
+[p x WRT0  =  OFF        ]
+"51
+[p x WRT1  =  OFF        ]
+"52
+[p x WRT2  =  OFF        ]
+"53
+[p x WRT3  =  OFF        ]
+"56
+[p x WRTC  =  OFF        ]
+"57
+[p x WRTB  =  OFF        ]
+"58
+[p x WRTD  =  OFF        ]
+"61
+[p x EBTR0  =  OFF       ]
+"62
+[p x EBTR1  =  OFF       ]
+"63
+[p x EBTR2  =  OFF       ]
+"64
+[p x EBTR3  =  OFF       ]
+"67
+[p x EBTRB  =  OFF       ]
+"54 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; <" UIR equ 0F68h ;# ">
+"432
+[; <" UIE equ 0F69h ;# ">
+"488
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; <" TOSU equ 0FFFh ;# ">
+"47 LOGIC_TEST.c
+[v _num_pisos `i ~T0 @X0 1 e ]
+[i _num_pisos
+-> 12 `i
+]
+"48
+[v _piso `i ~T0 @X0 -> 3 `i e ]
+[i _piso
+:U ..
+-> 1 `i
+/ -> 12 `i -> 2 `i
+-> 12 `i
+..
+]
+"49
+[v _estado `i ~T0 @X0 -> 3 `i e ]
+[i _estado
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+"50
+[v _direccion `i ~T0 @X0 -> 3 `i e ]
+[i _direccion
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+"51
+[v _objetivo `i ~T0 @X0 -> 3 `i e ]
+[i _objetivo
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+"52
+[v _reloj_piso `i ~T0 @X0 -> 3 `i e ]
+[i _reloj_piso
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+"53
+[v _reloj_puerta `i ~T0 @X0 -> 3 `i e ]
+[i _reloj_puerta
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+"54
+[v _encolados `i ~T0 @X0 -> 3 `i e ]
+[i _encolados
+:U ..
+-> 0 `i
+-> 0 `i
+-> 0 `i
+..
+]
+[v F3390 `uc ~T0 @X0 -> 21 `i t ]
+"57
+[v _paradas `F3390 ~T0 @X0 -> 3 `i e ]
+"60
+[v _cola_espera `i ~T0 @X0 -> 3 `i e ]
+[i _cola_espera
+:U ..
+-U -> 1 `i
+-U -> 1 `i
+-U -> 1 `i
+..
+]
+"61
+[v _cola_esp_len `i ~T0 @X0 1 e ]
+[i _cola_esp_len
+-> 0 `i
+]
+"64
+[v _modo `i ~T0 @X0 1 e ]
+[i _modo
+-> 0 `i
+]
+[v _piso_usr `i ~T0 @X0 1 e ]
+[i _piso_usr
+-> 0 `i
+]
+[v _elev_activo `i ~T0 @X0 1 e ]
+[i _elev_activo
+-> 0 `i
+]
+[v _buf_len `i ~T0 @X0 1 e ]
+[i _buf_len
+-> 0 `i
+]
+"65
+[v _buf `uc ~T0 @X0 -> 3 `i e ]
+[i _buf
+:U ..
+-> 0 `c
+..
+]
+"68
+[v _emergencia `uc ~T0 @X0 1 e ]
+[i _emergencia
+-> -> 0 `i `uc
+]
+[v _parpadeo `uc ~T0 @X0 1 e ]
+[i _parpadeo
+-> -> 1 `i `uc
+]
+"69
+[v _cont_parp `i ~T0 @X0 1 e ]
+[i _cont_parp
+-> 0 `i
+]
+[v _cont_buzz `i ~T0 @X0 1 e ]
+[i _cont_buzz
+-> 0 `i
+]
+[v _cont_uart `i ~T0 @X0 1 e ]
+[i _cont_uart
+-> 0 `i
+]
+"72
+[v _msg_lcd `uc ~T0 @X0 -> 17 `i e ]
+[i _msg_lcd
+:U ..
+-> 80 `c
+-> 114 `c
+-> 101 `c
+-> 115 `c
+-> 105 `c
+-> 111 `c
+-> 110 `c
+-> 97 `c
+-> 32 `c
+-> 65 `c
+-> 58 `c
+-> 32 `c
+-> 80 `c
+-> 105 `c
+-> 115 `c
+-> 111 `c
+-> 0 `c
+..
+]
+[v _prev_l1 `uc ~T0 @X0 -> 17 `i e ]
+[i _prev_l1
+:U ..
+-> 0 `c
+..
+]
+[v _prev_l2 `uc ~T0 @X0 -> 17 `i e ]
+[i _prev_l2
+:U ..
+-> 0 `c
+..
+]
+"73
+[v _tecla_ant `uc ~T0 @X0 1 e ]
+[i _tecla_ant
+-> -> 0 `i `uc
+]
+"74
+[v _subir_ant `i ~T0 @X0 1 e ]
+[i _subir_ant
+-> 1 `i
+]
+[v _bajar_ant `i ~T0 @X0 1 e ]
+[i _bajar_ant
+-> 1 `i
+]
+"77
+[v _rx_ring `Vuc ~T0 @X0 -> 64 `i e ]
+"78
+[v _rx_head `Vuc ~T0 @X0 1 e ]
+[i _rx_head
+-> -> 0 `i `uc
+]
+[v _rx_tail `Vuc ~T0 @X0 1 e ]
+[i _rx_tail
+-> -> 0 `i `uc
+]
+"79
+[v _tx_ring `uc ~T0 @X0 -> 256 `i e ]
+"80
+[v _tx_head `uc ~T0 @X0 1 e ]
+[i _tx_head
+-> -> 0 `i `uc
+]
+[v _tx_tail `uc ~T0 @X0 1 e ]
+[i _tx_tail
+-> -> 0 `i `uc
+]
+"81
+[v _uart_rx `uc ~T0 @X0 -> 20 `i e ]
+[i _uart_rx
+:U ..
+-> 0 `c
+..
+]
+"82
+[v _uart_rx_len `uc ~T0 @X0 1 e ]
+[i _uart_rx_len
+-> -> 0 `i `uc
+]
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"85
+[v _isr `(v ~T36 @X0 1 ef ]
+{
+[e :U _isr ]
+[f ]
+"86
+[e $ ! && != -> . . _PIE1bits 0 5 `i -> 0 `i != -> . . _PIR1bits 0 5 `i -> 0 `i 369  ]
+{
+"87
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> 0 `i 370  ]
+{
+"88
+[v _dummy `Vuc ~T0 @X0 1 a ]
+[e = _dummy _RCREG ]
+"89
+[e _dummy ]
+"90
+}
+[e $U 371  ]
+[e :U 370 ]
+{
+"91
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c _RCREG ]
+"92
+[v _next `uc ~T0 @X0 1 a ]
+[e = _next -> & + -> _rx_head `ui -> 1 `ui - -> 64 `ui -> 1 `ui `uc ]
+"93
+[e $ ! != -> _next `i -> _rx_tail `i 372  ]
+{
+"94
+[e = *U + &U _rx_ring * -> _rx_head `ux -> -> # *U &U _rx_ring `ui `ux -> _c `uc ]
+"95
+[e = _rx_head _next ]
+"96
+}
+[e :U 372 ]
+"97
+}
+[e :U 371 ]
+"98
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> 0 `i 373  ]
+{
+"99
+[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
+"100
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"101
+}
+[e :U 373 ]
+"102
+}
+[e :U 369 ]
+"103
+[e :UE 368 ]
+}
+"106
+[v _dig `(uc ~T0 @X0 1 ef1`i ]
+{
+[e :U _dig ]
+[v _v `i ~T0 @X0 1 r1 ]
+[f ]
+[e ) -> + -> 48 `ui -> -> % _v -> 10 `i `uc `ui `uc ]
+[e $UE 374  ]
+[e :UE 374 ]
+}
+"107
+[v _vabs `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _vabs ]
+[v _x `i ~T0 @X0 1 r1 ]
+[f ]
+[e ) ? < _x -> 0 `i : -U _x _x ]
+[e $UE 375  ]
+[e :UE 375 ]
+}
+"108
+[v _beep `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _beep ]
+[v _t `i ~T0 @X0 1 r1 ]
+[f ]
+[e = _cont_buzz _t ]
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+[e :UE 376 ]
+}
+"110
+[v _poner_2d `(v ~T0 @X0 1 ef2`*uc`i ]
+{
+[e :U _poner_2d ]
+[v _p `*uc ~T0 @X0 1 r1 ]
+[v _v `i ~T0 @X0 1 r2 ]
+[f ]
+"111
+[e $ ! < _v -> 0 `i 378  ]
+[e = _v -> 0 `i ]
+[e :U 378 ]
+"112
+[e $ ! > _v -> 99 `i 379  ]
+[e = _v -> 99 `i ]
+[e :U 379 ]
+"113
+[e = *U + _p * -> -> 0 `i `x -> -> # *U _p `i `x ( _dig (1 / _v -> 10 `i ]
+"114
+[e = *U + _p * -> -> 1 `i `x -> -> # *U _p `i `x ( _dig (1 _v ]
+"115
+[e :UE 377 ]
+}
+"117
+[v _poner_msg `(v ~T0 @X0 1 ef1`*Cuc ]
+{
+[e :U _poner_msg ]
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+"118
+[v _i `i ~T0 @X0 1 a ]
+"119
+{
+[e = _i -> 0 `i ]
+[e $U 384  ]
+[e :U 381 ]
+[e = *U + &U _msg_lcd * -> -> _i `ui `ux -> -> # *U &U _msg_lcd `ui `ux *U + _s * -> _i `x -> -> # *U _s `i `x ]
+[e ++ _i -> 1 `i ]
+[e :U 384 ]
+[e $ && < _i -> 16 `i != -> *U + _s * -> _i `x -> -> # *U _s `i `x `ui -> 0 `ui 381  ]
+[e :U 382 ]
+}
+"120
+{
+[e $ < _i -> 16 `i 385  ]
+[e $U 386  ]
+[e :U 385 ]
+[e = *U + &U _msg_lcd * -> -> _i `ui `ux -> -> # *U &U _msg_lcd `ui `ux -> -> 32 `ui `uc ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 385  ]
+[e :U 386 ]
+}
+"121
+[e = *U + &U _msg_lcd * -> -> -> 16 `i `ui `ux -> -> # *U &U _msg_lcd `ui `ux -> -> 0 `ui `uc ]
+"122
+[e :UE 380 ]
+}
+"124
+[v _msg_elev `(v ~T0 @X0 1 ef4`i`*Cuc`i`i ]
+{
+[e :U _msg_elev ]
+[v _e `i ~T0 @X0 1 r1 ]
+[v _plantilla `*Cuc ~T0 @X0 1 r2 ]
+[v _pos_num `i ~T0 @X0 1 r3 ]
+[v _num `i ~T0 @X0 1 r4 ]
+[f ]
+"125
+[v _m `uc ~T0 @X0 -> 17 `i a ]
+"126
+[e ( _strcpy (2 , &U _m _plantilla ]
+"127
+[e $ ! >= _e -> 0 `i 389  ]
+[e = *U + &U _m * -> -> -> 1 `i `ui `ux -> -> # *U &U _m `ui `ux ( _dig (1 + _e -> 1 `i ]
+[e :U 389 ]
+"128
+[e $ ! >= _pos_num -> 0 `i 390  ]
+[e ( _poner_2d (2 , &U *U + &U _m * -> -> _pos_num `ui `ux -> -> # *U &U _m `ui `ux _num ]
+[e :U 390 ]
+"129
+[e ( _poner_msg (1 -> &U _m `*Cuc ]
+"130
+[e :UE 388 ]
+}
+"132
+[v _LCD_Nib `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _LCD_Nib ]
+[v _n `uc ~T0 @X0 1 r1 ]
+[f ]
+"134
+[e = . . _LATBbits 0 0 -> & >> -> _n `i -> 0 `i -> 1 `i `uc ]
+"135
+[e = . . _LATBbits 0 1 -> & >> -> _n `i -> 1 `i -> 1 `i `uc ]
+"136
+[e = . . _LATDbits 0 4 -> & >> -> _n `i -> 2 `i -> 1 `i `uc ]
+"137
+[e = . . _LATBbits 0 2 -> & >> -> _n `i -> 3 `i -> 1 `i `uc ]
+"138
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"139
+[e :UE 391 ]
+}
+"141
+[v _LCD_Byte `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _LCD_Byte ]
+[v _v `uc ~T0 @X0 1 r1 ]
+[v _dato `uc ~T0 @X0 1 r2 ]
+[f ]
+"142
+[e = . . _LATDbits 0 0 _dato ]
+"143
+[e ( _LCD_Nib (1 -> >> -> _v `i -> 4 `i `uc ]
+[e ( _LCD_Nib (1 -> & -> _v `i -> 15 `i `uc ]
+"144
+[e $ ! && ! != -> _dato `i -> 0 `i <= -> _v `i -> 2 `i 393  ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[e :U 393 ]
+"145
+[e :UE 392 ]
+}
+"147
+[v _LCD_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _LCD_Init ]
+[f ]
+"148
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"149
+[e ( _LCD_Nib (1 -> -> 3 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[e ( _LCD_Nib (1 -> -> 3 `i `uc ]
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"150
+[e ( _LCD_Nib (1 -> -> 3 `i `uc ]
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+[e ( _LCD_Nib (1 -> -> 2 `i `uc ]
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"151
+[e ( _LCD_Byte (2 , -> -> 40 `i `uc -> -> 0 `i `uc ]
+[e ( _LCD_Byte (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+[e ( _LCD_Byte (2 , -> -> 6 `i `uc -> -> 0 `i `uc ]
+[e ( _LCD_Byte (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"152
+[e :UE 394 ]
+}
+"154
+[v _LCD_Linea `(v ~T0 @X0 1 ef2`uc`*Cuc ]
+{
+[e :U _LCD_Linea ]
+[v _fila `uc ~T0 @X0 1 r1 ]
+[v _txt `*Cuc ~T0 @X0 1 r2 ]
+[f ]
+"155
+[v _cache `*uc ~T0 @X0 1 a ]
+[e = _cache ? == -> _fila `i -> 0 `i : &U _prev_l1 &U _prev_l2 ]
+"156
+[v _l `uc ~T0 @X0 -> 17 `i a ]
+"157
+[v _i `i ~T0 @X0 1 a ]
+"158
+{
+[e = _i -> 0 `i ]
+[e $U 399  ]
+[e :U 396 ]
+[e = *U + &U _l * -> -> _i `ui `ux -> -> # *U &U _l `ui `ux *U + _txt * -> _i `x -> -> # *U _txt `i `x ]
+[e ++ _i -> 1 `i ]
+[e :U 399 ]
+[e $ && < _i -> 16 `i != -> *U + _txt * -> _i `x -> -> # *U _txt `i `x `ui -> 0 `ui 396  ]
+[e :U 397 ]
+}
+"159
+{
+[e $ < _i -> 16 `i 400  ]
+[e $U 401  ]
+[e :U 400 ]
+[e = *U + &U _l * -> -> _i `ui `ux -> -> # *U &U _l `ui `ux -> -> 32 `ui `uc ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 400  ]
+[e :U 401 ]
+}
+"160
+[e = *U + &U _l * -> -> -> 16 `i `ui `ux -> -> # *U &U _l `ui `ux -> -> 0 `ui `uc ]
+"161
+[e $ ! == ( _strncmp (3 , , -> _cache `*Cuc -> &U _l `*Cuc -> -> 16 `i `ui -> 0 `i 403  ]
+[e $UE 395  ]
+[e :U 403 ]
+"162
+[e ( _memcpy (3 , , -> _cache `*v -> &U _l `*Cv -> -> 17 `i `ui ]
+"163
+[e ( _LCD_Byte (2 , -> ? != -> _fila `i -> 0 `i : -> 192 `i -> 128 `i `uc -> -> 0 `i `uc ]
+"164
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 404  ]
+[e $U 405  ]
+[e :U 404 ]
+[e ( _LCD_Byte (2 , -> *U + &U _l * -> -> _i `ui `ux -> -> # *U &U _l `ui `ux `uc -> -> 1 `i `uc ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 404  ]
+[e :U 405 ]
+}
+"165
+[e :UE 395 ]
+}
+[v F3452 `Cuc ~T0 @X0 -> 4 `i t ]
+"168
+[v _TECLAS `F3452 ~T0 @X0 -> 4 `i e ]
+[i _TECLAS
+:U ..
+:U ..
+-> -> 49 `ui `uc
+-> -> 50 `ui `uc
+-> -> 51 `ui `uc
+-> -> 65 `ui `uc
+..
+:U ..
+-> -> 52 `ui `uc
+-> -> 53 `ui `uc
+-> -> 54 `ui `uc
+-> -> 66 `ui `uc
+..
+:U ..
+-> -> 55 `ui `uc
+-> -> 56 `ui `uc
+-> -> 57 `ui `uc
+-> -> 67 `ui `uc
+..
+:U ..
+-> -> 42 `ui `uc
+-> -> 48 `ui `uc
+-> -> 35 `ui `uc
+-> -> 68 `ui `uc
+..
+..
+]
+"172
+[v _leer_teclado `(uc ~T0 @X0 1 ef ]
+{
+[e :U _leer_teclado ]
+[f ]
+"173
+[v _f `i ~T0 @X0 1 a ]
+"174
+[v _t `uc ~T0 @X0 1 a ]
+[e = _t -> -> 0 `i `uc ]
+"176
+{
+[e = _f -> 0 `i ]
+[e $ < _f -> 4 `i 408  ]
+[e $U 409  ]
+[e :U 408 ]
+{
+"177
+[e =| _TRISA -> -> 15 `i `Vuc ]
+[e =& _LATA -> -> 240 `i `Vuc ]
+"178
+[e =& _TRISA -> -> ~ << -> 1 `i _f `uc `Vuc ]
+"179
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"180
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 0 `i 411  ]
+{
+[e = _t *U + &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux `ui `ux ]
+[e $U 409  ]
+}
+[e :U 411 ]
+"181
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 0 `i 412  ]
+{
+[e = _t *U + &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux `ui `ux ]
+[e $U 409  ]
+}
+[e :U 412 ]
+"182
+[e $ ! == -> . . _PORTEbits 0 0 `i -> 0 `i 413  ]
+{
+[e = _t *U + &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux `ui `ux ]
+[e $U 409  ]
+}
+[e :U 413 ]
+"183
+[e $ ! == -> . . _PORTEbits 0 1 `i -> 0 `i 414  ]
+{
+[e = _t *U + &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _TECLAS * -> -> _f `ui `ux -> * -> # *U &U *U &U _TECLAS `ui -> -> 4 `i `ui `ux `ui `ux ]
+[e $U 409  ]
+}
+[e :U 414 ]
+"184
+}
+[e ++ _f -> 1 `i ]
+[e $ < _f -> 4 `i 408  ]
+[e :U 409 ]
+}
+"185
+[e =| _TRISA -> -> 15 `i `Vuc ]
+"186
+[e ) _t ]
+[e $UE 407  ]
+"187
+[e :UE 407 ]
+}
+"189
+[v _UART_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _UART_Init ]
+[f ]
+"190
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
+"191
+[e = _SPBRG -> -> 51 `i `uc ]
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"192
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"193
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"194
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+"195
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"196
+[e :UE 415 ]
+}
+"198
+[v _UART_TxFree `(uc ~T0 @X0 1 ef ]
+{
+[e :U _UART_TxFree ]
+[f ]
+"199
+[e ) -> & - -> - -> _tx_tail `i -> _tx_head `i `ui -> 1 `ui - -> 256 `ui -> 1 `ui `uc ]
+[e $UE 416  ]
+"200
+[e :UE 416 ]
+}
+"202
+[v _UART_PutChar `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _UART_PutChar ]
+[v _c `uc ~T0 @X0 1 r1 ]
+[f ]
+"203
+[v _next `uc ~T0 @X0 1 a ]
+[e = _next -> + -> _tx_head `ui -> 1 `ui `uc ]
+"204
+[e $ ! == -> _next `i -> _tx_tail `i 418  ]
+[e $UE 417  ]
+[e :U 418 ]
+"205
+[e = *U + &U _tx_ring * -> _tx_head `ux -> -> # *U &U _tx_ring `ui `ux _c ]
+"206
+[e = _tx_head _next ]
+"207
+[e :UE 417 ]
+}
+"209
+[v _UART_PutStr `(v ~T0 @X0 1 ef1`*Cuc ]
+{
+[e :U _UART_PutStr ]
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+"210
+[e $U 420  ]
+[e :U 421 ]
+[e ( _UART_PutChar (1 *U ++ _s * -> -> 1 `i `x -> -> # *U _s `i `x ]
+[e :U 420 ]
+[e $ != -> *U _s `i -> 0 `i 421  ]
+[e :U 422 ]
+"211
+[e :UE 419 ]
+}
+"213
+[v _UART_Put2d `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _UART_Put2d ]
+[v _v `i ~T0 @X0 1 r1 ]
+[f ]
+"214
+[e $ ! < _v -> 0 `i 424  ]
+[e = _v -> 0 `i ]
+[e :U 424 ]
+"215
+[e $ ! > _v -> 99 `i 425  ]
+[e = _v -> 99 `i ]
+[e :U 425 ]
+"216
+[e ( _UART_PutChar (1 ( _dig (1 / _v -> 10 `i ]
+"217
+[e ( _UART_PutChar (1 ( _dig (1 _v ]
+"218
+[e :UE 423 ]
+}
+"220
+[v _UART_PutInt `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _UART_PutInt ]
+[v _v `i ~T0 @X0 1 r1 ]
+[f ]
+"221
+[v _tmp `uc ~T0 @X0 -> 7 `i a ]
+"222
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"223
+[e $ ! < _v -> 0 `i 427  ]
+{
+[e ( _UART_PutChar (1 -> -> 45 `ui `uc ]
+[e = _v -U _v ]
+}
+[e :U 427 ]
+"224
+[e $ ! == _v -> 0 `i 428  ]
+{
+[e ( _UART_PutChar (1 -> -> 48 `ui `uc ]
+[e $UE 426  ]
+}
+[e :U 428 ]
+"225
+[e $U 429  ]
+[e :U 430 ]
+{
+[e = *U + &U _tmp * -> -> ++ _i -> 1 `i `ui `ux -> -> # *U &U _tmp `ui `ux ( _dig (1 _v ]
+[e =/ _v -> 10 `i ]
+}
+[e :U 429 ]
+[e $ && > _v -> 0 `i < _i -> 6 `i 430  ]
+[e :U 431 ]
+"226
+[e $U 432  ]
+[e :U 433 ]
+[e ( _UART_PutChar (1 *U + &U _tmp * -> -> =- _i -> 1 `i `ui `ux -> -> # *U &U _tmp `ui `ux ]
+[e :U 432 ]
+[e $ > _i -> 0 `i 433  ]
+[e :U 434 ]
+"227
+[e :UE 426 ]
+}
+"229
+[v _UART_PutHex5 `(v ~T0 @X0 1 ef1`ul ]
+{
+[e :U _UART_PutHex5 ]
+[v _mask `ul ~T0 @X0 1 r1 ]
+[f ]
+"230
+[v F3475 `Cuc ~T0 @X0 -> 16 `i s HEX ]
+[i F3475
+:U ..
+-> 48 `c
+-> 49 `c
+-> 50 `c
+-> 51 `c
+-> 52 `c
+-> 53 `c
+-> 54 `c
+-> 55 `c
+-> 56 `c
+-> 57 `c
+-> 65 `c
+-> 66 `c
+-> 67 `c
+-> 68 `c
+-> 69 `c
+-> 70 `c
+..
+]
+"231
+[e ( _UART_PutChar (1 *U + &U F3475 * -> & >> _mask -> 16 `i -> 15 `ul `ux -> -> # *U &U F3475 `ui `ux ]
+"232
+[e ( _UART_PutChar (1 *U + &U F3475 * -> & >> _mask -> 12 `i -> 15 `ul `ux -> -> # *U &U F3475 `ui `ux ]
+"233
+[e ( _UART_PutChar (1 *U + &U F3475 * -> & >> _mask -> 8 `i -> 15 `ul `ux -> -> # *U &U F3475 `ui `ux ]
+"234
+[e ( _UART_PutChar (1 *U + &U F3475 * -> & >> _mask -> 4 `i -> 15 `ul `ux -> -> # *U &U F3475 `ui `ux ]
+"235
+[e ( _UART_PutChar (1 *U + &U F3475 * -> & _mask -> 15 `ul `ux -> -> # *U &U F3475 `ui `ux ]
+"236
+[e :UE 435 ]
+}
+"238
+[v _UART_PumpTx `(v ~T0 @X0 1 ef ]
+{
+[e :U _UART_PumpTx ]
+[f ]
+"239
+[e $ ! && != -> . . _PIR1bits 0 4 `i -> 0 `i != -> _tx_tail `i -> _tx_head `i 437  ]
+{
+"240
+[e = _TXREG -> *U + &U _tx_ring * -> ++ _tx_tail -> -> 1 `i `uc `ux -> -> # *U &U _tx_ring `ui `ux `uc ]
+"241
+}
+[e :U 437 ]
+"242
+[e :UE 436 ]
+}
+"244
+[v _estado_char `(uc ~T0 @X0 1 ef1`i ]
+{
+[e :U _estado_char ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"245
+[e $ ! != -> _emergencia `i -> 0 `i 439  ]
+[e ) -> -> 69 `ui `uc ]
+[e $UE 438  ]
+[e :U 439 ]
+"246
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 440  ]
+[e ) -> ? == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i : -> 85 `ui -> 68 `ui `uc ]
+[e $UE 438  ]
+[e :U 440 ]
+"247
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 441  ]
+[e ) -> -> 87 `ui `uc ]
+[e $UE 438  ]
+[e :U 441 ]
+"248
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 442  ]
+[e ) -> -> 79 `ui `uc ]
+[e $UE 438  ]
+[e :U 442 ]
+"249
+[e ) -> -> 73 `ui `uc ]
+[e $UE 438  ]
+"250
+[e :UE 438 ]
+}
+"252
+[v _puerta_nivel `(uc ~T0 @X0 1 ef1`i ]
+{
+[e :U _puerta_nivel ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"253
+[v _r `i ~T0 @X0 1 a ]
+"254
+[e $ ! || == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 444  ]
+[e ) -> -> 48 `ui `uc ]
+[e $UE 443  ]
+[e :U 444 ]
+"255
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 445  ]
+{
+"256
+[e $ ! || == *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i > *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 45 `i 446  ]
+[e ) -> -> 57 `ui `uc ]
+[e $UE 443  ]
+[e :U 446 ]
+"257
+[e = _r / *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 5 `i ]
+"258
+[e ) ( _dig (1 ? > _r -> 9 `i : -> 9 `i _r ]
+[e $UE 443  ]
+"259
+}
+[e :U 445 ]
+"260
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 447  ]
+{
+"261
+[e $ ! > *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 45 `i 448  ]
+[e ) -> -> 57 `ui `uc ]
+[e $UE 443  ]
+[e :U 448 ]
+"262
+[e = _r / *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 5 `i ]
+"263
+[e ) ( _dig (1 ? > _r -> 9 `i : -> 9 `i _r ]
+[e $UE 443  ]
+"264
+}
+[e :U 447 ]
+"265
+[e ) -> -> 48 `ui `uc ]
+[e $UE 443  ]
+"266
+[e :UE 443 ]
+}
+"268
+[v _UART_EmitEnq `(v ~T0 @X0 1 ef3`i`i`uc ]
+{
+[e :U _UART_EmitEnq ]
+[v _e `i ~T0 @X0 1 r1 ]
+[v _fl `i ~T0 @X0 1 r2 ]
+[v _tipo `uc ~T0 @X0 1 r3 ]
+[f ]
+"269
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 16 `ui 450  ]
+[e $UE 449  ]
+[e :U 450 ]
+"270
+[e ( _UART_PutStr (1 :s 1C ]
+"271
+[e ( _UART_PutChar (1 ( _dig (1 _e ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"272
+[e ( _UART_Put2d (1 _fl ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"273
+[e ( _UART_PutChar (1 _tipo ]
+[e ( _UART_PutStr (1 :s 2C ]
+"274
+[e :UE 449 ]
+}
+"276
+[v _UART_EmitDeq `(v ~T0 @X0 1 ef3`i`i`uc ]
+{
+[e :U _UART_EmitDeq ]
+[v _e `i ~T0 @X0 1 r1 ]
+[v _fl `i ~T0 @X0 1 r2 ]
+[v _tipo `uc ~T0 @X0 1 r3 ]
+[f ]
+"277
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 16 `ui 452  ]
+[e $UE 451  ]
+[e :U 452 ]
+"278
+[e ( _UART_PutStr (1 :s 3C ]
+"279
+[e ( _UART_PutChar (1 ( _dig (1 _e ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"280
+[e ( _UART_Put2d (1 _fl ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"281
+[e ( _UART_PutChar (1 _tipo ]
+[e ( _UART_PutStr (1 :s 4C ]
+"282
+[e :UE 451 ]
+}
+"284
+[v _UART_EmitDsp `(v ~T0 @X0 1 ef6`i`uc`i`i`i`i ]
+{
+[e :U _UART_EmitDsp ]
+[v _fl `i ~T0 @X0 1 r1 ]
+[v _dir_c `uc ~T0 @X0 1 r2 ]
+[v _chosen `i ~T0 @X0 1 r3 ]
+[v _c0 `i ~T0 @X0 1 r4 ]
+[v _c1 `i ~T0 @X0 1 r5 ]
+[v _c2 `i ~T0 @X0 1 r6 ]
+[f ]
+"285
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 34 `ui 454  ]
+[e $UE 453  ]
+[e :U 454 ]
+"286
+[e ( _UART_PutStr (1 :s 5C ]
+"287
+[e ( _UART_Put2d (1 _fl ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"288
+[e ( _UART_PutChar (1 _dir_c ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"289
+[e ( _UART_PutChar (1 ( _dig (1 _chosen ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"290
+[e ( _UART_PutInt (1 _c0 ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"291
+[e ( _UART_PutInt (1 _c1 ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"292
+[e ( _UART_PutInt (1 _c2 ]
+[e ( _UART_PutStr (1 :s 6C ]
+"293
+[e :UE 453 ]
+}
+"295
+[v _UART_EmitCfg `(v ~T0 @X0 1 ef2`i`i ]
+{
+[e :U _UART_EmitCfg ]
+[v _n `i ~T0 @X0 1 r1 ]
+[v _podadas `i ~T0 @X0 1 r2 ]
+[f ]
+"296
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 18 `ui 456  ]
+[e $UE 455  ]
+[e :U 456 ]
+"297
+[e ( _UART_PutStr (1 :s 7C ]
+"298
+[e ( _UART_Put2d (1 _n ]
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"299
+[e ( _UART_PutInt (1 _podadas ]
+[e ( _UART_PutStr (1 :s 8C ]
+"300
+[e :UE 455 ]
+}
+"302
+[v _UART_EmitEmg `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _UART_EmitEmg ]
+[v _act `uc ~T0 @X0 1 r1 ]
+[f ]
+"303
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 10 `ui 458  ]
+[e $UE 457  ]
+[e :U 458 ]
+"304
+[e ( _UART_PutStr (1 :s 9C ]
+"305
+[e ( _UART_PutChar (1 -> ? != -> _act `i -> 0 `i : -> 49 `ui -> 48 `ui `uc ]
+"306
+[e ( _UART_PutStr (1 :s 10C ]
+"307
+[e :UE 457 ]
+}
+"309
+[v _UART_EnviarEstado `(v ~T0 @X0 1 ef ]
+{
+[e :U _UART_EnviarEstado ]
+[f ]
+"311
+[v _e `i ~T0 @X0 1 a ]
+[v _p `i ~T0 @X0 1 a ]
+"312
+[e $ ! < -> ( _UART_TxFree ..  `ui -> 72 `ui 460  ]
+[e $UE 459  ]
+[e :U 460 ]
+"313
+[e ( _UART_PutStr (1 :s 11C ]
+"314
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 461  ]
+[e $U 462  ]
+[e :U 461 ]
+{
+"315
+[e ( _UART_Put2d (1 *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+"316
+[e ( _UART_PutChar (1 ( _estado_char (1 _e ]
+"317
+[e ( _UART_Put2d (1 *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux ]
+"318
+[e ( _UART_PutChar (1 ( _puerta_nivel (1 _e ]
+"319
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"320
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 461  ]
+[e :U 462 ]
+}
+"321
+[e ( _UART_PutChar (1 -> ? != -> _emergencia `i -> 0 `i : -> 49 `ui -> 48 `ui `uc ]
+"322
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"323
+[e ( _UART_Put2d (1 _num_pisos ]
+"324
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 464  ]
+[e $U 465  ]
+[e :U 464 ]
+{
+"325
+[v _pk `ul ~T0 @X0 1 a ]
+[e = _pk -> 0 `ul ]
+[v _ds `ul ~T0 @X0 1 a ]
+[e = _ds -> 0 `ul ]
+"326
+{
+[e = _p -> 1 `i ]
+[e $U 470  ]
+[e :U 467 ]
+{
+"327
+[e $ ! != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui | -> 1 `ui -> 2 `ui -> -> 0 `i `ui 471  ]
+[e =| _pk << -> 1 `ul - _p -> 1 `i ]
+[e :U 471 ]
+"328
+[e $ ! != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui -> 4 `ui -> -> 0 `i `ui 472  ]
+[e =| _ds << -> 1 `ul - _p -> 1 `i ]
+[e :U 472 ]
+"329
+}
+[e ++ _p -> 1 `i ]
+[e :U 470 ]
+[e $ <= _p _num_pisos 467  ]
+[e :U 468 ]
+}
+"330
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"331
+[e ( _UART_PutHex5 (1 _pk ]
+"332
+[e ( _UART_PutChar (1 -> -> 44 `ui `uc ]
+"333
+[e ( _UART_PutHex5 (1 _ds ]
+"334
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 464  ]
+[e :U 465 ]
+}
+"335
+[e ( _UART_PutStr (1 :s 12C ]
+"336
+[e :UE 459 ]
+}
+"339
+[v _agregar_cola_espera `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _agregar_cola_espera ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"340
+[v _i `i ~T0 @X0 1 a ]
+"341
+{
+[e = _i -> 0 `i ]
+[e $U 477  ]
+[e :U 474 ]
+[e $ ! == *U + &U _cola_espera * -> -> _i `ui `ux -> -> # *U &U _cola_espera `ui `ux _e 478  ]
+[e $UE 473  ]
+[e :U 478 ]
+[e ++ _i -> 1 `i ]
+[e :U 477 ]
+[e $ < _i _cola_esp_len 474  ]
+[e :U 475 ]
+}
+"342
+[e $ ! < _cola_esp_len -> 3 `i 479  ]
+[e = *U + &U _cola_espera * -> -> ++ _cola_esp_len -> 1 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux _e ]
+[e :U 479 ]
+"343
+[e :UE 473 ]
+}
+"345
+[v _quitar_cola_espera `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _quitar_cola_espera ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"346
+[v _i `i ~T0 @X0 1 a ]
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+"347
+{
+[e = _i -> 0 `i ]
+[e $U 484  ]
+[e :U 481 ]
+{
+"348
+[e $ ! != *U + &U _cola_espera * -> -> _i `ui `ux -> -> # *U &U _cola_espera `ui `ux _e 485  ]
+[e = *U + &U _cola_espera * -> -> ++ _j -> 1 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux *U + &U _cola_espera * -> -> _i `ui `ux -> -> # *U &U _cola_espera `ui `ux ]
+[e :U 485 ]
+"349
+}
+[e ++ _i -> 1 `i ]
+[e :U 484 ]
+[e $ < _i _cola_esp_len 481  ]
+[e :U 482 ]
+}
+"350
+[e = _cola_esp_len _j ]
+"351
+{
+[e $ < _j -> 3 `i 486  ]
+[e $U 487  ]
+[e :U 486 ]
+[e = *U + &U _cola_espera * -> -> _j `ui `ux -> -> # *U &U _cola_espera `ui `ux -U -> 1 `i ]
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 3 `i 486  ]
+[e :U 487 ]
+}
+"352
+[e :UE 480 ]
+}
+"354
+[v _elev_esperando `(i ~T0 @X0 1 ef ]
+{
+[e :U _elev_esperando ]
+[f ]
+"355
+[e $U 490  ]
+[e :U 491 ]
+{
+"356
+[v _e `i ~T0 @X0 1 a ]
+[e = _e *U + &U _cola_espera * -> -> -> 0 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux ]
+"357
+[e $ ! && && >= _e -> 0 `i < _e -> 3 `i == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 493  ]
+[e ) _e ]
+[e $UE 489  ]
+[e :U 493 ]
+"358
+[e ( _quitar_cola_espera (1 _e ]
+"359
+}
+[e :U 490 ]
+"355
+[e $ > _cola_esp_len -> 0 `i 491  ]
+[e :U 492 ]
+"360
+[e ) -U -> 1 `i ]
+[e $UE 489  ]
+"361
+[e :UE 489 ]
+}
+"363
+[v _tiene_paradas `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _tiene_paradas ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"364
+[v _p `i ~T0 @X0 1 a ]
+"365
+{
+[e = _p -> 1 `i ]
+[e $U 498  ]
+[e :U 495 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 499  ]
+[e ) -> 1 `i ]
+[e $UE 494  ]
+[e :U 499 ]
+[e ++ _p -> 1 `i ]
+[e :U 498 ]
+[e $ <= _p _num_pisos 495  ]
+[e :U 496 ]
+}
+"366
+[e ) -> 0 `i ]
+[e $UE 494  ]
+"367
+[e :UE 494 ]
+}
+"369
+[v _contar_paradas `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _contar_paradas ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"370
+[v _p `i ~T0 @X0 1 a ]
+[v _c `i ~T0 @X0 1 a ]
+[e = _c -> 0 `i ]
+"371
+{
+[e = _p -> 1 `i ]
+[e $U 504  ]
+[e :U 501 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 505  ]
+[e ++ _c -> 1 `i ]
+[e :U 505 ]
+[e ++ _p -> 1 `i ]
+[e :U 504 ]
+[e $ <= _p _num_pisos 501  ]
+[e :U 502 ]
+}
+"372
+[e ) _c ]
+[e $UE 500  ]
+"373
+[e :UE 500 ]
+}
+"375
+[v _contar_destinos `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _contar_destinos ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"376
+[v _p `i ~T0 @X0 1 a ]
+[v _c `i ~T0 @X0 1 a ]
+[e = _c -> 0 `i ]
+"377
+{
+[e = _p -> 1 `i ]
+[e $U 510  ]
+[e :U 507 ]
+[e $ ! != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui -> 4 `ui -> -> 0 `i `ui 511  ]
+[e ++ _c -> 1 `i ]
+[e :U 511 ]
+[e ++ _p -> 1 `i ]
+[e :U 510 ]
+[e $ <= _p _num_pisos 507  ]
+[e :U 508 ]
+}
+"378
+[e ) _c ]
+[e $UE 506  ]
+"379
+[e :UE 506 ]
+}
+"381
+[v _siguiente_objetivo `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _siguiente_objetivo ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"382
+[v _p `i ~T0 @X0 1 a ]
+[v _min_p `i ~T0 @X0 1 a ]
+[e = _min_p -> 99 `i ]
+[v _max_p `i ~T0 @X0 1 a ]
+[e = _max_p -> 0 `i ]
+"383
+{
+[e = _p -> 1 `i ]
+[e $U 516  ]
+[e :U 513 ]
+{
+"384
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 517  ]
+{
+"385
+[e $ ! < _p _min_p 518  ]
+[e = _min_p _p ]
+[e :U 518 ]
+"386
+[e $ ! > _p _max_p 519  ]
+[e = _max_p _p ]
+[e :U 519 ]
+"387
+}
+[e :U 517 ]
+"388
+}
+[e ++ _p -> 1 `i ]
+[e :U 516 ]
+[e $ <= _p _num_pisos 513  ]
+[e :U 514 ]
+}
+"389
+[e $ ! == _max_p -> 0 `i 520  ]
+{
+"390
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i ]
+"391
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"392
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 521  ]
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+[e :U 521 ]
+"393
+[e $UE 512  ]
+"394
+}
+[e :U 520 ]
+"395
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 522  ]
+{
+"396
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+"397
+[e $UE 512  ]
+"398
+}
+[e :U 522 ]
+"399
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i 523  ]
+{
+"400
+{
+[e = _p + *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+[e $U 527  ]
+[e :U 524 ]
+{
+"401
+[e $ ! || != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui | -> 4 `ui -> 1 `ui -> -> 0 `i `ui == _p _max_p 528  ]
+{
+"402
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _p ]
+"403
+[e $UE 512  ]
+"404
+}
+[e :U 528 ]
+"405
+}
+[e ++ _p -> 1 `i ]
+[e :U 527 ]
+[e $ <= _p _num_pisos 524  ]
+[e :U 525 ]
+}
+"406
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i ]
+"407
+{
+[e = _p - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+[e $ >= _p -> 1 `i 529  ]
+[e $U 530  ]
+[e :U 529 ]
+{
+"408
+[e $ ! || != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui | -> 4 `ui -> 2 `ui -> -> 0 `i `ui == _p _min_p 532  ]
+{
+"409
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _p ]
+"410
+[e $UE 512  ]
+"411
+}
+[e :U 532 ]
+"412
+}
+[e -- _p -> 1 `i ]
+[e $ >= _p -> 1 `i 529  ]
+[e :U 530 ]
+}
+"413
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _max_p ]
+"414
+}
+[e $U 533  ]
+[e :U 523 ]
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i 534  ]
+{
+"415
+{
+[e = _p - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+[e $ >= _p -> 1 `i 535  ]
+[e $U 536  ]
+[e :U 535 ]
+{
+"416
+[e $ ! || != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui | -> 4 `ui -> 2 `ui -> -> 0 `i `ui == _p _min_p 538  ]
+{
+"417
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _p ]
+"418
+[e $UE 512  ]
+"419
+}
+[e :U 538 ]
+"420
+}
+[e -- _p -> 1 `i ]
+[e $ >= _p -> 1 `i 535  ]
+[e :U 536 ]
+}
+"421
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i ]
+"422
+{
+[e = _p + *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+[e $U 542  ]
+[e :U 539 ]
+{
+"423
+[e $ ! || != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui | -> 4 `ui -> 1 `ui -> -> 0 `i `ui == _p _max_p 543  ]
+{
+"424
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _p ]
+"425
+[e $UE 512  ]
+"426
+}
+[e :U 543 ]
+"427
+}
+[e ++ _p -> 1 `i ]
+[e :U 542 ]
+[e $ <= _p _num_pisos 539  ]
+[e :U 540 ]
+}
+"428
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _min_p ]
+"429
+}
+[e $U 544  ]
+[e :U 534 ]
+{
+"430
+[v _mejor `i ~T0 @X0 1 a ]
+[e = _mejor _min_p ]
+[v _d `i ~T0 @X0 1 a ]
+[e = _d -> 99 `i ]
+"431
+{
+[e = _p -> 1 `i ]
+[e $U 548  ]
+[e :U 545 ]
+{
+"432
+[e $ ! && != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i < ( _vabs (1 - _p *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _d 549  ]
+{
+"433
+[e = _d ( _vabs (1 - _p *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+"434
+[e = _mejor _p ]
+"435
+}
+[e :U 549 ]
+"436
+}
+[e ++ _p -> 1 `i ]
+[e :U 548 ]
+[e $ <= _p _num_pisos 545  ]
+[e :U 546 ]
+}
+"437
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _mejor ]
+"438
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux ? > _mejor *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux : -> 1 `i ? < _mejor *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux : -> 2 `i -> 0 `i ]
+"439
+}
+[e :U 544 ]
+[e :U 533 ]
+"440
+[e :UE 512 ]
+}
+"443
+[v _costo_elevador `(i ~T0 @X0 1 ef3`i`i`i ]
+{
+[e :U _costo_elevador ]
+[v _e `i ~T0 @X0 1 r1 ]
+[v _p_usr `i ~T0 @X0 1 r2 ]
+[v _dir `i ~T0 @X0 1 r3 ]
+[f ]
+"444
+[v _p `i ~T0 @X0 1 a ]
+[v _lejano `i ~T0 @X0 1 a ]
+[e = _lejano *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+[v _inter `i ~T0 @X0 1 a ]
+[e = _inter -> 0 `i ]
+"445
+[v _carga `i ~T0 @X0 1 a ]
+[e = _carga ( _contar_paradas (1 _e ]
+"447
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i 551  ]
+{
+"448
+[e ) * ( _vabs (1 - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr -> 10 `i ]
+[e $UE 550  ]
+"449
+}
+[e :U 551 ]
+"450
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 552  ]
+{
+"451
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i 553  ]
+{
+"452
+[e $ ! && == _dir -> 1 `i > _p_usr *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux 554  ]
+{
+"453
+{
+[e = _p + *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+[e $U 558  ]
+[e :U 555 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 559  ]
+[e ++ _inter -> 1 `i ]
+[e :U 559 ]
+[e ++ _p -> 1 `i ]
+[e :U 558 ]
+[e $ < _p _p_usr 555  ]
+[e :U 556 ]
+}
+"454
+[e ) + * - _p_usr *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 10 `i * _inter -> 5 `i ]
+[e $UE 550  ]
+"455
+}
+[e :U 554 ]
+"456
+{
+[e = _p *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+[e $U 563  ]
+[e :U 560 ]
+{
+"457
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 564  ]
+{
+[e = _lejano _p ]
+[e ++ _inter -> 1 `i ]
+}
+[e :U 564 ]
+"458
+}
+[e ++ _p -> 1 `i ]
+[e :U 563 ]
+[e $ <= _p _num_pisos 560  ]
+[e :U 561 ]
+}
+"459
+[e ) + + + * - _lejano *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 10 `i * ( _vabs (1 - _lejano _p_usr -> 10 `i * _inter -> 8 `i -> 10 `i ]
+[e $UE 550  ]
+"460
+}
+[e :U 553 ]
+"461
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i 565  ]
+{
+"462
+[e $ ! && == _dir -> 2 `i < _p_usr *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux 566  ]
+{
+"463
+{
+[e = _p + _p_usr -> 1 `i ]
+[e $U 570  ]
+[e :U 567 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 571  ]
+[e ++ _inter -> 1 `i ]
+[e :U 571 ]
+[e ++ _p -> 1 `i ]
+[e :U 570 ]
+[e $ < _p *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux 567  ]
+[e :U 568 ]
+}
+"464
+[e ) + * - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr -> 10 `i * _inter -> 5 `i ]
+[e $UE 550  ]
+"465
+}
+[e :U 566 ]
+"466
+{
+[e = _p *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+[e $ >= _p -> 1 `i 572  ]
+[e $U 573  ]
+[e :U 572 ]
+{
+"467
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 575  ]
+{
+[e = _lejano _p ]
+[e ++ _inter -> 1 `i ]
+}
+[e :U 575 ]
+"468
+}
+[e -- _p -> 1 `i ]
+[e $ >= _p -> 1 `i 572  ]
+[e :U 573 ]
+}
+"469
+[e ) + + + * - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _lejano -> 10 `i * ( _vabs (1 - _p_usr _lejano -> 10 `i * _inter -> 8 `i -> 10 `i ]
+[e $UE 550  ]
+"470
+}
+[e :U 565 ]
+"471
+[e ) + * ( _vabs (1 - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr -> 10 `i * _carga -> 8 `i ]
+[e $UE 550  ]
+"472
+}
+[e :U 552 ]
+"473
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 576  ]
+{
+"474
+[e $ ! == *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr 577  ]
+[e ) -> 4 `i ]
+[e $UE 550  ]
+[e :U 577 ]
+"475
+[e ) + + * ( _vabs (1 - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr -> 10 `i -> 18 `i * _carga -> 8 `i ]
+[e $UE 550  ]
+"476
+}
+[e :U 576 ]
+"478
+[e $ ! == *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr 578  ]
+[e ) -> 6 `i ]
+[e $UE 550  ]
+[e :U 578 ]
+"479
+[e ) + + * ( _vabs (1 - *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _p_usr -> 10 `i -> 38 `i * _carga -> 10 `i ]
+[e $UE 550  ]
+"480
+[e :UE 550 ]
+}
+"482
+[v _cambiar_num_pisos `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _cambiar_num_pisos ]
+[v _n `i ~T0 @X0 1 r1 ]
+[f ]
+"483
+[v _e `i ~T0 @X0 1 a ]
+[v _p `i ~T0 @X0 1 a ]
+[v _podadas `i ~T0 @X0 1 a ]
+[e = _podadas -> 0 `i ]
+"484
+[e $ ! || < _n -> 4 `i > _n -> 20 `i 580  ]
+[e $UE 579  ]
+[e :U 580 ]
+"485
+[e = _num_pisos _n ]
+"487
+[e $ ! && == _modo -> 2 `i > _piso_usr _num_pisos 581  ]
+{
+"488
+[e = _piso_usr -> 0 `i ]
+"489
+[e = _modo -> 0 `i ]
+"490
+}
+[e :U 581 ]
+"492
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 582  ]
+[e $U 583  ]
+[e :U 582 ]
+{
+"493
+[e $ ! > *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _num_pisos 585  ]
+[e = *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux _num_pisos ]
+[e :U 585 ]
+"494
+[e $ ! > *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux _num_pisos 586  ]
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i ]
+[e :U 586 ]
+"495
+{
+[e = _p + _num_pisos -> 1 `i ]
+[e $ <= _p -> 20 `i 587  ]
+[e $U 588  ]
+[e :U 587 ]
+{
+"496
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 590  ]
+{
+"497
+[e = *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+"498
+[e ++ _podadas -> 1 `i ]
+"499
+}
+[e :U 590 ]
+"500
+}
+[e ++ _p -> 1 `i ]
+[e $ <= _p -> 20 `i 587  ]
+[e :U 588 ]
+}
+"501
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 591  ]
+{
+"502
+[e ( _siguiente_objetivo (1 _e ]
+"503
+[e $ ! == *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i 592  ]
+{
+"504
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+"505
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"506
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"507
+}
+[e :U 592 ]
+"508
+}
+[e $U 593  ]
+[e :U 591 ]
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 594  ]
+{
+"509
+[e $ ! && > *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ! != ( _tiene_paradas (1 _e -> 0 `i 595  ]
+{
+"510
+[e = *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+"511
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i ]
+"512
+}
+[e :U 595 ]
+"513
+}
+[e :U 594 ]
+[e :U 593 ]
+"514
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 582  ]
+[e :U 583 ]
+}
+"516
+[e ( _msg_elev (4 , , , -U -> 1 `i :s 13C -> 12 `i _num_pisos ]
+"517
+[e ( _beep (1 -> 6 `i ]
+"518
+[e ( _UART_EmitCfg (2 , _num_pisos _podadas ]
+"519
+[e ( _UART_EnviarEstado ..  ]
+"520
+[e :UE 579 ]
+}
+"522
+[v _reiniciar_sistema `(v ~T0 @X0 1 ef ]
+{
+[e :U _reiniciar_sistema ]
+[f ]
+"523
+[v _e `i ~T0 @X0 1 a ]
+"524
+[e = _emergencia -> -> 0 `i `uc ]
+"525
+[e = _modo -> 0 `i ]
+[e = _piso_usr -> 0 `i ]
+[e = _elev_activo -> 0 `i ]
+[e = _buf_len -> 0 `i ]
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+"526
+[e = _cola_esp_len -> 0 `i ]
+"527
+[e = *U + &U _cola_espera * -> -> -> 0 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux -U -> 1 `i ]
+[e = *U + &U _cola_espera * -> -> -> 1 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux -U -> 1 `i ]
+[e = *U + &U _cola_espera * -> -> -> 2 `i `ui `ux -> -> # *U &U _cola_espera `ui `ux -U -> 1 `i ]
+"528
+[e ( _memset (3 , , -> &U _paradas `*v -> 0 `i -> # _paradas `ui ]
+"530
+[e = *U + &U _piso * -> -> -> 0 `i `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+"531
+[e = *U + &U _piso * -> -> -> 1 `i `ui `ux -> -> # *U &U _piso `ui `ux ? > / _num_pisos -> 2 `i -> 1 `i : / _num_pisos -> 2 `i -> 1 `i ]
+"532
+[e = *U + &U _piso * -> -> -> 2 `i `ui `ux -> -> # *U &U _piso `ui `ux _num_pisos ]
+"533
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 597  ]
+[e $U 598  ]
+[e :U 597 ]
+{
+"534
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+"535
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"536
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i ]
+"537
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"538
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i ]
+"539
+[e = *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+"540
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 597  ]
+[e :U 598 ]
+}
+"541
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = _cont_buzz -> 0 `i ]
+"542
+[e ( _poner_msg (1 :s 14C ]
+"543
+[e $ ! >= -> ( _UART_TxFree ..  `ui -> 8 `ui 600  ]
+[e ( _UART_PutStr (1 :s 15C ]
+[e :U 600 ]
+"544
+[e ( _UART_EnviarEstado ..  ]
+"545
+[e :UE 596 ]
+}
+"548
+[v _llamar_pasillo_piso `(v ~T0 @X0 1 ef2`i`i ]
+{
+[e :U _llamar_pasillo_piso ]
+[v _fl `i ~T0 @X0 1 r1 ]
+[v _dir `i ~T0 @X0 1 r2 ]
+[f ]
+"549
+[v _e `i ~T0 @X0 1 a ]
+[v _mejor `i ~T0 @X0 1 a ]
+[e = _mejor -> 0 `i ]
+[v _best `i ~T0 @X0 1 a ]
+[e = _best -> 30000 `i ]
+"550
+[v _costos `i ~T0 @X0 -> 3 `i a ]
+"551
+[v _bit `uc ~T0 @X0 1 a ]
+[e = _bit -> ? == _dir -> 1 `i : -> 1 `ui -> 2 `ui `uc ]
+"552
+[v _dir_c `uc ~T0 @X0 1 a ]
+[e = _dir_c -> ? == _dir -> 1 `i : -> 85 `ui -> 68 `ui `uc ]
+"554
+[e $ ! || || != -> _emergencia `i -> 0 `i < _fl -> 1 `i > _fl _num_pisos 602  ]
+[e $UE 601  ]
+[e :U 602 ]
+"557
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 603  ]
+[e $U 604  ]
+[e :U 603 ]
+{
+"558
+[e = *U + &U _costos * -> -> _e `ui `ux -> -> # *U &U _costos `ui `ux ( _costo_elevador (3 , , _e _fl _dir ]
+"559
+[e $ ! < *U + &U _costos * -> -> _e `ui `ux -> -> # *U &U _costos `ui `ux _best 606  ]
+{
+[e = _best *U + &U _costos * -> -> _e `ui `ux -> -> # *U &U _costos `ui `ux ]
+[e = _mejor _e ]
+}
+[e :U 606 ]
+"560
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 603  ]
+[e :U 604 ]
+}
+"563
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 607  ]
+[e $U 608  ]
+[e :U 607 ]
+{
+"564
+[e $ ! != & -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> _bit `i -> 0 `i 610  ]
+{
+"565
+[e = _mejor _e ]
+"566
+[e $U 608  ]
+"567
+}
+[e :U 610 ]
+"568
+}
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 607  ]
+[e :U 608 ]
+}
+"570
+[e = _elev_activo _mejor ]
+"571
+[e ( _beep (1 -> 8 `i ]
+"572
+[e ( _UART_EmitDsp (4 , , , , , _fl _dir_c _mejor *U + &U _costos * -> -> -> 0 `i `ui `ux -> -> # *U &U _costos `ui `ux *U + &U _costos * -> -> -> 1 `i `ui `ux -> -> # *U &U _costos `ui `ux *U + &U _costos * -> -> -> 2 `i `ui `ux -> -> # *U &U _costos `ui `ux ]
+"574
+[e $ ! && == *U + &U _piso * -> -> _mejor `ui `ux -> -> # *U &U _piso `ui `ux _fl != *U + &U _estado * -> -> _mejor `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 611  ]
+{
+"575
+[e = *U + &U _estado * -> -> _mejor `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i ]
+"576
+[e = *U + &U _reloj_puerta * -> -> _mejor `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i ]
+"577
+[e = *U + &U _encolados * -> -> _mejor `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+"578
+[e ( _agregar_cola_espera (1 _mejor ]
+"579
+[e ( _msg_elev (4 , , , _mejor :s 16C -> 4 `i _fl ]
+"580
+}
+[e $U 612  ]
+[e :U 611 ]
+{
+"581
+[v _nueva `uc ~T0 @X0 1 a ]
+[e = _nueva -> -> == & -> *U + &U *U + &U _paradas * -> -> _mejor `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _mejor `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> _bit `i -> 0 `i `i `uc ]
+"582
+[e =| *U + &U *U + &U _paradas * -> -> _mejor `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _mejor `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> _bit `uc ]
+"583
+[e $ ! != -> _nueva `i -> 0 `i 613  ]
+[e ( _UART_EmitEnq (3 , , _mejor _fl _dir_c ]
+[e :U 613 ]
+"584
+[e $ ! == *U + &U _estado * -> -> _mejor `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i 614  ]
+{
+"585
+[e = *U + &U _estado * -> -> _mejor `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i ]
+"586
+[e = *U + &U _reloj_piso * -> -> _mejor `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"587
+}
+[e :U 614 ]
+"588
+[e $ ! == *U + &U _estado * -> -> _mejor `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 615  ]
+[e ( _siguiente_objetivo (1 _mejor ]
+[e :U 615 ]
+"589
+[e ( _msg_elev (4 , , , _mejor -> ? == _dir -> 1 `i : :s 17C :s 18C `*Cuc -> 5 `i _fl ]
+"590
+}
+[e :U 612 ]
+"591
+[e ( _UART_EnviarEstado ..  ]
+"592
+[e :UE 601 ]
+}
+"594
+[v _llamar_pasillo `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _llamar_pasillo ]
+[v _dir `i ~T0 @X0 1 r1 ]
+[f ]
+"595
+[v _fl `i ~T0 @X0 1 a ]
+"596
+[e $ ! != -> _emergencia `i -> 0 `i 617  ]
+[e $UE 616  ]
+[e :U 617 ]
+"597
+[e $ ! || != _modo -> 2 `i == _piso_usr -> 0 `i 618  ]
+{
+[e ( _poner_msg (1 :s 19C ]
+[e ( _beep (1 -> 10 `i ]
+[e $UE 616  ]
+}
+[e :U 618 ]
+"598
+[e = _fl _piso_usr ]
+[e = _piso_usr -> 0 `i ]
+[e = _modo -> 0 `i ]
+"599
+[e ( _llamar_pasillo_piso (2 , _fl _dir ]
+"600
+[e :UE 616 ]
+}
+"602
+[v _encolar_destino_cabina `(v ~T0 @X0 1 ef2`i`i ]
+{
+[e :U _encolar_destino_cabina ]
+[v _w `i ~T0 @X0 1 r1 ]
+[v _num `i ~T0 @X0 1 r2 ]
+[f ]
+"603
+[e $ ! || || < _w -> 0 `i > _w -> 2 `i != -> _emergencia `i -> 0 `i 620  ]
+[e $UE 619  ]
+[e :U 620 ]
+"604
+[e $ ! || < _num -> 1 `i > _num _num_pisos 621  ]
+{
+[e ( _poner_msg (1 :s 20C ]
+[e ( _beep (1 -> 18 `i ]
+[e $UE 619  ]
+}
+[e :U 621 ]
+"605
+[e $ ! == _num *U + &U _piso * -> -> _w `ui `ux -> -> # *U &U _piso `ui `ux 622  ]
+{
+[e ( _msg_elev (4 , , , -U -> 1 `i :s 21C -> 11 `i _num ]
+[e $UE 619  ]
+}
+[e :U 622 ]
+"607
+[v _nueva `uc ~T0 @X0 1 a ]
+[e = _nueva -> -> == & -> *U + &U *U + &U _paradas * -> -> _w `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _num `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _w `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `ui -> 4 `ui -> -> 0 `i `ui `i `uc ]
+"608
+[e =| *U + &U *U + &U _paradas * -> -> _w `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _num `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _w `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> 4 `ui `uc ]
+"609
+[e $ ! != -> _nueva `i -> 0 `i 623  ]
+[e ( _UART_EmitEnq (3 , , _w _num -> -> 67 `ui `uc ]
+[e :U 623 ]
+"611
+[e $ ! == *U + &U _estado * -> -> _w `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 624  ]
+{
+"612
+[e ++ *U + &U _encolados * -> -> _w `ui `ux -> -> # *U &U _encolados `ui `ux -> 1 `i ]
+"613
+[e = *U + &U _reloj_puerta * -> -> _w `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 450 `i ]
+"614
+}
+[e $U 625  ]
+[e :U 624 ]
+[e $ ! == *U + &U _estado * -> -> _w `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i 626  ]
+{
+"615
+[e = *U + &U _estado * -> -> _w `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i ]
+"616
+[e = *U + &U _reloj_piso * -> -> _w `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"617
+[e ( _siguiente_objetivo (1 _w ]
+"618
+}
+[e $U 627  ]
+[e :U 626 ]
+[e $ ! == *U + &U _estado * -> -> _w `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 628  ]
+{
+"619
+[e ( _siguiente_objetivo (1 _w ]
+"620
+}
+[e :U 628 ]
+[e :U 627 ]
+[e :U 625 ]
+"621
+[e ( _msg_elev (4 , , , _w :s 22C -> 5 `i _num ]
+"622
+[e ( _UART_EnviarEstado ..  ]
+"623
+[e :UE 619 ]
+}
+"625
+[v _procesar_tecla `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _procesar_tecla ]
+[v _k `uc ~T0 @X0 1 r1 ]
+[f ]
+"626
+[v _w `i ~T0 @X0 1 a ]
+[v _num `i ~T0 @X0 1 a ]
+[v _e `i ~T0 @X0 1 a ]
+"627
+[e $ ! == -> _k `ui -> 42 `ui 630  ]
+{
+"628
+[e = _emergencia -> -> ! != -> _emergencia `i -> 0 `i `i `uc ]
+"629
+[e = _modo -> 0 `i ]
+[e = _buf_len -> 0 `i ]
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+[e = _piso_usr -> 0 `i ]
+"630
+[e $ ! != -> _emergencia `i -> 0 `i 631  ]
+[e ( _beep (1 -> 25 `i ]
+[e $U 632  ]
+"631
+[e :U 631 ]
+{
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = _cont_buzz -> 0 `i ]
+[e ( _poner_msg (1 :s 23C ]
+}
+[e :U 632 ]
+"632
+[e ( _UART_EmitEmg (1 _emergencia ]
+"633
+[e ( _UART_EnviarEstado ..  ]
+"634
+[e $UE 629  ]
+"635
+}
+[e :U 630 ]
+"636
+[e $ ! != -> _emergencia `i -> 0 `i 633  ]
+[e $UE 629  ]
+[e :U 633 ]
+"637
+[e ( _beep (1 -> 4 `i ]
+"639
+[e $ ! == -> _k `ui -> 65 `ui 634  ]
+{
+[e = _modo -> 1 `i ]
+[e = _buf_len -> 0 `i ]
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+[e = _piso_usr -> 0 `i ]
+[e $UE 629  ]
+}
+[e :U 634 ]
+"641
+[e $ ! && >= -> _k `ui -> 48 `ui <= -> _k `ui -> 57 `ui 635  ]
+{
+"642
+[e = _w ( _elev_esperando ..  ]
+"643
+[e $ ! || == _modo -> 1 `i && == _modo -> 0 `i >= _w -> 0 `i 636  ]
+{
+"644
+[e $ ! >= _buf_len -> 2 `i 637  ]
+{
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux _k ]
+[e = *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+[e = _buf_len -> 1 `i ]
+}
+[e $U 638  ]
+"645
+[e :U 637 ]
+{
+[e = *U + &U _buf * -> -> ++ _buf_len -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux _k ]
+[e = *U + &U _buf * -> -> _buf_len `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+}
+[e :U 638 ]
+"646
+[e $ ! && && == _modo -> 0 `i >= _w -> 0 `i > *U + &U _encolados * -> -> _w `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i 639  ]
+[e = *U + &U _reloj_puerta * -> -> _w `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 450 `i ]
+[e :U 639 ]
+"647
+}
+[e $U 640  ]
+[e :U 636 ]
+[e $ ! == _modo -> 2 `i 641  ]
+[e ( _msg_elev (4 , , , -U -> 1 `i :s 24C -> 1 `i _piso_usr ]
+[e $U 642  ]
+"648
+[e :U 641 ]
+[e ( _poner_msg (1 :s 25C ]
+[e :U 642 ]
+[e :U 640 ]
+"649
+[e $UE 629  ]
+"650
+}
+[e :U 635 ]
+"652
+[e $ ! == -> _k `ui -> 35 `ui 643  ]
+{
+"653
+[e = _num -> ? == _buf_len -> 1 `i : - -> *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux `ui -> 48 `ui ? == _buf_len -> 2 `i : + * - -> *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux `ui -> 48 `ui -> -> 10 `i `ui - -> *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux `ui -> 48 `ui -> -> 0 `i `ui `i ]
+"655
+[e = _buf_len -> 0 `i ]
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+"657
+[e $ ! == _modo -> 1 `i 644  ]
+{
+"658
+[e $ ! || < _num -> 1 `i > _num _num_pisos 645  ]
+{
+[e = _modo -> 0 `i ]
+[e ( _poner_msg (1 :s 26C ]
+[e ( _beep (1 -> 18 `i ]
+}
+[e $U 646  ]
+"659
+[e :U 645 ]
+{
+[e = _piso_usr _num ]
+[e = _modo -> 2 `i ]
+[e ( _msg_elev (4 , , , -U -> 1 `i :s 27C -> 1 `i _num ]
+}
+[e :U 646 ]
+"660
+}
+[e $U 647  ]
+[e :U 644 ]
+[e $ ! && == _modo -> 0 `i >= = _w ( _elev_esperando ..  -> 0 `i 648  ]
+{
+"661
+[e ( _encolar_destino_cabina (2 , _w _num ]
+"662
+}
+[e :U 648 ]
+[e :U 647 ]
+"663
+[e $UE 629  ]
+"664
+}
+[e :U 643 ]
+"666
+[e $ ! == -> _k `ui -> 66 `ui 649  ]
+{
+"667
+[e = _e ? >= ( _elev_esperando ..  -> 0 `i : ( _elev_esperando ..  _elev_activo ]
+"668
+[e $ ! != *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 650  ]
+{
+"669
+[e $ ! || == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 651  ]
+{
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i ]
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 220 `i ]
+}
+[e $U 652  ]
+"670
+[e :U 651 ]
+[e $ ! > *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i 653  ]
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 450 `i ]
+[e :U 653 ]
+[e :U 652 ]
+"671
+[e ( _msg_elev (4 , , , _e :s 28C -U -> 1 `i -> 0 `i ]
+[e ( _beep (1 -> 7 `i ]
+"672
+[e ( _UART_EnviarEstado ..  ]
+"673
+}
+[e :U 650 ]
+"674
+}
+[e $U 654  ]
+[e :U 649 ]
+[e $ ! == -> _k `ui -> 67 `ui 655  ]
+{
+"675
+[e = _e ? >= ( _elev_esperando ..  -> 0 `i : ( _elev_esperando ..  _elev_activo ]
+"676
+[e $ ! || == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 656  ]
+{
+"677
+[e ( _quitar_cola_espera (1 _e ]
+"678
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i ]
+[e = *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+[e = _buf_len -> 0 `i ]
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+"679
+[e $ ! != ( _tiene_paradas (1 _e -> 0 `i 657  ]
+{
+"680
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i ]
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+[e ( _siguiente_objetivo (1 _e ]
+"681
+[e ( _msg_elev (4 , , , _e :s 29C -> 10 `i *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux ]
+"682
+}
+[e $U 658  ]
+[e :U 657 ]
+{
+"683
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"684
+[e ( _msg_elev (4 , , , _e :s 30C -U -> 1 `i -> 0 `i ]
+"685
+}
+[e :U 658 ]
+"686
+[e ( _beep (1 -> 7 `i ]
+"687
+[e ( _UART_EnviarEstado ..  ]
+"688
+}
+[e :U 656 ]
+"689
+}
+[e $U 659  ]
+[e :U 655 ]
+[e $ ! == -> _k `ui -> 68 `ui 660  ]
+{
+"690
+[e $ ! > _buf_len -> 0 `i 661  ]
+[e = *U + &U _buf * -> -> =- _buf_len -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 0 `ui `uc ]
+[e $U 662  ]
+"691
+[e :U 661 ]
+[e $ ! == _modo -> 2 `i 663  ]
+{
+[e = _piso_usr -> 0 `i ]
+[e = _modo -> 1 `i ]
+}
+[e $U 664  ]
+"692
+[e :U 663 ]
+[e $ ! == _modo -> 1 `i 665  ]
+{
+[e = _modo -> 0 `i ]
+[e ( _poner_msg (1 :s 31C ]
+}
+[e :U 665 ]
+[e :U 664 ]
+[e :U 662 ]
+"693
+}
+[e :U 660 ]
+[e :U 659 ]
+[e :U 654 ]
+"694
+[e :UE 629 ]
+}
+"697
+[v _atender_llegada `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _atender_llegada ]
+[v _e `i ~T0 @X0 1 r1 ]
+[f ]
+"698
+[v _fl `i ~T0 @X0 1 a ]
+[e = _fl *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux ]
+[v _p `i ~T0 @X0 1 a ]
+"699
+[v _mask `uc ~T0 @X0 1 a ]
+[e = _mask *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux ]
+"700
+[v _had_pickup `uc ~T0 @X0 1 a ]
+[e = _had_pickup -> -> 0 `i `uc ]
+"701
+[v _had_dest `uc ~T0 @X0 1 a ]
+[e = _had_dest -> ? != & -> _mask `ui -> 4 `ui -> -> 0 `i `ui : -> 1 `ui -> 0 `ui `uc ]
+"702
+[v _mas_arriba `i ~T0 @X0 1 a ]
+[e = _mas_arriba -> 0 `i ]
+[v _mas_abajo `i ~T0 @X0 1 a ]
+[e = _mas_abajo -> 0 `i ]
+"704
+{
+[e = _p + _fl -> 1 `i ]
+[e $U 670  ]
+[e :U 667 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 671  ]
+{
+[e = _mas_arriba -> 1 `i ]
+[e $U 668  ]
+}
+[e :U 671 ]
+[e ++ _p -> 1 `i ]
+[e :U 670 ]
+[e $ <= _p _num_pisos 667  ]
+[e :U 668 ]
+}
+"705
+{
+[e = _p - _fl -> 1 `i ]
+[e $ >= _p -> 1 `i 672  ]
+[e $U 673  ]
+[e :U 672 ]
+[e $ ! != -> *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _p `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux `i -> 0 `i 675  ]
+{
+[e = _mas_abajo -> 1 `i ]
+[e $U 673  ]
+}
+[e :U 675 ]
+[e -- _p -> 1 `i ]
+[e $ >= _p -> 1 `i 672  ]
+[e :U 673 ]
+}
+"707
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 4 `ui `uc `uc ]
+"708
+[e $ ! != -> _had_dest `i -> 0 `i 676  ]
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 67 `ui `uc ]
+[e :U 676 ]
+"710
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i 677  ]
+{
+"711
+[e $ ! != & -> _mask `ui -> 1 `ui -> -> 0 `i `ui 678  ]
+{
+"712
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 1 `ui `uc `uc ]
+"713
+[e = _had_pickup -> -> 1 `ui `uc ]
+"714
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 85 `ui `uc ]
+"715
+}
+[e :U 678 ]
+"716
+[e $ ! && ! != _mas_arriba -> 0 `i != & -> _mask `ui -> 2 `ui -> -> 0 `i `ui 679  ]
+{
+"717
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 2 `ui `uc `uc ]
+"718
+[e = _had_pickup -> -> 1 `ui `uc ]
+"719
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i ]
+"720
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 68 `ui `uc ]
+"721
+}
+[e :U 679 ]
+"722
+}
+[e $U 680  ]
+[e :U 677 ]
+[e $ ! == *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i 681  ]
+{
+"723
+[e $ ! != & -> _mask `ui -> 2 `ui -> -> 0 `i `ui 682  ]
+{
+"724
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 2 `ui `uc `uc ]
+"725
+[e = _had_pickup -> -> 1 `ui `uc ]
+"726
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 68 `ui `uc ]
+"727
+}
+[e :U 682 ]
+"728
+[e $ ! && ! != _mas_abajo -> 0 `i != & -> _mask `ui -> 1 `ui -> -> 0 `i `ui 683  ]
+{
+"729
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 1 `ui `uc `uc ]
+"730
+[e = _had_pickup -> -> 1 `ui `uc ]
+"731
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i ]
+"732
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 85 `ui `uc ]
+"733
+}
+[e :U 683 ]
+"734
+}
+[e $U 684  ]
+[e :U 681 ]
+{
+"735
+[e $ ! != & -> _mask `ui -> 1 `ui -> -> 0 `i `ui 685  ]
+{
+"736
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 1 `ui `uc `uc ]
+"737
+[e = _had_pickup -> -> 1 `ui `uc ]
+"738
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i ]
+"739
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 85 `ui `uc ]
+"740
+}
+[e :U 685 ]
+"741
+[e $ ! != & -> _mask `ui -> 2 `ui -> -> 0 `i `ui 686  ]
+{
+"742
+[e =& *U + &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux * -> -> _fl `ui `ux -> -> # *U &U *U + &U _paradas * -> -> _e `ui `ux -> * -> # *U &U *U &U _paradas `ui -> -> 21 `i `ui `ux `ui `ux -> -> ~ -> 2 `ui `uc `uc ]
+"743
+[e = _had_pickup -> -> 1 `ui `uc ]
+"744
+[e $ ! ! != & -> _mask `ui -> 1 `ui -> -> 0 `i `ui 687  ]
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i ]
+[e :U 687 ]
+"745
+[e ( _UART_EmitDeq (3 , , _e _fl -> -> 68 `ui `uc ]
+"746
+}
+[e :U 686 ]
+"747
+}
+[e :U 684 ]
+[e :U 680 ]
+"749
+[e = *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i ]
+"750
+[e = _elev_activo _e ]
+"751
+[e ( _beep (1 -> 12 `i ]
+"753
+[e $ ! != -> _had_pickup `i -> 0 `i 688  ]
+{
+"754
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i ]
+"755
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i ]
+"756
+[e = *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+"757
+[e ( _agregar_cola_espera (1 _e ]
+"758
+[e ( _msg_elev (4 , , , _e :s 32C -> 4 `i _fl ]
+"759
+}
+[e $U 689  ]
+[e :U 688 ]
+{
+"760
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i ]
+"761
+[e = *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 220 `i ]
+"762
+[e ( _msg_elev (4 , , , _e :s 33C -> 12 `i _fl ]
+"763
+}
+[e :U 689 ]
+"764
+[e ( _UART_EnviarEstado ..  ]
+"765
+[e :UE 666 ]
+}
+"767
+[v _actualizar_todo `(v ~T0 @X0 1 ef ]
+{
+[e :U _actualizar_todo ]
+[f ]
+"768
+[v _e `i ~T0 @X0 1 a ]
+[v _w `i ~T0 @X0 1 a ]
+"769
+[v _l1 `uc ~T0 @X0 -> 17 `i a ]
+[v _l2 `uc ~T0 @X0 -> 17 `i a ]
+"771
+[e $ ! >= =+ _cont_parp -> 1 `i -> 35 `i 691  ]
+{
+[e = _cont_parp -> 0 `i ]
+[e = _parpadeo -> -> ! != -> _parpadeo `i -> 0 `i `i `uc ]
+}
+[e :U 691 ]
+"772
+[e $ ! != -> _emergencia `i -> 0 `i 692  ]
+{
+"773
+[e = . . _LATBbits 0 5 _parpadeo ]
+"774
+}
+[e $U 693  ]
+[e :U 692 ]
+{
+"775
+[e $ ! && > _cont_buzz -> 0 `i == =- _cont_buzz -> 1 `i -> 0 `i 694  ]
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e :U 694 ]
+"777
+{
+[e = _e -> 0 `i ]
+[e $ < _e -> 3 `i 695  ]
+[e $U 696  ]
+[e :U 695 ]
+{
+"778
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i 698  ]
+{
+"779
+[e $ ! && > *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i == =- *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 1 `i -> 0 `i 699  ]
+{
+"780
+[e $ ! != ( _tiene_paradas (1 _e -> 0 `i 700  ]
+{
+"781
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i ]
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+[e ( _siguiente_objetivo (1 _e ]
+"782
+}
+[e $U 701  ]
+[e :U 700 ]
+{
+"783
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"784
+}
+[e :U 701 ]
+"785
+[e ( _UART_EnviarEstado ..  ]
+"786
+}
+[e :U 699 ]
+"787
+}
+[e $U 702  ]
+[e :U 698 ]
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i 703  ]
+{
+"788
+[e $ ! && && > *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i > *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 0 `i == =- *U + &U _reloj_puerta * -> -> _e `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 1 `i -> 0 `i 704  ]
+{
+"789
+[e ( _quitar_cola_espera (1 _e ]
+"790
+[e = *U + &U _encolados * -> -> _e `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i ]
+"791
+[e $ ! != ( _tiene_paradas (1 _e -> 0 `i 705  ]
+{
+"792
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i ]
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+[e ( _siguiente_objetivo (1 _e ]
+"793
+[e ( _msg_elev (4 , , , _e :s 34C -> 10 `i *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux ]
+"794
+}
+[e $U 706  ]
+[e :U 705 ]
+{
+"795
+[e = *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 0 `i ]
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 0 `i ]
+"796
+}
+[e :U 706 ]
+"797
+[e ( _UART_EnviarEstado ..  ]
+"798
+}
+[e :U 704 ]
+"799
+}
+[e $U 707  ]
+[e :U 703 ]
+[e $ ! == *U + &U _estado * -> -> _e `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i 708  ]
+{
+"800
+[e $ ! == *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i 709  ]
+[e ( _siguiente_objetivo (1 _e ]
+[e :U 709 ]
+"801
+[e $ ! == *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux -> 0 `i 710  ]
+[e $U 697  ]
+[e :U 710 ]
+"804
+[e $ ! == *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux 711  ]
+{
+"805
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"806
+[e ( _atender_llegada (1 _e ]
+"807
+[e $U 697  ]
+"808
+}
+[e :U 711 ]
+"810
+[e $ ! < =+ *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 1 `i -> 200 `i 712  ]
+[e $U 697  ]
+[e :U 712 ]
+"811
+[e = *U + &U _reloj_piso * -> -> _e `ui `ux -> -> # *U &U _reloj_piso `ui `ux -> 0 `i ]
+"813
+[e $ ! < *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux 713  ]
+{
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i ]
+[e ++ *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+}
+[e $U 714  ]
+"814
+[e :U 713 ]
+[e $ ! > *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux 715  ]
+{
+[e = *U + &U _direccion * -> -> _e `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i ]
+[e -- *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux -> 1 `i ]
+}
+[e :U 715 ]
+[e :U 714 ]
+"816
+[e $ ! == *U + &U _piso * -> -> _e `ui `ux -> -> # *U &U _piso `ui `ux *U + &U _objetivo * -> -> _e `ui `ux -> -> # *U &U _objetivo `ui `ux 716  ]
+{
+"817
+[e ( _atender_llegada (1 _e ]
+"818
+}
+[e :U 716 ]
+"819
+}
+[e :U 708 ]
+[e :U 707 ]
+[e :U 702 ]
+"820
+}
+[e :U 697 ]
+[e ++ _e -> 1 `i ]
+[e $ < _e -> 3 `i 695  ]
+[e :U 696 ]
+}
+"821
+}
+[e :U 693 ]
+"824
+[e $ ! != -> _emergencia `i -> 0 `i 717  ]
+{
+"825
+[e ( _strcpy (2 , &U _l1 :s 35C ]
+[e ( _strcpy (2 , &U _l2 :s 36C ]
+"826
+}
+[e $U 718  ]
+[e :U 717 ]
+{
+"827
+[e ( _strcpy (2 , &U _l1 :s 37C ]
+"828
+[e ( _poner_2d (2 , &U *U + &U _l1 * -> -> -> 2 `i `ui `ux -> -> # *U &U _l1 `ui `ux *U + &U _piso * -> -> -> 0 `i `ui `ux -> -> # *U &U _piso `ui `ux ]
+"829
+[e ( _poner_2d (2 , &U *U + &U _l1 * -> -> -> 8 `i `ui `ux -> -> # *U &U _l1 `ui `ux *U + &U _piso * -> -> -> 1 `i `ui `ux -> -> # *U &U _piso `ui `ux ]
+"830
+[e ( _poner_2d (2 , &U *U + &U _l1 * -> -> -> 14 `i `ui `ux -> -> # *U &U _l1 `ui `ux *U + &U _piso * -> -> -> 2 `i `ui `ux -> -> # *U &U _piso `ui `ux ]
+"832
+[e = _w ( _elev_esperando ..  ]
+"833
+[e $ ! == _modo -> 1 `i 719  ]
+{
+"834
+[e ( _strcpy (2 , &U _l2 :s 38C ]
+"835
+[e $ ! >= _buf_len -> 1 `i 720  ]
+[e = *U + &U _l2 * -> -> -> 9 `i `ui `ux -> -> # *U &U _l2 `ui `ux *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+[e :U 720 ]
+"836
+[e $ ! >= _buf_len -> 2 `i 721  ]
+[e = *U + &U _l2 * -> -> -> 10 `i `ui `ux -> -> # *U &U _l2 `ui `ux *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+[e :U 721 ]
+"837
+}
+[e $U 722  ]
+[e :U 719 ]
+[e $ ! == _modo -> 2 `i 723  ]
+{
+"838
+[e ( _strcpy (2 , &U _l2 :s 39C ]
+[e ( _poner_2d (2 , &U *U + &U _l2 * -> -> -> 1 `i `ui `ux -> -> # *U &U _l2 `ui `ux _piso_usr ]
+"839
+}
+[e $U 724  ]
+[e :U 723 ]
+[e $ ! >= _w -> 0 `i 725  ]
+{
+"840
+[e $ ! && == ( _strncmp (3 , , -> &U _msg_lcd `*Cuc :s 40C -> -> 16 `i `ui -> 0 `i == _buf_len -> 0 `i 726  ]
+[e ( _strcpy (2 , &U _l2 :s 41C ]
+[e $U 727  ]
+"841
+[e :U 726 ]
+[e $ ! && > *U + &U _encolados * -> -> _w `ui `ux -> -> # *U &U _encolados `ui `ux -> 0 `i == _buf_len -> 0 `i 728  ]
+{
+"842
+[e ( _strcpy (2 , &U _l2 :s 42C ]
+"843
+[e = *U + &U _l2 * -> -> -> 1 `i `ui `ux -> -> # *U &U _l2 `ui `ux ( _dig (1 + _w -> 1 `i ]
+"844
+[e ( _poner_2d (2 , &U *U + &U _l2 * -> -> -> 5 `i `ui `ux -> -> # *U &U _l2 `ui `ux ( _contar_destinos (1 _w ]
+"845
+[e = *U + &U _l2 * -> -> -> 8 `i `ui `ux -> -> # *U &U _l2 `ui `ux ( _dig (1 / + *U + &U _reloj_puerta * -> -> _w `ui `ux -> -> # *U &U _reloj_puerta `ui `ux -> 99 `i -> 100 `i ]
+"846
+}
+[e $U 729  ]
+[e :U 728 ]
+{
+"847
+[e ( _strcpy (2 , &U _l2 :s 43C ]
+[e = *U + &U _l2 * -> -> -> 1 `i `ui `ux -> -> # *U &U _l2 `ui `ux ( _dig (1 + _w -> 1 `i ]
+"848
+[e $ ! >= _buf_len -> 1 `i 730  ]
+[e = *U + &U _l2 * -> -> -> 8 `i `ui `ux -> -> # *U &U _l2 `ui `ux *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+[e :U 730 ]
+"849
+[e $ ! >= _buf_len -> 2 `i 731  ]
+[e = *U + &U _l2 * -> -> -> 9 `i `ui `ux -> -> # *U &U _l2 `ui `ux *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+[e :U 731 ]
+"850
+}
+[e :U 729 ]
+[e :U 727 ]
+"851
+}
+[e $U 732  ]
+[e :U 725 ]
+[e ( _memcpy (3 , , -> &U _l2 `*v -> &U _msg_lcd `*Cv -> -> 17 `i `ui ]
+[e :U 732 ]
+[e :U 724 ]
+[e :U 722 ]
+"852
+}
+[e :U 718 ]
+"853
+[e ( _LCD_Linea (2 , -> -> 0 `i `uc -> &U _l1 `*Cuc ]
+[e ( _LCD_Linea (2 , -> -> 1 `i `uc -> &U _l2 `*Cuc ]
+"857
+[e = . . _LATEbits 0 2 -> -> && && ! != -> _emergencia `i -> 0 `i == *U + &U _estado * -> -> -> 0 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 0 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i `i `uc ]
+"858
+[e = . . _LATAbits 0 6 -> -> && && ! != -> _emergencia `i -> 0 `i || == *U + &U _estado * -> -> -> 0 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i == *U + &U _estado * -> -> -> 0 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i != -> _parpadeo `i -> 0 `i `i `uc ]
+"859
+[e = . . _LATCbits 0 0 -> ? != -> _emergencia `i -> 0 `i : -> _parpadeo `i -> -> -> && == *U + &U _estado * -> -> -> 0 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 0 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i `i `uc `i `uc ]
+"862
+[e = . . _LATCbits 0 2 -> -> && && ! != -> _emergencia `i -> 0 `i == *U + &U _estado * -> -> -> 1 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 1 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i `i `uc ]
+"863
+[e = . . _LATDbits 0 3 -> -> && && ! != -> _emergencia `i -> 0 `i || == *U + &U _estado * -> -> -> 1 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i == *U + &U _estado * -> -> -> 1 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i != -> _parpadeo `i -> 0 `i `i `uc ]
+"864
+[e = . . _LATDbits 0 2 -> ? != -> _emergencia `i -> 0 `i : -> _parpadeo `i -> -> -> && == *U + &U _estado * -> -> -> 1 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 1 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i `i `uc `i `uc ]
+"867
+[e = . . _LATDbits 0 7 -> -> && && ! != -> _emergencia `i -> 0 `i == *U + &U _estado * -> -> -> 2 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 2 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 1 `i `i `uc ]
+"868
+[e = . . _LATDbits 0 6 -> -> && && ! != -> _emergencia `i -> 0 `i || == *U + &U _estado * -> -> -> 2 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 2 `i == *U + &U _estado * -> -> -> 2 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 3 `i != -> _parpadeo `i -> 0 `i `i `uc ]
+"869
+[e = . . _LATDbits 0 5 -> ? != -> _emergencia `i -> 0 `i : -> _parpadeo `i -> -> -> && == *U + &U _estado * -> -> -> 2 `i `ui `ux -> -> # *U &U _estado `ui `ux -> 1 `i == *U + &U _direccion * -> -> -> 2 `i `ui `ux -> -> # *U &U _direccion `ui `ux -> 2 `i `i `uc `i `uc ]
+"870
+[e :UE 690 ]
+}
+"873
+[v _parse_2d `(i ~T0 @X0 1 ef1`*Cuc ]
+{
+[e :U _parse_2d ]
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+"874
+[v _v `i ~T0 @X0 1 a ]
+[e = _v -> 0 `i ]
+"875
+[e $ ! && >= -> *U + _s * -> -> 0 `i `x -> -> # *U _s `i `x `ui -> 48 `ui <= -> *U + _s * -> -> 0 `i `x -> -> # *U _s `i `x `ui -> 57 `ui 734  ]
+{
+"876
+[e = _v -> - -> *U + _s * -> -> 0 `i `x -> -> # *U _s `i `x `ui -> 48 `ui `i ]
+"877
+[e $ ! && >= -> *U + _s * -> -> 1 `i `x -> -> # *U _s `i `x `ui -> 48 `ui <= -> *U + _s * -> -> 1 `i `x -> -> # *U _s `i `x `ui -> 57 `ui 735  ]
+[e = _v + * _v -> 10 `i -> - -> *U + _s * -> -> 1 `i `x -> -> # *U _s `i `x `ui -> 48 `ui `i ]
+[e :U 735 ]
+"878
+}
+[e :U 734 ]
+"879
+[e ) _v ]
+[e $UE 733  ]
+"880
+[e :UE 733 ]
+}
+"882
+[v _UART_ProcessRx `(v ~T0 @X0 1 ef ]
+{
+[e :U _UART_ProcessRx ]
+[f ]
+"883
+[e $U 737  ]
+[e :U 738 ]
+{
+"884
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c *U + &U _rx_ring * -> _rx_tail `ux -> -> # *U &U _rx_ring `ui `ux ]
+"885
+[e = _rx_tail -> & + -> _rx_tail `ui -> 1 `ui - -> 64 `ui -> 1 `ui `uc ]
+"887
+[e $ ! || == -> _c `ui -> 13 `ui == -> _c `ui -> 10 `ui 740  ]
+{
+"888
+[e $ ! == -> _uart_rx_len `i -> 0 `i 741  ]
+[e $U 737  ]
+[e :U 741 ]
+"889
+[e = *U + &U _uart_rx * -> _uart_rx_len `ux -> -> # *U &U _uart_rx `ui `ux -> -> 0 `ui `uc ]
+"891
+[e $ ! && && >= -> _uart_rx_len `i -> 3 `i == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 78 `ui == -> *U + &U _uart_rx * -> -> -> 1 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 58 `ui 742  ]
+{
+"892
+[e ( _cambiar_num_pisos (1 ( _parse_2d (1 -> &U *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `*Cuc ]
+"893
+}
+[e $U 743  ]
+[e :U 742 ]
+[e $ ! && && >= -> _uart_rx_len `i -> 3 `i == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 75 `ui == -> *U + &U _uart_rx * -> -> -> 1 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 58 `ui 744  ]
+{
+"894
+[e ( _procesar_tecla (1 *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux ]
+"895
+}
+[e $U 745  ]
+[e :U 744 ]
+[e $ ! && && >= -> _uart_rx_len `i -> 3 `i == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 72 `ui == -> *U + &U _uart_rx * -> -> -> 1 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 58 `ui 746  ]
+{
+"896
+[e $ ! == -> *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 85 `ui 747  ]
+[e ( _llamar_pasillo (1 -> 1 `i ]
+[e $U 748  ]
+"897
+[e :U 747 ]
+[e $ ! == -> *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 68 `ui 749  ]
+[e ( _llamar_pasillo (1 -> 2 `i ]
+[e :U 749 ]
+[e :U 748 ]
+"898
+}
+[e $U 750  ]
+[e :U 746 ]
+[e $ ! && && >= -> _uart_rx_len `i -> 6 `i == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 67 `ui == -> *U + &U _uart_rx * -> -> -> 1 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 58 `ui 751  ]
+{
+"900
+[v _fl `i ~T0 @X0 1 a ]
+[e = _fl ( _parse_2d (1 -> &U *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `*Cuc ]
+"901
+[v _d `uc ~T0 @X0 1 a ]
+[e = _d *U + &U _uart_rx * -> -> -> 5 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux ]
+"902
+[e $ ! || == -> _d `ui -> 85 `ui == -> _d `ui -> 68 `ui 752  ]
+[e ( _llamar_pasillo_piso (2 , _fl ? == -> _d `ui -> 85 `ui : -> 1 `i -> 2 `i ]
+[e :U 752 ]
+"903
+}
+[e $U 753  ]
+[e :U 751 ]
+[e $ ! && && >= -> _uart_rx_len `i -> 6 `i == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 68 `ui == -> *U + &U _uart_rx * -> -> -> 1 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 58 `ui 754  ]
+{
+"905
+[v _e `i ~T0 @X0 1 a ]
+[e = _e -> - -> *U + &U _uart_rx * -> -> -> 2 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 49 `ui `i ]
+"906
+[v _fl `i ~T0 @X0 1 a ]
+[e = _fl ( _parse_2d (1 -> &U *U + &U _uart_rx * -> -> -> 4 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `*Cuc ]
+"907
+[e $ ! && >= _e -> 0 `i <= _e -> 2 `i 755  ]
+[e ( _encolar_destino_cabina (2 , _e _fl ]
+[e :U 755 ]
+"908
+}
+[e $U 756  ]
+[e :U 754 ]
+[e $ ! == -> *U + &U _uart_rx * -> -> -> 0 `i `ui `ux -> -> # *U &U _uart_rx `ui `ux `ui -> 82 `ui 757  ]
+{
+"909
+[e ( _reiniciar_sistema ..  ]
+"910
+}
+[e :U 757 ]
+[e :U 756 ]
+[e :U 753 ]
+[e :U 750 ]
+[e :U 745 ]
+[e :U 743 ]
+"911
+[e = _uart_rx_len -> -> 0 `i `uc ]
+"912
+}
+[e $U 758  ]
+[e :U 740 ]
+[e $ ! < -> _uart_rx_len `i -> 18 `i 759  ]
+{
+"913
+[e = *U + &U _uart_rx * -> ++ _uart_rx_len -> -> 1 `i `uc `ux -> -> # *U &U _uart_rx `ui `ux _c ]
+"914
+}
+[e :U 759 ]
+[e :U 758 ]
+"915
+}
+[e :U 737 ]
+"883
+[e $ != -> _rx_tail `i -> _rx_head `i 738  ]
+[e :U 739 ]
+"916
+[e :UE 736 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"919
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"920
+[e = . . _OSCCONbits 0 3 -> -> 7 `i `uc ]
+"921
+[e = _ADCON0 -> -> 0 `i `uc ]
+[e = _ADCON1 -> -> 15 `i `uc ]
+[e = _CMCON -> -> 7 `i `uc ]
+[e = _SPPCON -> -> 0 `i `uc ]
+"925
+[e = _TRISA -> -> 63 `i `uc ]
+"927
+[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
+[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
+[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+"928
+[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+"929
+[e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
+"930
+[e = . . _TRISBbits 0 6 -> -> 1 `i `uc ]
+[e = . . _TRISBbits 0 7 -> -> 1 `i `uc ]
+"932
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
+"934
+[e = _TRISD -> -> 0 `i `uc ]
+"936
+[e = . . _TRISEbits 0 0 -> -> 1 `i `uc ]
+[e = . . _TRISEbits 0 1 -> -> 1 `i `uc ]
+[e = . . _TRISEbits 0 2 -> -> 0 `i `uc ]
+"938
+[e = _LATA -> -> 0 `i `uc ]
+[e = _LATB -> -> 0 `i `uc ]
+[e = _LATC -> -> 0 `i `uc ]
+[e = _LATD -> -> 0 `i `uc ]
+[e = _LATE -> -> 0 `i `uc ]
+"939
+[e ( _memset (3 , , -> &U _paradas `*v -> 0 `i -> # _paradas `ui ]
+"941
+[e ( _LCD_Init ..  ]
+"942
+[e ( _UART_Init ..  ]
+"943
+[e ( _actualizar_todo ..  ]
+"944
+[e ( _UART_EnviarEstado ..  ]
+"946
+[e :U 762 ]
+{
+"947
+[v _t `uc ~T0 @X0 1 a ]
+[e = _t ( _leer_teclado ..  ]
+"948
+[e $ ! && != -> _t `i -> 0 `i != -> _t `i -> _tecla_ant `i 764  ]
+[e ( _procesar_tecla (1 _t ]
+[e :U 764 ]
+"949
+[e = _tecla_ant _t ]
+"952
+[e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == _subir_ant -> 1 `i 765  ]
+[e ( _llamar_pasillo (1 -> 1 `i ]
+[e :U 765 ]
+"953
+[e = _subir_ant -> . . _PORTBbits 0 4 `i ]
+"954
+[e $ ! && == -> . . _PORTBbits 0 3 `i -> 0 `i == _bajar_ant -> 1 `i 766  ]
+[e ( _llamar_pasillo (1 -> 2 `i ]
+[e :U 766 ]
+"955
+[e = _bajar_ant -> . . _PORTBbits 0 3 `i ]
+"958
+{
+[v _ms `i ~T0 @X0 1 a ]
+[e = _ms -> 0 `i ]
+[e $ < _ms -> 10 `i 767  ]
+[e $U 768  ]
+[e :U 767 ]
+{
+"959
+[e ( _UART_PumpTx ..  ]
+"960
+[e ( _UART_ProcessRx ..  ]
+"961
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"962
+[e ( _UART_PumpTx ..  ]
+"963
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
+"964
+}
+[e ++ _ms -> 1 `i ]
+[e $ < _ms -> 10 `i 767  ]
+[e :U 768 ]
+}
+"966
+[e ( _actualizar_todo ..  ]
+"967
+[e $ ! >= =+ _cont_uart -> 1 `i -> 25 `i 770  ]
+{
+[e = _cont_uart -> 0 `i ]
+[e ( _UART_EnviarEstado ..  ]
+}
+[e :U 770 ]
+"968
+}
+[e :U 761 ]
+[e $U 762  ]
+[e :U 763 ]
+"969
+[e :UE 760 ]
+}
+[a 36C 80 117 108 115 97 32 42 32 114 101 97 110 117 100 97 114 0 ]
+[a 14C 80 114 101 115 105 111 110 97 32 65 58 32 80 105 115 111 0 ]
+[a 25C 80 114 101 115 105 111 110 97 32 65 58 32 80 105 115 111 0 ]
+[a 24C 80 48 48 58 32 83 85 66 73 82 47 66 65 74 65 82 0 ]
+[a 27C 80 48 48 58 32 83 85 66 73 82 47 66 65 74 65 82 0 ]
+[a 39C 80 48 48 58 32 83 85 66 73 82 47 66 65 74 65 82 0 ]
+[a 38C 83 101 108 46 80 105 115 111 58 95 95 32 35 61 79 75 0 ]
+[a 37C 49 58 48 48 32 32 50 58 48 48 32 32 51 58 48 48 0 ]
+[a 28C 69 49 32 80 117 101 114 116 97 32 65 66 73 69 82 46 0 ]
+[a 30C 69 49 32 80 117 101 114 116 97 32 67 69 82 82 65 46 0 ]
+[a 11C 83 44 0 ]
+[a 1C 69 44 69 78 81 44 0 ]
+[a 3C 69 44 68 69 81 44 0 ]
+[a 5C 69 44 68 83 80 44 0 ]
+[a 9C 69 44 69 77 71 44 0 ]
+[a 7C 69 44 67 70 71 44 0 ]
+[a 20C 69 82 82 79 82 58 78 111 32 101 120 105 115 116 101 33 0 ]
+[a 26C 69 82 82 79 82 58 78 111 32 101 120 105 115 116 101 33 0 ]
+[a 40C 69 82 82 79 82 58 78 111 32 101 120 105 115 116 101 33 0 ]
+[a 41C 69 82 82 79 82 58 78 111 32 101 120 105 115 116 101 33 0 ]
+[a 19C 80 114 105 109 101 114 111 32 112 117 108 115 97 32 65 33 0 ]
+[a 35C 33 33 32 69 77 69 82 71 69 78 67 73 65 32 33 33 0 ]
+[a 42C 69 49 32 81 58 48 48 32 48 115 32 67 61 73 114 32 0 ]
+[a 22C 69 49 32 43 80 48 48 32 101 110 32 99 111 108 97 32 0 ]
+[a 31C 69 110 116 114 97 100 97 32 98 111 114 114 97 100 97 32 0 ]
+[a 43C 69 49 32 68 101 115 116 58 95 95 32 35 61 79 75 32 0 ]
+[a 17C 69 49 45 62 80 48 48 32 40 83 85 66 73 82 41 32 0 ]
+[a 18C 69 49 45 62 80 48 48 32 40 66 65 74 65 82 41 32 0 ]
+[a 16C 69 49 32 80 48 48 32 65 98 105 101 114 116 111 32 32 0 ]
+[a 32C 69 49 32 80 48 48 32 65 98 105 101 114 116 111 32 32 0 ]
+[a 23C 83 105 115 116 101 109 97 32 110 111 114 109 97 108 32 32 0 ]
+[a 33C 69 49 32 108 108 101 103 111 32 97 32 80 48 48 32 32 0 ]
+[a 13C 78 69 87 32 80 73 83 79 83 32 61 32 48 48 32 32 0 ]
+[a 21C 89 97 32 101 110 32 80 105 115 111 32 48 48 33 32 32 0 ]
+[a 29C 69 49 45 62 68 101 115 116 32 80 48 48 32 32 32 32 0 ]
+[a 34C 69 49 45 62 68 101 115 116 32 80 48 48 32 32 32 32 0 ]
+[a 15C 69 44 82 83 84 13 10 0 ]
+[a 2C 13 10 0 ]
+[a 4C 13 10 0 ]
+[a 6C 13 10 0 ]
+[a 8C 13 10 0 ]
+[a 10C 13 10 0 ]
+[a 12C 13 10 0 ]

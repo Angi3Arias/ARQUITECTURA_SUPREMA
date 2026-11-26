@@ -1,0 +1,1 @@
+LOGIC_TEST.p1: LOGIC_TEST.c config.h

@@ -1,0 +1,1137 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"4 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"10 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.30uc  1 e 2 0 ]
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"15 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"85 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+"106
+[v _dig dig `(uc  1 e 1 0 ]
+"107
+[v _vabs vabs `(i  1 e 2 0 ]
+"108
+[v _beep beep `(v  1 e 1 0 ]
+"110
+[v _poner_2d poner_2d `(v  1 e 1 0 ]
+"117
+[v _poner_msg poner_msg `(v  1 e 1 0 ]
+"124
+[v _msg_elev msg_elev `(v  1 e 1 0 ]
+"132
+[v _LCD_Nib LCD_Nib `(v  1 e 1 0 ]
+"141
+[v _LCD_Byte LCD_Byte `(v  1 e 1 0 ]
+"147
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"154
+[v _LCD_Linea LCD_Linea `(v  1 e 1 0 ]
+"172
+[v _leer_teclado leer_teclado `(uc  1 e 1 0 ]
+"189
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"198
+[v _UART_TxFree UART_TxFree `(uc  1 e 1 0 ]
+"202
+[v _UART_PutChar UART_PutChar `(v  1 e 1 0 ]
+"209
+[v _UART_PutStr UART_PutStr `(v  1 e 1 0 ]
+"213
+[v _UART_Put2d UART_Put2d `(v  1 e 1 0 ]
+"220
+[v _UART_PutInt UART_PutInt `(v  1 e 1 0 ]
+"229
+[v _UART_PutHex5 UART_PutHex5 `(v  1 e 1 0 ]
+"238
+[v _UART_PumpTx UART_PumpTx `(v  1 e 1 0 ]
+"244
+[v _estado_char estado_char `(uc  1 e 1 0 ]
+"252
+[v _puerta_nivel puerta_nivel `(uc  1 e 1 0 ]
+"268
+[v _UART_EmitEnq UART_EmitEnq `(v  1 e 1 0 ]
+"276
+[v _UART_EmitDeq UART_EmitDeq `(v  1 e 1 0 ]
+"284
+[v _UART_EmitDsp UART_EmitDsp `(v  1 e 1 0 ]
+"295
+[v _UART_EmitCfg UART_EmitCfg `(v  1 e 1 0 ]
+"302
+[v _UART_EmitEmg UART_EmitEmg `(v  1 e 1 0 ]
+"309
+[v _UART_EnviarEstado UART_EnviarEstado `(v  1 e 1 0 ]
+"339
+[v _agregar_cola_espera agregar_cola_espera `(v  1 e 1 0 ]
+"345
+[v _quitar_cola_espera quitar_cola_espera `(v  1 e 1 0 ]
+"354
+[v _elev_esperando elev_esperando `(i  1 e 2 0 ]
+"363
+[v _tiene_paradas tiene_paradas `(i  1 e 2 0 ]
+"369
+[v _contar_paradas contar_paradas `(i  1 e 2 0 ]
+"375
+[v _contar_destinos contar_destinos `(i  1 e 2 0 ]
+"381
+[v _siguiente_objetivo siguiente_objetivo `(v  1 e 1 0 ]
+"443
+[v _costo_elevador costo_elevador `(i  1 e 2 0 ]
+"482
+[v _cambiar_num_pisos cambiar_num_pisos `(v  1 e 1 0 ]
+"522
+[v _reiniciar_sistema reiniciar_sistema `(v  1 e 1 0 ]
+"548
+[v _llamar_pasillo_piso llamar_pasillo_piso `(v  1 e 1 0 ]
+"594
+[v _llamar_pasillo llamar_pasillo `(v  1 e 1 0 ]
+"602
+[v _encolar_destino_cabina encolar_destino_cabina `(v  1 e 1 0 ]
+"625
+[v _procesar_tecla procesar_tecla `(v  1 e 1 0 ]
+"697
+[v _atender_llegada atender_llegada `(v  1 e 1 0 ]
+"767
+[v _actualizar_todo actualizar_todo `(v  1 e 1 0 ]
+"873
+[v _parse_2d parse_2d `(i  1 e 2 0 ]
+"882
+[v _UART_ProcessRx UART_ProcessRx `(v  1 e 1 0 ]
+"919
+[v _main main `(v  1 e 1 0 ]
+"223 D:\PROGRAMAS\ARQ\MPLAB_VERSION_6.20\packs\Microchip\PIC18Fxxxx_DFP\1.6.159\xc8\pic\include\proc/pic18f4550.h
+[v _SPPCON SPPCON `VEuc  1 e 1 @3941 ]
+[s S255 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+"2353
+[s S263 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+]
+[s S271 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S277 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S280 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+]
+[u S282 . 1 `S255 1 . 1 0 `S263 1 . 1 0 `S271 1 . 1 0 `S277 1 . 1 0 `S280 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES282  1 e 1 @3968 ]
+[s S704 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2483
+[s S769 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S777 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S780 . 1 `S704 1 . 1 0 `S769 1 . 1 0 `S777 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES780  1 e 1 @3969 ]
+[s S316 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RDPU 1 0 :1:7 
+]
+"2868
+[s S323 . 1 `uc 1 CK1SPP 1 0 :1:0 
+`uc 1 CK2SPP 1 0 :1:1 
+`uc 1 OESPP 1 0 :1:2 
+]
+[s S327 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 CCP2E 1 0 :1:7 
+]
+[s S334 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 PA2E 1 0 :1:7 
+]
+[s S341 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RE7 1 0 :1:7 
+]
+[u S346 . 1 `S316 1 . 1 0 `S323 1 . 1 0 `S327 1 . 1 0 `S334 1 . 1 0 `S341 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES346  1 e 1 @3972 ]
+"2973
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S591 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+]
+"2998
+[s S599 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+]
+[u S607 . 1 `S591 1 . 1 0 `S599 1 . 1 0 ]
+[v _LATAbits LATAbits `VES607  1 e 1 @3977 ]
+"3073
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S147 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3100
+[s S156 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S165 . 1 `S147 1 . 1 0 `S156 1 . 1 0 ]
+[v _LATBbits LATBbits `VES165  1 e 1 @3978 ]
+"3185
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S627 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3208
+[s S634 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S641 . 1 `S627 1 . 1 0 `S634 1 . 1 0 ]
+[v _LATCbits LATCbits `VES641  1 e 1 @3979 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S193 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3290
+[s S202 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S211 . 1 `S193 1 . 1 0 `S202 1 . 1 0 ]
+[v _LATDbits LATDbits `VES211  1 e 1 @3980 ]
+"3375
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S571 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3392
+[s S575 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S579 . 1 `S571 1 . 1 0 `S575 1 . 1 0 ]
+[v _LATEbits LATEbits `VES579  1 e 1 @3981 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S695 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3657
+[u S713 . 1 `S695 1 . 1 0 `S704 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES713  1 e 1 @3987 ]
+[s S383 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S390 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S397 . 1 `S383 1 . 1 0 `S390 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES397  1 e 1 @3988 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S736 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+]
+"4245
+[s S740 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S744 . 1 `S736 1 . 1 0 `S740 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES744  1 e 1 @3990 ]
+[s S24 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4408
+[s S33 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S39 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES39  1 e 1 @3997 ]
+[s S58 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4492
+[s S67 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S73 . 1 `S58 1 . 1 0 `S67 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES73  1 e 1 @3998 ]
+[s S92 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4977
+[s S101 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S104 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S107 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S110 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S113 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S115 . 1 `S92 1 . 1 0 `S101 1 . 1 0 `S104 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 `S113 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES115  1 e 1 @4011 ]
+[s S416 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5185
+[s S425 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S434 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S437 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S439 . 1 `S416 1 . 1 0 `S425 1 . 1 0 `S434 1 . 1 0 `S437 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES439  1 e 1 @4012 ]
+"5402
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5414
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5587
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+[s S468 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"6098
+[s S477 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S482 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S485 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S488 . 1 `S468 1 . 1 0 `S477 1 . 1 0 `S482 1 . 1 0 `S485 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES488  1 e 1 @4024 ]
+"6581
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6666
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S659 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8009
+[s S665 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S673 . 1 `S659 1 . 1 0 `S665 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES673  1 e 1 @4051 ]
+[s S514 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S523 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S532 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S536 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S532 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES536  1 e 1 @4082 ]
+"47 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _num_pisos num_pisos `i  1 e 2 0 ]
+"48
+[v _piso piso `[3]i  1 e 6 0 ]
+"49
+[v _estado estado `[3]i  1 e 6 0 ]
+"50
+[v _direccion direccion `[3]i  1 e 6 0 ]
+"51
+[v _objetivo objetivo `[3]i  1 e 6 0 ]
+"52
+[v _reloj_piso reloj_piso `[3]i  1 e 6 0 ]
+"53
+[v _reloj_puerta reloj_puerta `[3]i  1 e 6 0 ]
+"54
+[v _encolados encolados `[3]i  1 e 6 0 ]
+"57
+[v _paradas paradas `[3][21]uc  1 e 63 0 ]
+"60
+[v _cola_espera cola_espera `[3]i  1 e 6 0 ]
+"61
+[v _cola_esp_len cola_esp_len `i  1 e 2 0 ]
+"64
+[v _modo modo `i  1 e 2 0 ]
+[v _piso_usr piso_usr `i  1 e 2 0 ]
+[v _elev_activo elev_activo `i  1 e 2 0 ]
+[v _buf_len buf_len `i  1 e 2 0 ]
+"65
+[v _buf buf `[3]uc  1 e 3 0 ]
+"68
+[v _emergencia emergencia `uc  1 e 1 0 ]
+[v _parpadeo parpadeo `uc  1 e 1 0 ]
+"69
+[v _cont_parp cont_parp `i  1 e 2 0 ]
+[v _cont_buzz cont_buzz `i  1 e 2 0 ]
+[v _cont_uart cont_uart `i  1 e 2 0 ]
+"72
+[v _msg_lcd msg_lcd `[17]uc  1 e 17 0 ]
+[v _prev_l1 prev_l1 `[17]uc  1 e 17 0 ]
+[v _prev_l2 prev_l2 `[17]uc  1 e 17 0 ]
+"73
+[v _tecla_ant tecla_ant `uc  1 e 1 0 ]
+"74
+[v _subir_ant subir_ant `i  1 e 2 0 ]
+[v _bajar_ant bajar_ant `i  1 e 2 0 ]
+"77
+[v _rx_ring rx_ring `VE[64]uc  1 e 64 0 ]
+"78
+[v _rx_head rx_head `VEuc  1 e 1 0 ]
+[v _rx_tail rx_tail `VEuc  1 e 1 0 ]
+"79
+[v _tx_ring tx_ring `[256]uc  1 e 256 0 ]
+"80
+[v _tx_head tx_head `uc  1 e 1 0 ]
+[v _tx_tail tx_tail `uc  1 e 1 0 ]
+"81
+[v _uart_rx uart_rx `[20]uc  1 e 20 0 ]
+"82
+[v _uart_rx_len uart_rx_len `uc  1 e 1 0 ]
+"168
+[v _TECLAS TECLAS `C[4][4]uc  1 e 16 0 ]
+"919
+[v _main main `(v  1 e 1 0 ]
+{
+"958
+[v main@ms ms `i  1 a 2 54 ]
+"947
+[v main@t t `uc  1 a 1 56 ]
+"969
+} 0
+"172
+[v _leer_teclado leer_teclado `(uc  1 e 1 0 ]
+{
+"173
+[v leer_teclado@f f `i  1 a 2 8 ]
+"174
+[v leer_teclado@t t `uc  1 a 1 7 ]
+"187
+} 0
+"767
+[v _actualizar_todo actualizar_todo `(v  1 e 1 0 ]
+{
+"769
+[v actualizar_todo@l2 l2 `[17]uc  1 a 17 17 ]
+[v actualizar_todo@l1 l1 `[17]uc  1 a 17 0 ]
+"768
+[v actualizar_todo@e e `i  1 a 2 51 ]
+[v actualizar_todo@w w `i  1 a 2 49 ]
+"870
+} 0
+"375
+[v _contar_destinos contar_destinos `(i  1 e 2 0 ]
+{
+"376
+[v contar_destinos@p p `i  1 a 2 13 ]
+[v contar_destinos@c c `i  1 a 2 11 ]
+"375
+[v contar_destinos@e e `i  1 p 2 5 ]
+"379
+} 0
+"697
+[v _atender_llegada atender_llegada `(v  1 e 1 0 ]
+{
+"698
+[v atender_llegada@fl fl `i  1 a 2 68 ]
+[v atender_llegada@p p `i  1 a 2 65 ]
+"702
+[v atender_llegada@mas_abajo mas_abajo `i  1 a 2 62 ]
+[v atender_llegada@mas_arriba mas_arriba `i  1 a 2 60 ]
+"699
+[v atender_llegada@mask mask `uc  1 a 1 67 ]
+"700
+[v atender_llegada@had_pickup had_pickup `uc  1 a 1 64 ]
+"701
+[v atender_llegada@had_dest had_dest `uc  1 a 1 59 ]
+"697
+[v atender_llegada@e e `i  1 p 2 53 ]
+"765
+} 0
+"276
+[v _UART_EmitDeq UART_EmitDeq `(v  1 e 1 0 ]
+{
+[v UART_EmitDeq@e e `i  1 p 2 29 ]
+[v UART_EmitDeq@fl fl `i  1 p 2 31 ]
+[v UART_EmitDeq@tipo tipo `uc  1 p 1 33 ]
+"282
+} 0
+"154
+[v _LCD_Linea LCD_Linea `(v  1 e 1 0 ]
+{
+[v LCD_Linea@fila fila `uc  1 p 1 wreg ]
+"156
+[v LCD_Linea@l l `[17]uc  1 a 17 17 ]
+"157
+[v LCD_Linea@i i `i  1 a 2 39 ]
+"155
+[v LCD_Linea@cache cache `*.39uc  1 a 2 37 ]
+"154
+[v LCD_Linea@fila fila `uc  1 p 1 wreg ]
+[v LCD_Linea@txt txt `*.30Cuc  1 p 1 16 ]
+[v LCD_Linea@fila fila `uc  1 p 1 36 ]
+"165
+} 1
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@l l `*.39Cuc  1 p 2 5 ]
+[v strncmp@r r `*.35Cuc  1 p 2 7 ]
+[v strncmp@n n `ui  1 p 2 9 ]
+"8
+} 0
+"4 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 14 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 12 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 11 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 5 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 7 ]
+[v memcpy@n n `ui  1 p 2 9 ]
+"18
+} 0
+"238 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _UART_PumpTx UART_PumpTx `(v  1 e 1 0 ]
+{
+"242
+} 0
+"882
+[v _UART_ProcessRx UART_ProcessRx `(v  1 e 1 0 ]
+{
+"905
+[v UART_ProcessRx@e e `i  1 a 2 8 ]
+"906
+[v UART_ProcessRx@fl_1225 fl `i  1 a 2 4 ]
+"900
+[v UART_ProcessRx@fl fl `i  1 a 2 2 ]
+"901
+[v UART_ProcessRx@d d `uc  1 a 1 11 ]
+"884
+[v UART_ProcessRx@c c `uc  1 a 1 10 ]
+"916
+} 0
+"522
+[v _reiniciar_sistema reiniciar_sistema `(v  1 e 1 0 ]
+{
+"523
+[v reiniciar_sistema@e e `i  1 a 2 56 ]
+"545
+} 0
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"5
+[v memset@p p `*.39uc  1 a 2 11 ]
+"3
+[v memset@dest dest `*.39v  1 p 2 5 ]
+[v memset@c c `i  1 p 2 7 ]
+[v memset@n n `ui  1 p 2 9 ]
+"10
+} 0
+"625 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _procesar_tecla procesar_tecla `(v  1 e 1 0 ]
+{
+[v procesar_tecla@k k `uc  1 p 1 wreg ]
+"626
+[v procesar_tecla@e e `i  1 a 2 71 ]
+[v procesar_tecla@num num `i  1 a 2 68 ]
+[v procesar_tecla@w w `i  1 a 2 66 ]
+"625
+[v procesar_tecla@k k `uc  1 p 1 wreg ]
+"627
+[v procesar_tecla@k k `uc  1 p 1 70 ]
+"694
+} 1
+"602
+[v _encolar_destino_cabina encolar_destino_cabina `(v  1 e 1 0 ]
+{
+"607
+[v encolar_destino_cabina@nueva nueva `uc  1 a 1 61 ]
+"602
+[v encolar_destino_cabina@w w `i  1 p 2 53 ]
+[v encolar_destino_cabina@num num `i  1 p 2 55 ]
+"623
+} 0
+"354
+[v _elev_esperando elev_esperando `(i  1 e 2 0 ]
+{
+"356
+[v elev_esperando@e e `i  1 a 2 17 ]
+"361
+} 0
+"345
+[v _quitar_cola_espera quitar_cola_espera `(v  1 e 1 0 ]
+{
+"346
+[v quitar_cola_espera@j j `i  1 a 2 11 ]
+[v quitar_cola_espera@i i `i  1 a 2 9 ]
+"345
+[v quitar_cola_espera@e e `i  1 p 2 5 ]
+"352
+} 0
+"302
+[v _UART_EmitEmg UART_EmitEmg `(v  1 e 1 0 ]
+{
+[v UART_EmitEmg@act act `uc  1 p 1 wreg ]
+[v UART_EmitEmg@act act `uc  1 p 1 wreg ]
+[v UART_EmitEmg@act act `uc  1 p 1 30 ]
+"307
+} 1
+"873
+[v _parse_2d parse_2d `(i  1 e 2 0 ]
+{
+"874
+[v parse_2d@v v `i  1 a 2 10 ]
+"873
+[v parse_2d@s s `*.30Cuc  1 p 1 5 ]
+"880
+} 0
+"594
+[v _llamar_pasillo llamar_pasillo `(v  1 e 1 0 ]
+{
+"595
+[v llamar_pasillo@fl fl `i  1 a 2 0 ]
+"594
+[v llamar_pasillo@dir dir `i  1 p 2 82 ]
+"600
+} 0
+"548
+[v _llamar_pasillo_piso llamar_pasillo_piso `(v  1 e 1 0 ]
+{
+"581
+[v llamar_pasillo_piso@nueva nueva `uc  1 a 1 61 ]
+"550
+[v llamar_pasillo_piso@costos costos `[3]i  1 a 6 70 ]
+"549
+[v llamar_pasillo_piso@mejor mejor `i  1 a 2 80 ]
+[v llamar_pasillo_piso@e e `i  1 a 2 78 ]
+[v llamar_pasillo_piso@best best `i  1 a 2 62 ]
+"551
+[v llamar_pasillo_piso@bit bit `uc  1 a 1 77 ]
+"552
+[v llamar_pasillo_piso@dir_c dir_c `uc  1 a 1 76 ]
+"548
+[v llamar_pasillo_piso@fl fl `i  1 p 2 53 ]
+[v llamar_pasillo_piso@dir dir `i  1 p 2 55 ]
+"592
+} 0
+"443
+[v _costo_elevador costo_elevador `(i  1 e 2 0 ]
+{
+"444
+[v costo_elevador@p p `i  1 a 2 45 ]
+[v costo_elevador@inter inter `i  1 a 2 43 ]
+[v costo_elevador@lejano lejano `i  1 a 2 41 ]
+"445
+[v costo_elevador@carga carga `i  1 a 2 39 ]
+"443
+[v costo_elevador@e e `i  1 p 2 15 ]
+[v costo_elevador@p_usr p_usr `i  1 p 2 17 ]
+[v costo_elevador@dir dir `i  1 p 2 19 ]
+"480
+} 0
+"369
+[v _contar_paradas contar_paradas `(i  1 e 2 0 ]
+{
+"370
+[v contar_paradas@p p `i  1 a 2 13 ]
+[v contar_paradas@c c `i  1 a 2 11 ]
+"369
+[v contar_paradas@e e `i  1 p 2 5 ]
+"373
+} 0
+"339
+[v _agregar_cola_espera agregar_cola_espera `(v  1 e 1 0 ]
+{
+"340
+[v agregar_cola_espera@i i `i  1 a 2 9 ]
+"339
+[v agregar_cola_espera@e e `i  1 p 2 5 ]
+"343
+} 0
+"268
+[v _UART_EmitEnq UART_EmitEnq `(v  1 e 1 0 ]
+{
+[v UART_EmitEnq@e e `i  1 p 2 29 ]
+[v UART_EmitEnq@fl fl `i  1 p 2 31 ]
+[v UART_EmitEnq@tipo tipo `uc  1 p 1 33 ]
+"274
+} 0
+"284
+[v _UART_EmitDsp UART_EmitDsp `(v  1 e 1 0 ]
+{
+[v UART_EmitDsp@fl fl `i  1 p 2 38 ]
+[v UART_EmitDsp@dir_c dir_c `uc  1 p 1 40 ]
+[v UART_EmitDsp@chosen chosen `i  1 p 2 41 ]
+[v UART_EmitDsp@c0 c0 `i  1 p 2 43 ]
+[v UART_EmitDsp@c1 c1 `i  1 p 2 45 ]
+[v UART_EmitDsp@c2 c2 `i  1 p 2 47 ]
+"293
+} 0
+"482
+[v _cambiar_num_pisos cambiar_num_pisos `(v  1 e 1 0 ]
+{
+"483
+[v cambiar_num_pisos@e e `i  1 a 2 63 ]
+[v cambiar_num_pisos@p p `i  1 a 2 61 ]
+[v cambiar_num_pisos@podadas podadas `i  1 a 2 59 ]
+"482
+[v cambiar_num_pisos@n n `i  1 p 2 53 ]
+"520
+} 0
+"363
+[v _tiene_paradas tiene_paradas `(i  1 e 2 0 ]
+{
+"364
+[v tiene_paradas@p p `i  1 a 2 11 ]
+"363
+[v tiene_paradas@e e `i  1 p 2 5 ]
+"367
+} 0
+"381
+[v _siguiente_objetivo siguiente_objetivo `(v  1 e 1 0 ]
+{
+"430
+[v siguiente_objetivo@mejor mejor `i  1 a 2 23 ]
+[v siguiente_objetivo@d d `i  1 a 2 17 ]
+"382
+[v siguiente_objetivo@p p `i  1 a 2 29 ]
+[v siguiente_objetivo@max_p max_p `i  1 a 2 27 ]
+[v siguiente_objetivo@min_p min_p `i  1 a 2 25 ]
+"381
+[v siguiente_objetivo@e e `i  1 p 2 9 ]
+"440
+} 0
+"107
+[v _vabs vabs `(i  1 e 2 0 ]
+{
+[v vabs@x x `i  1 p 2 5 ]
+} 0
+"124
+[v _msg_elev msg_elev `(v  1 e 1 0 ]
+{
+"125
+[v msg_elev@m m `[17]uc  1 a 17 26 ]
+"124
+[v msg_elev@e e `i  1 p 2 18 ]
+[v msg_elev@plantilla plantilla `*.32Cuc  1 p 2 20 ]
+[v msg_elev@pos_num pos_num `i  1 p 2 22 ]
+[v msg_elev@num num `i  1 p 2 24 ]
+"130
+} 0
+"3 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.30uc  1 e 2 0 ]
+{
+"5
+[v strcpy@d d `*.30uc  1 a 1 8 ]
+"3
+[v strcpy@dest dest `*.30uc  1 p 1 5 ]
+[v strcpy@src src `*.32Cuc  1 p 2 6 ]
+"8
+} 0
+"117 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _poner_msg poner_msg `(v  1 e 1 0 ]
+{
+"118
+[v poner_msg@i i `i  1 a 2 9 ]
+"117
+[v poner_msg@s s `*.35Cuc  1 p 2 5 ]
+"122
+} 0
+"110
+[v _poner_2d poner_2d `(v  1 e 1 0 ]
+{
+[v poner_2d@p p `*.30uc  1 p 1 15 ]
+[v poner_2d@v v `i  1 p 2 16 ]
+"115
+} 0
+"108
+[v _beep beep `(v  1 e 1 0 ]
+{
+[v beep@t t `i  1 p 2 5 ]
+} 0
+"309
+[v _UART_EnviarEstado UART_EnviarEstado `(v  1 e 1 0 ]
+{
+"325
+[v UART_EnviarEstado@ds ds `ul  1 a 4 43 ]
+[v UART_EnviarEstado@pk pk `ul  1 a 4 39 ]
+"311
+[v UART_EnviarEstado@e e `i  1 a 2 51 ]
+[v UART_EnviarEstado@p p `i  1 a 2 49 ]
+"336
+} 0
+"252
+[v _puerta_nivel puerta_nivel `(uc  1 e 1 0 ]
+{
+"253
+[v puerta_nivel@r r `i  1 a 2 23 ]
+"252
+[v puerta_nivel@e e `i  1 p 2 15 ]
+"266
+} 0
+"244
+[v _estado_char estado_char `(uc  1 e 1 0 ]
+{
+[v estado_char@e e `i  1 p 2 5 ]
+"250
+} 0
+"229
+[v _UART_PutHex5 UART_PutHex5 `(v  1 e 1 0 ]
+{
+[v UART_PutHex5@mask mask `ul  1 p 4 27 ]
+"230
+[v UART_PutHex5@HEX HEX `C[16]uc  1 s 16 HEX ]
+"236
+} 0
+"295
+[v _UART_EmitCfg UART_EmitCfg `(v  1 e 1 0 ]
+{
+[v UART_EmitCfg@n n `i  1 p 2 38 ]
+[v UART_EmitCfg@podadas podadas `i  1 p 2 40 ]
+"300
+} 0
+"198
+[v _UART_TxFree UART_TxFree `(uc  1 e 1 0 ]
+{
+"200
+} 0
+"209
+[v _UART_PutStr UART_PutStr `(v  1 e 1 0 ]
+{
+[v UART_PutStr@s s `*.32Cuc  1 p 2 27 ]
+"211
+} 0
+"220
+[v _UART_PutInt UART_PutInt `(v  1 e 1 0 ]
+{
+"221
+[v UART_PutInt@tmp tmp `[7]uc  1 a 7 29 ]
+"222
+[v UART_PutInt@i i `i  1 a 2 36 ]
+"220
+[v UART_PutInt@v v `i  1 p 2 27 ]
+"227
+} 0
+"213
+[v _UART_Put2d UART_Put2d `(v  1 e 1 0 ]
+{
+[v UART_Put2d@v v `i  1 p 2 27 ]
+"218
+} 0
+"106
+[v _dig dig `(uc  1 e 1 0 ]
+{
+[v dig@v v `i  1 p 2 13 ]
+} 0
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 10 ]
+[v ___awmod@counter counter `uc  1 a 1 9 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 5 ]
+[v ___awmod@divisor divisor `i  1 p 2 7 ]
+"34
+} 0
+"7 D:\PROGRAMAS\ARQ\XC8_6.20\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 11 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 10 ]
+[v ___awdiv@counter counter `uc  1 a 1 9 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 5 ]
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+"41
+} 0
+"202 D:\UNIVERSIDAD\UNIVERSIDAD\Arq\Elevador_Supremo_version_display\MPLAB\LOGIC_TEST.c
+[v _UART_PutChar UART_PutChar `(v  1 e 1 0 ]
+{
+[v UART_PutChar@c c `uc  1 p 1 wreg ]
+"203
+[v UART_PutChar@next next `uc  1 a 1 26 ]
+"202
+[v UART_PutChar@c c `uc  1 p 1 wreg ]
+[v UART_PutChar@c c `uc  1 p 1 25 ]
+"207
+} 1
+"189
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"196
+} 0
+"147
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"152
+} 0
+"141
+[v _LCD_Byte LCD_Byte `(v  1 e 1 0 ]
+{
+[v LCD_Byte@v v `uc  1 p 1 wreg ]
+[v LCD_Byte@v v `uc  1 p 1 wreg ]
+[v LCD_Byte@dato dato `uc  1 p 1 7 ]
+[v LCD_Byte@v v `uc  1 p 1 9 ]
+"145
+} 1
+"132
+[v _LCD_Nib LCD_Nib `(v  1 e 1 0 ]
+{
+[v LCD_Nib@n n `uc  1 p 1 wreg ]
+[v LCD_Nib@n n `uc  1 p 1 wreg ]
+"134
+[v LCD_Nib@n n `uc  1 p 1 6 ]
+"139
+} 1
+"85
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"92
+[v isr@next next `uc  1 a 1 4 ]
+"91
+[v isr@c c `uc  1 a 1 3 ]
+"88
+[v isr@dummy dummy `VEuc  1 a 1 2 ]
+"103
+} 0
